@@ -1,0 +1,186 @@
+<!doctype html><html lang=en>
+<head>
+<title>ProjectEuler -01 Multiple of 3 and 5 :: Krishankant</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="PROBLEM : https://www.hackerrank.com/contests/projecteuler/challenges/euler001If we list all the natural numbers below that are multiples of or , we get and . The sum of these multiples is .
+Find the sum of all the multiples of or below .
+Input FormatFirst line contains that denotes the number of test cases. This is followed by lines, each containing an integer, .
+Constraints
+    Output FormatFor each test case, print an integer that denotes the sum of all the multiples of or below .">
+<meta name=keywords content="Krishankant Ray">
+<meta name=robots content="noodp">
+<link rel=canonical href=../../posts/2017-09-13-projecteuler-01-multiple-of-3-and-5/>
+<link rel=stylesheet href=../../assets/style.css>
+<link rel=apple-touch-icon href=../../img/apple-touch-icon-192x192.png>
+<link rel="shortcut icon" href=../../img/favicon/orange.png>
+<meta name=twitter:card content="summary">
+<meta name=twitter:site content>
+<meta name=twitter:creator content="Krishankant Ray">
+<meta property="og:locale" content="en">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ProjectEuler -01  Multiple of 3 and 5">
+<meta property="og:description" content="PROBLEM : https://www.hackerrank.com/contests/projecteuler/challenges/euler001If we list all the natural numbers below that are multiples of or , we get and . The sum of these multiples is .
+Find the sum of all the multiples of or below .
+Input FormatFirst line contains that denotes the number of test cases. This is followed by lines, each containing an integer, .
+Constraints
+    Output FormatFor each test case, print an integer that denotes the sum of all the multiples of or below .">
+<meta property="og:url" content="/posts/2017-09-13-projecteuler-01-multiple-of-3-and-5/">
+<meta property="og:site_name" content="Krishankant">
+<meta property="og:image" content="/img/favicon/orange.png">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+<meta property="article:published_time" content="2017-09-13 16:56:00 +0530 +0530">
+</head>
+<body class=orange>
+<div class="container center headings--one-size">
+<header class=header>
+<div class=header__inner>
+<div class=header__logo>
+<a href=../../>
+<div class=logo>
+Krishankant
+</div>
+</a>
+</div>
+<div class=menu-trigger>menu</div>
+</div>
+<nav class=menu>
+<ul class="menu__inner menu__inner--desktop">
+<li><a href=../../about>About/Resume</a></li>
+<li><a href=../../posts>Blog</a></li>
+<li><a href=../../contact>Contact</a></li>
+<li><a href=../../projects>Projects</a></li>
+</ul>
+<ul class="menu__inner menu__inner--mobile">
+<li><a href=../../about>About/Resume</a></li>
+<li><a href=../../posts>Blog</a></li>
+<li><a href=../../contact>Contact</a></li>
+<li><a href=../../projects>Projects</a></li>
+</ul>
+</nav>
+</header>
+<div class=content>
+<div class=post>
+<h1 class=post-title>
+<a href=../../posts/2017-09-13-projecteuler-01-multiple-of-3-and-5/>ProjectEuler -01 Multiple of 3 and 5</a></h1>
+<div class=post-meta>
+<span class=post-date>
+2017-09-13
+</span>
+<span class=post-author>:: Krishankant Ray</span>
+</div>
+<div class=post-content><div>
+<p>PROBLEM :  <a href=https://www.hackerrank.com/contests/projecteuler/challenges/euler001>https://www.hackerrank.com/contests/projecteuler/challenges/euler001</a><br>
+If we list all the natural numbers below <img src alt>
+that are multiples of <img src alt>
+or <img src alt>,
+we get <img src alt>
+and <img src alt>.
+The sum of these multiples is <img src alt>.<br>
+Find the sum of all the multiples of <img src alt>
+or <img src alt>
+below <img src alt>.</p>
+<p><strong>Input Format</strong></p>
+<p>First line contains <img src alt>
+that denotes the number of test cases. This is followed by <img src alt>
+lines, each containing an integer, <img src alt>.</p>
+<p><strong>Constraints</strong></p>
+<ul>
+<li><img src alt></li>
+<li><img src alt></li>
+</ul>
+<p><strong>Output Format</strong></p>
+<p>For each test case, print an integer that denotes the sum of all the
+multiples of <img src alt>
+or <img src alt>
+below <img src alt>.</p>
+<p><strong>Sample Input 0</strong></p>
+<pre><code>2
+10
+100
+</code></pre>
+<p><strong>Sample Output 0</strong></p>
+<pre><code>23
+2318
+</code></pre>
+<p><strong>Explanation 0</strong></p>
+<p>For <img src alt>,
+if we list all the natural numbers below <img src alt>
+that are multiples of <img src alt>
+or <img src alt>,
+we get <img src alt>
+and <img src alt>.
+The sum of these multiples is <img src alt>.<br>
+Similarly for <img src alt>,
+we get <img src alt>.</p>
+<p><strong>Solution :</strong></p>
+<pre><code>#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    int t;
+    cin &gt;&gt; t;
+    while (t--) {
+        long long int n, x, y, z, m3, m5, m15, sum = 0;
+        cin &gt;&gt; n;
+        if (n % 3 == 0)
+            x = (n - 1) / 3;
+        else
+            x = n / 3;
+        if (n % 5 == 0)
+            y = (n - 1) / 5;
+        else
+            y = n / 5;
+        if (n % 15 == 0)
+            z = (n - 1) / 15;
+        else
+            z = n / 15;
+
+        m3 = (x * ((2 * 3) + (x - 1) * 3)) / 2;
+        m5 = (y * ((2 * 5) + (y - 1) * 5)) / 2;
+        m15 = (z * ((2 * 15) + (z - 1) * 15)) / 2;
+        sum = m3 + m5 - m15;
+        cout &lt;&lt; sum &lt;&lt; endl;
+        sum = 0;
+    }
+    return 0;
+}
+</code></pre>
+<p> </p>
+</div></div>
+<div class=pagination>
+<div class=pagination__title>
+<span class=pagination__title-h>Read other posts</span>
+<hr>
+</div>
+<div class=pagination__buttons>
+<span class="button previous">
+<a href=../../posts/2017-09-14-codechef-may17-chef-and-his-daily-routine-code-chefrout/>
+<span class=button__icon>←</span>
+<span class=button__text>Codechef MAY17 chef and his daily routine ( code: CHEFROUT )</span>
+</a>
+</span>
+<span class="button next">
+<a href=../../posts/2017-09-11-codechef-sept17-sereja-and-commands-code-seaco/>
+<span class=button__text>CodeChef SEPT17 Sereja and Commands (code: SEACO) </span>
+<span class=button__icon>→</span>
+</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<footer class=footer>
+<div class=footer__inner>
+<div class=copyright>
+<span>© 2021 Powered by <a href=http://gohugo.io>Hugo</a></span>
+<span>:: Theme made by <a href=https://twitter.com/panr>panr</a></span>
+</div>
+</div>
+</footer>
+<script src=../../assets/main.js></script>
+<script src=../../assets/prism.js></script>
+</div>
+</body>
+</html>

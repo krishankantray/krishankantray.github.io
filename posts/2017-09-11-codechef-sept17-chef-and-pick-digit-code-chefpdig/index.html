@@ -1,0 +1,217 @@
+<!doctype html><html lang=en>
+<head>
+<title>CodeChef SEPT17 Chef and Pick Digit (code: CHEFPDIG) :: Krishankant</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Problem: Little Chef and Sum https://www.codechef.com/SEPT17/problems/CHEFPDIGChef likes to play with big numbers. Today, he has a big positive integer N. He can select any two digits from this number (the digits can be same but their positions should be different) and orders them in any one of the two possible ways. For each of these ways, he creates a two digit number from it (might contain leading zeros). Then, he will pick a character corresponding to the ASCII value equal to this number, i.">
+<meta name=keywords content="Krishankant Ray">
+<meta name=robots content="noodp">
+<link rel=canonical href=../../posts/2017-09-11-codechef-sept17-chef-and-pick-digit-code-chefpdig/>
+<link rel=stylesheet href=../../assets/style.css>
+<link rel=apple-touch-icon href=../../img/apple-touch-icon-192x192.png>
+<link rel="shortcut icon" href=../../img/favicon/orange.png>
+<meta name=twitter:card content="summary">
+<meta name=twitter:site content>
+<meta name=twitter:creator content="Krishankant Ray">
+<meta property="og:locale" content="en">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CodeChef SEPT17 Chef and Pick Digit (code: CHEFPDIG)">
+<meta property="og:description" content="Problem: Little Chef and Sum https://www.codechef.com/SEPT17/problems/CHEFPDIGChef likes to play with big numbers. Today, he has a big positive integer N. He can select any two digits from this number (the digits can be same but their positions should be different) and orders them in any one of the two possible ways. For each of these ways, he creates a two digit number from it (might contain leading zeros). Then, he will pick a character corresponding to the ASCII value equal to this number, i.">
+<meta property="og:url" content="/posts/2017-09-11-codechef-sept17-chef-and-pick-digit-code-chefpdig/">
+<meta property="og:site_name" content="Krishankant">
+<meta property="og:image" content="/img/favicon/orange.png">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+<meta property="article:published_time" content="2017-09-11 20:07:00 +0530 +0530">
+</head>
+<body class=orange>
+<div class="container center headings--one-size">
+<header class=header>
+<div class=header__inner>
+<div class=header__logo>
+<a href=../../>
+<div class=logo>
+Krishankant
+</div>
+</a>
+</div>
+<div class=menu-trigger>menu</div>
+</div>
+<nav class=menu>
+<ul class="menu__inner menu__inner--desktop">
+<li><a href=../../about>About/Resume</a></li>
+<li><a href=../../posts>Blog</a></li>
+<li><a href=../../contact>Contact</a></li>
+<li><a href=../../projects>Projects</a></li>
+</ul>
+<ul class="menu__inner menu__inner--mobile">
+<li><a href=../../about>About/Resume</a></li>
+<li><a href=../../posts>Blog</a></li>
+<li><a href=../../contact>Contact</a></li>
+<li><a href=../../projects>Projects</a></li>
+</ul>
+</nav>
+</header>
+<div class=content>
+<div class=post>
+<h1 class=post-title>
+<a href=../../posts/2017-09-11-codechef-sept17-chef-and-pick-digit-code-chefpdig/>CodeChef SEPT17 Chef and Pick Digit (code: CHEFPDIG)</a></h1>
+<div class=post-meta>
+<span class=post-date>
+2017-09-11
+</span>
+<span class=post-author>:: Krishankant Ray</span>
+</div>
+<div class=post-content><div>
+<p><strong>Problem: Little
+Chef and Sum </strong><br>
+<strong><br>
+</strong><a href=https://www.codechef.com/SEPT17/problems/CHEFPDIG>https://www.codechef.com/SEPT17/problems/CHEFPDIG</a></p>
+<p>Chef likes to play with big numbers. Today, he has a big positive
+integer <strong>N</strong>. He can select any two digits from this number (the digits
+can be same but their positions should be different) and orders them in
+any one of the two possible ways. For each of these ways, he creates a
+two digit number from it (might contain leading zeros). Then, he will
+pick a character corresponding to the ASCII value equal to this number,
+i.e. the number 65 corresponds to &lsquo;A&rsquo;, 66 to &lsquo;B&rsquo; and so on till 90 for
+&lsquo;Z&rsquo;. Chef is only interested in finding which of the characters in the
+range &lsquo;A&rsquo; to &lsquo;Z&rsquo; can possibly be picked this way. <strong>Input </strong><br>
+The first line of the input contains an integer <strong>T</strong> denoting the
+number of test cases.<br>
+The first line of the input contains an integer <strong>N</strong>.</p>
+<p><strong>Output </strong><br>
+For each test case, output a string containing
+characters Chef can pick <strong>in sorted order</strong> If the resulting size of
+string is zero, you should output a new line.</p>
+<p><strong>Constraints
+:</strong></p>
+<ul>
+<li><strong>1</strong> ≤ <strong>T</strong> ≤ <strong>10</strong></li>
+<li><strong>1</strong> ≤ <strong>N</strong> ≤ <strong>10100000</strong></li>
+</ul>
+<p><strong>Subtask :</strong></p>
+<p> </p>
+<ul>
+<li><em>Subtask #1 (40 points)</em> <strong>N</strong> ≤ <strong>1010</strong></li>
+<li><em>Subtask #2 (60 points)</em> <strong>Original Constraints</strong></li>
+</ul>
+<h3 id=span-stylecolor-redexamplespan>Example<a href=#span-stylecolor-redexamplespan class=hanchor arialabel=Anchor>&#8983;</a> </h3>
+<pre><code>Input:
+4
+65
+566
+11
+1623455078
+
+Output:
+
+A
+AB
+
+ACDFGHIJKLNPQRSTUVW
+</code></pre>
+<h3 id=span-stylecolor-redexplanationspan>Explanation<a href=#span-stylecolor-redexplanationspan class=hanchor arialabel=Anchor>&#8983;</a> </h3>
+<p><strong>Example case 1.</strong> Chef can pick digits <strong>6</strong> and <strong>5</strong> and create
+integers 56 and 65. The integer 65 corresponds to &lsquo;A&rsquo;.<br>
+<strong>Example case 2.</strong> Chef can pick digits <strong>6</strong> and <strong>5</strong> and create
+<strong>&lsquo;A&rsquo;</strong> as it equals <strong>65</strong>. He can pick 6 and 6 (they are picked from
+position 2 and position 3, respectively) to create &lsquo;B&rsquo; too. Hence answer
+is &ldquo;AB&rdquo;.<br>
+<strong>Example case 3.</strong> It&rsquo;s not possible to create any character from &lsquo;A&rsquo;
+to &lsquo;Z&rsquo;. Hence, we just print a new line.</p>
+<p><strong></strong>Solutions
+:<strong></strong></p>
+<pre><code>#include&lt;iostream&gt;
+#include&lt;vector&gt;
+#include&lt;algorithm&gt;
+#include&lt;iterator&gt;
+using namespace std;
+ 
+int main()
+{
+    int t;
+    cin&gt;&gt;t;
+    while(t--)
+    {
+        long long unsigned int n,x;
+        cin&gt;&gt;n;
+        x=n;
+        vector&lt;int&gt;nums;
+        vector&lt;char&gt;alpha;
+        while(x !=0)
+        {
+            int a = x%10;
+            nums.push_back(a);
+            x /=10;
+        }
+        
+        int p = nums.size();
+        for(int i=0; i&lt;p; i++)
+        {
+            for(int j=0; j&lt;p ;j++)
+            {
+                if(j != i)
+                {
+                    int b = 10*nums[i] + nums[j];
+                    char c = b;
+                    if(b&gt;=65 &amp;&amp; b&lt;=90)
+                        alpha.push_back(c);
+                    b= 10*nums[j] + nums[i];
+                    c= b;
+                    if(b&gt;=65 &amp;&amp; b&lt;=90)
+                        alpha.push_back(c);
+                }
+            }
+        }
+        
+        sort(alpha.begin(), alpha.end());
+        vector&lt;char&gt;::iterator it;
+        it = unique(alpha.begin(), alpha.end());
+        alpha.resize(distance(alpha.begin(), it));
+    for(int i=0; i&lt;alpha.size(); i++)
+        cout&lt;&lt;alpha[i];
+        cout&lt;&lt;endl;
+    }
+    
+    
+    
+    return 0;
+}
+</code></pre>
+<p><strong></strong> <strong></strong></p>
+</div></div>
+<div class=pagination>
+<div class=pagination__title>
+<span class=pagination__title-h>Read other posts</span>
+<hr>
+</div>
+<div class=pagination__buttons>
+<span class="button previous">
+<a href=../../posts/2017-09-11-codechef-sept17-sereja-and-commands-code-seaco/>
+<span class=button__icon>←</span>
+<span class=button__text>CodeChef SEPT17 Sereja and Commands (code: SEACO) </span>
+</a>
+</span>
+<span class="button next">
+<a href=../../posts/2017-09-11-codechef-sept17-little-chef-and-sum-code-chefsum/>
+<span class=button__text>CodeChef SEPT17 Little Chef and Sum ( code: CHEFSUM)</span>
+<span class=button__icon>→</span>
+</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<footer class=footer>
+<div class=footer__inner>
+<div class=copyright>
+<span>© 2021 Powered by <a href=http://gohugo.io>Hugo</a></span>
+<span>:: Theme made by <a href=https://twitter.com/panr>panr</a></span>
+</div>
+</div>
+</footer>
+<script src=../../assets/main.js></script>
+<script src=../../assets/prism.js></script>
+</div>
+</body>
+</html>
