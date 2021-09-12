@@ -1,22 +1,26 @@
 +++
-title = "About"
-date = "2019-01-25"
-author = "Radek"
+title = "About Me"
 +++
+[![Download Resume](https://img.icons8.com/color/30/000000/pdf.png) Download Resume](/pdf/KrishankantRay.pdf)
 
 # Hi there
 
-My name is Radek and I'm the author of this theme. I made it to help you present your ideas easier.
+My name is Krishankant and I'm a software engineer based in India 🇮🇳.
 
-We all know how hard is to start something on the web, especially these days. You need to prepare a bunch of stuff, configure them and when that’s done — create the content.
+I have 2+ years of experience in software engineering. 
 
-This theme is pretty basic and covers all of the essentials. All you have to do is start typing!
+I currently work as a **Software Engineer** in a Netherland based cyber security startup called - [Breachlock Inc](http://breachlock.com/). And previously I worked at [Cvent](https://www.cvent.com/) for 12 months. 
 
-The theme includes:
+**Skills** : 
 
-- **5 duotone themes**, depending on your preferences (orange, red, blue, green, pink)
-- [**Fira Code**](https://github.com/tonsky/FiraCode) as default monospaced font. It's gorgeous!
-- **really nice, custom duotone** syntax highlighting based on [**PrismJS**](https://prismjs.com)
-- mobile friendly layout
+Languages : `Javascript`, `C++`, `Java`, `MySQL`
 
-So, there you have it... enjoy!
+Frameworks/Tools : `ReactJS`, `ExpressJS`, `NodeJS`
+
+Others : `Algorithms`, `Data Structures`, `OOP`, `System Design`
+
+
+***
+
+
+Feel free to reach out to me at [contacts](https://krishankantray.github.io/contact) page. 

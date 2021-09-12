@@ -8,7 +8,7 @@ enableInlineShortcodes = true
 [params]
   # dir name of your main content (default is `content/posts`).
   # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "resume"
+  contentTypeName = "posts"
 
   # ["orange", "blue", "red", "green", "pink"]
   themeColor = "orange"
@@ -63,13 +63,13 @@ enableInlineShortcodes = true
 
     [languages.en.params.logo]
       logoText = "Krishankant"
-      logoHomeLink = "/resume"
+      logoHomeLink = "/"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
-        identifier = "resume"
+        identifier = "about"
         name = "About/Resume"
-        url = "/resume"
+        url = "/about"
       [[languages.en.menu.main]]
         identifier = "blog"
         name = "Blog"
