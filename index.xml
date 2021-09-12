@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Krishankant</title><link>/</link><description>Recent content on Krishankant</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 19 Apr 2020 21:26:17 +0530</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>CSV to SQL import using Node, Express and React</title><link>/posts/my-first-post/</link><pubDate>Sun, 19 Apr 2020 21:26:17 +0530</pubDate><guid>/posts/my-first-post/</guid><description>CSV to SQL import
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Krishankant</title><link>/</link><description>Recent content on Krishankant</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 19 Apr 2020 21:26:17 +0530</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>CSV to SQL import using Node, Express and React</title><link>/posts/csv-to-sql-import/</link><pubDate>Sun, 19 Apr 2020 21:26:17 +0530</pubDate><guid>/posts/csv-to-sql-import/</guid><description>CSV to SQL import
 Github : Front-End Part Back-End Part
 What is this app all about ? This app allows users to import a .csv file and save it in MySQL. The .csv file needs to be in a specified format, something like this . Once the data is saved we can see and delete the table data on the front-end.
 Whats there on back-end and front-end ? Back-End : NodeJS ExpressJS MySQL Front-End : ReactJS Here is the SQL table structure :</description><content>&lt;h1 id="csv-to-sql-import">CSV to SQL import&lt;/h1>
@@ -123,20 +123,7 @@ Just change the line 35 , 69 and 97, i.e we need to change the URL of all the fe
 &lt;a href="https://csv-to-sql-import.herokuapp.com">https://csv-to-sql-import.herokuapp.com&lt;/a>
 with
 http:localhost:9000&lt;/p>
-&lt;p>and rest of the part of url remains same.&lt;/p></content></item><item><title>About</title><link>/about/</link><pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate><guid>/about/</guid><description>Hi there My name is Radek and I&amp;rsquo;m the author of this theme. I made it to help you present your ideas easier.
-We all know how hard is to start something on the web, especially these days. You need to prepare a bunch of stuff, configure them and when that’s done — create the content.
-This theme is pretty basic and covers all of the essentials. All you have to do is start typing!</description><content>&lt;h1 id="hi-there">Hi there&lt;/h1>
-&lt;p>My name is Radek and I&amp;rsquo;m the author of this theme. I made it to help you present your ideas easier.&lt;/p>
-&lt;p>We all know how hard is to start something on the web, especially these days. You need to prepare a bunch of stuff, configure them and when that’s done — create the content.&lt;/p>
-&lt;p>This theme is pretty basic and covers all of the essentials. All you have to do is start typing!&lt;/p>
-&lt;p>The theme includes:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>5 duotone themes&lt;/strong>, depending on your preferences (orange, red, blue, green, pink)&lt;/li>
-&lt;li>&lt;a href="https://github.com/tonsky/FiraCode">&lt;strong>Fira Code&lt;/strong>&lt;/a> as default monospaced font. It&amp;rsquo;s gorgeous!&lt;/li>
-&lt;li>&lt;strong>really nice, custom duotone&lt;/strong> syntax highlighting based on &lt;a href="https://prismjs.com">&lt;strong>PrismJS&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>mobile friendly layout&lt;/li>
-&lt;/ul>
-&lt;p>So, there you have it&amp;hellip; enjoy!&lt;/p></content></item><item><title>About Me</title><link>/resume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/resume/</guid><description>Download Resume
+&lt;p>and rest of the part of url remains same.&lt;/p></content></item><item><title>About Me</title><link>/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/about/</guid><description>Download Resume
 Hi there My name is Krishankant and I&amp;rsquo;m a software engineer based in India 🇮🇳.
 I have 2+ years of experience in software engineering.
 I currently work as a Software Engineer in a Netherland based cyber security startup called - Breachlock Inc. And previously I worked at Cvent for 12 months.
