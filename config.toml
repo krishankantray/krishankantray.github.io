@@ -1,4 +1,4 @@
-baseurl = "krishankantray.github.io"
+baseurl = "/"
 languageCode = "en-us"
 theme = "terminal"
 paginate = 5
