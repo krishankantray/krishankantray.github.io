@@ -123,4 +123,280 @@ Just change the line 35 , 69 and 97, i.e we need to change the URL of all the fe
 &lt;a href="https://csv-to-sql-import.herokuapp.com">https://csv-to-sql-import.herokuapp.com&lt;/a>
 with
 http:localhost:9000&lt;/p>
-&lt;p>and rest of the part of url remains same.&lt;/p></content></item></channel></rss>
+&lt;p>and rest of the part of url remains same.&lt;/p></content></item><item><title>Kadane's Algorithm</title><link>/posts/2020-04-03-kadanes-algorithm/</link><pubDate>Fri, 03 Apr 2020 06:16:00 +0530</pubDate><guid>/posts/2020-04-03-kadanes-algorithm/</guid><description>Kadane&amp;rsquo;s Algorithm TL;DR
+This algorithm is used to find maximum sum sub-array from a given array.  Its has O(n) time complexity and O(1) space complexity.  It works irrespective of whether the elements are positive or negative, whether sorted or unsorted.  Its DP approach Its brute force approach takes O(n^2) as it calculates all possible sub-array and then return maximum out of them.  Since brute force approach is very obvious and easy to implement, so, I am not discussing it here.</description><content>&lt;h2 id="span-stylecolor-redspan-stylefont-size-x-largespan-stylefont-family-verdana-sans-serifkadanes-algorithmspanspanspan">&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->Kadane&amp;rsquo;s Algorithm&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->&lt;/h2>
+&lt;p>TL;DR&lt;/p>
+&lt;ul>
+&lt;li>This algorithm is used to find maximum sum sub-array from a given
+array. &lt;/li>
+&lt;li>Its has O(n) time complexity and O(1) space complexity.  &lt;/li>
+&lt;li>It works irrespective of whether the elements are positive or
+negative, whether sorted or unsorted. &lt;/li>
+&lt;li>Its DP approach&lt;/li>
+&lt;li>Its brute force approach takes O(n^2) as it calculates all possible
+sub-array and then return maximum out of them. &lt;/li>
+&lt;/ul>
+&lt;p>Since brute force approach is very obvious and easy to implement, so, I
+am not discussing it here.&lt;/p>
+&lt;h4 id="lets-directly-jump-to-kadanes-algorithm-">Lets directly jump to Kadane&amp;rsquo;s Algorithm : &lt;/h4>
+&lt;p>Its uses two variables one stores local maximum ( &lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->local_maximum
+&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->) and other stores global maximum ( &lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->global_maximum&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->) .&lt;br>
+Initialise , &lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->local_maximum
+= 0 &lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->and &lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->global_maximum&lt;!-- raw HTML omitted -->
+= -Infinity &lt;!-- raw HTML omitted -->&lt;/p>
+&lt;dl>
+&lt;dt>We start iteration from the first element, and for each element we check&lt;/dt>
+&lt;dt>following condition before updating the &amp;lt;span&lt;/dt>
+&lt;dt>style=&amp;ldquo;color: #e69138;&amp;quot;&amp;gt;&amp;lt;span&lt;/dt>
+&lt;dt>style=&amp;ldquo;font-family: &amp;quot;Courier New&amp;quot;, Courier, monospace;&amp;quot;&amp;gt;local_maximum&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->&lt;/dt>
+&lt;dd>&lt;/dd>
+&lt;/dl>
+&lt;ul>
+&lt;li>if  &lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->local_maximum
+&amp;lt; 0&lt;!-- raw HTML omitted --> &lt;!-- raw HTML omitted -->,  then &lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->local_maximum
+= arr[i]&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted --> ,  this is because if &lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->local_maximum
+&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->is negative value then adding it with current value
+will result into lower value.&lt;br>
+Otherwise, if&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->
+local_maximum &amp;gt;=0 &lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->then &lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->local_maximum=
+local_maximum + arr[i]&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted --> .&lt;/li>
+&lt;/ul>
+&lt;p>Now, we got &lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->local_maximum
+&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->till current element, its time to compare it with &lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->global_maximum&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->. &lt;/p>
+&lt;p> &lt;/p>
+&lt;ul>
+&lt;li>If &lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->global_maximum
+&amp;lt; local_maximum&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted --> then  &lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->global
+maximum = local_maximum&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->              &lt;/li>
+&lt;/ul>
+&lt;p> &lt;/p>
+&lt;p> Thats it, now after whole iteration is finished the our answer is the
+value of &lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->global_maximum&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->. &lt;/p>
+&lt;p> &lt;/p>
+&lt;h4 id="now-its-time-to-code-it-out-">Now, its time to code it out : &lt;/h4>
+&lt;p>Language used : &lt;code>JavaScript&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-js" data-lang="js">
+&lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">maxSubArray&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">function&lt;/span>(&lt;span style="color:#a6e22e">nums&lt;/span>) {
+&lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">local_maximum&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#a6e22e">nums&lt;/span>
+.&lt;span style="color:#a6e22e">reduce&lt;/span>( (&lt;span style="color:#a6e22e">global_maximum&lt;/span>,&lt;span style="color:#a6e22e">current_element&lt;/span>)=&amp;gt;{
+&lt;span style="color:#66d9ef">if&lt;/span>(&lt;span style="color:#a6e22e">local_maximum&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span> ) {
+&lt;span style="color:#a6e22e">local_maximum&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#a6e22e">current_element&lt;/span> ;
+}
+&lt;span style="color:#66d9ef">else&lt;/span>
+&lt;span style="color:#a6e22e">local_maximum&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#a6e22e">local_maximum&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#a6e22e">current_element&lt;/span> ;
+&lt;span style="color:#a6e22e">global_maximum&lt;/span> &lt;span style="color:#f92672">=&lt;/span> Math.&lt;span style="color:#a6e22e">max&lt;/span>(&lt;span style="color:#a6e22e">global_maximum&lt;/span>,&lt;span style="color:#a6e22e">local_maximum&lt;/span>);
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#a6e22e">global_maximum&lt;/span> ;
+}, &lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#66d9ef">Infinity&lt;/span>);
+};
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Please read about reduce function in JS if you don&amp;rsquo;t already know about
+it.&lt;/p></content></item><item><title>LeetCode: 169 Majority Element</title><link>/posts/2020-02-16-leetcode-169-majority-element/</link><pubDate>Sun, 16 Feb 2020 11:36:00 +0530</pubDate><guid>/posts/2020-02-16-leetcode-169-majority-element/</guid><description>LEETCODE : 169. Majority Element Link
+Problem Description :
+Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.
+You may assume that the array is non-empty and the majority element always exist in the array.
+For example:
+Example 1:
+Input: [3,2,3] Output: 3   Example 2:
+Input: [2,2,1,1,1,2,2] Output: 2 Explaination :
+There is pretty easy way to solve it by using count of every element and then returning the element which has count greater than n/2 .</description><content>&lt;h2 id="leetcode--169-majority-element">LEETCODE : 169. Majority Element&lt;/h2>
+&lt;p>&lt;a href="https://leetcode.com/problems/majority-element/">Link&lt;/a>&lt;/p>
+&lt;p>&lt;strong>Problem Description :&lt;/strong>&lt;/p>
+&lt;p>Given an array of size n, find the majority element. The majority element is
+the element that appears more than ⌊ n/2 ⌋ times.&lt;/p>
+&lt;p>You may assume that the array is non-empty and the majority element
+always exist in the array.&lt;/p>
+&lt;p>For example:&lt;br>
+&lt;strong>Example 1:&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>Input: [3,2,3]
+Output: 3
+&lt;/code>&lt;/pre>&lt;pre>&lt;code> 
+&lt;/code>&lt;/pre>
+&lt;p>&lt;strong>Example 2:&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>Input: [2,2,1,1,1,2,2]
+Output: 2
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Explaination :&lt;/strong>&lt;/p>
+&lt;p>There is pretty easy way to solve it by using count of every element and then returning the element which has count greater than n/2 .&lt;/p>
+&lt;p>But this solution comes with a cost of O(n) time and O(n) space.&lt;/p>
+&lt;p>There is a better solution which can do the job in O(n) time and O(1) space.
+Atleast we are saving some of the space.
+How does our space efficient algorithm works ?&lt;/p>
+&lt;p>Basically, what we do is that we go on cancelling those elements which has a
+counter element present, a counter element is an element whose value is
+different from the current element. In other words, we can say that, we
+cancel every element corresponding to every other uncancelled element
+whose value is different.&lt;/p>
+&lt;p>In C++ we can write it as below :&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-cpp" data-lang="cpp">
+&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Solution&lt;/span> {
+&lt;span style="color:#66d9ef">public&lt;/span>&lt;span style="color:#f92672">:&lt;/span>
+&lt;span style="color:#66d9ef">int&lt;/span> majorityElement(vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&amp;amp;&lt;/span> nums) {
+&lt;span style="color:#66d9ef">int&lt;/span> val&lt;span style="color:#f92672">=&lt;/span>nums[&lt;span style="color:#ae81ff">0&lt;/span>];
+&lt;span style="color:#66d9ef">int&lt;/span> count&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>;
+&lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>; i&lt;span style="color:#f92672">&amp;lt;&lt;/span>nums.size(); i&lt;span style="color:#f92672">++&lt;/span>){
+&lt;span style="color:#66d9ef">if&lt;/span>(count&lt;span style="color:#f92672">==&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span>){
+val&lt;span style="color:#f92672">=&lt;/span>nums[i];
+}
+count &lt;span style="color:#f92672">+=&lt;/span> nums[i]&lt;span style="color:#f92672">==&lt;/span>val&lt;span style="color:#f92672">?&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">:-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> ;
+}
+&lt;span style="color:#66d9ef">return&lt;/span> val;
+}
+};
+&lt;/code>&lt;/pre>&lt;/div></content></item><item><title>LEETCODE : 171. Excel Sheet Column Number</title><link>/posts/2020-02-10-leetcode-171-excel-sheet-column-number/</link><pubDate>Mon, 10 Feb 2020 00:25:00 +0530</pubDate><guid>/posts/2020-02-10-leetcode-171-excel-sheet-column-number/</guid><description>LEETCODE : 171. Excel Sheet Column Number Link
+Problem Description :
+Given a column title as appear in an Excel sheet, return its corresponding column number.
+For example:
+A -&amp;gt; 1 B -&amp;gt; 2 C -&amp;gt; 3 ... Z -&amp;gt; 26 AA -&amp;gt; 27 AB -&amp;gt; 28 ... Example 1:
+Input: &amp;quot;A&amp;quot; Output: 1  Example 2:
+Input: &amp;quot;AB&amp;quot; Output: 28 Example 3:
+Input: &amp;quot;ZY&amp;quot; Output: 701  Explaination :</description><content>&lt;h2 id="span-stylefont-family-quotverdanaquot--sans-serifleetcode--171-excel-sheet-column-numberspan">&lt;!-- raw HTML omitted -->LEETCODE : 171. Excel Sheet Column Number&lt;!-- raw HTML omitted -->&lt;/h2>
+&lt;p>&lt;a href="https://leetcode.com/problems/excel-sheet-column-number">Link&lt;/a>&lt;/p>
+&lt;p>&lt;strong>Problem Description :&lt;/strong>&lt;/p>
+&lt;p>Given a column title as appear in an Excel sheet, return its corresponding
+column number.&lt;/p>
+&lt;p>For example:&lt;/p>
+&lt;pre tabindex="0">&lt;code>
+A -&amp;gt; 1
+B -&amp;gt; 2
+C -&amp;gt; 3
+...
+Z -&amp;gt; 26
+AA -&amp;gt; 27
+AB -&amp;gt; 28
+...
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Example 1:&lt;/strong>&lt;/p>
+&lt;pre>&lt;code>Input: &amp;quot;A&amp;quot;
+Output: 1 
+ 
+&lt;/code>&lt;/pre>
+&lt;p>&lt;strong>Example 2:&lt;/strong>&lt;/p>
+&lt;pre>&lt;code>Input: &amp;quot;AB&amp;quot;
+Output: 28
+&lt;/code>&lt;/pre>
+&lt;p>&lt;strong>Example 3:&lt;/strong>&lt;/p>
+&lt;pre>&lt;code>Input: &amp;quot;ZY&amp;quot;
+Output: 701 
+&lt;/code>&lt;/pre>
+&lt;hr>
+&lt;p>&lt;strong>Explaination :&lt;/strong>&lt;/p>
+&lt;p>Initially it looks like a hard problem but when we get to know the logic behind it then it seems to be a really easy problem.&lt;/p>
+&lt;p>The observation needed here is that, the column title value represents a
+number of base 26. And all we need to do is to convert that base 26
+number to base 10 number.&lt;/p>
+&lt;p>To convert the base to base 10, we need to do what we usually do for binary
+or octal converstions.&lt;/p>
+&lt;p>&lt;em>For example :&lt;/em>&lt;/p>
+&lt;pre tabindex="0">&lt;code>
+BAD
+B=2
+A=1
+D=4
+ 
+2x(26)^2 + 1x(26) + 4x(26)^0 
+= 1352
++ 26 + 4
+=
+1382
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>In C++ we can write it as below :&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-cpp" data-lang="cpp">
+&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Solution&lt;/span> {
+&lt;span style="color:#66d9ef">public&lt;/span>&lt;span style="color:#f92672">:&lt;/span>
+&lt;span style="color:#66d9ef">int&lt;/span> titleToNumber(string s) {
+&lt;span style="color:#66d9ef">int&lt;/span> ans &lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;span style="color:#66d9ef">long&lt;/span> pwr&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>;
+reverse(s.begin(), s.end()) ;
+&lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">auto&lt;/span> c:s){
+ans&lt;span style="color:#f92672">+=&lt;/span>(pwr&lt;span style="color:#f92672">*&lt;/span>(c&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#e6db74">&amp;#39;A&amp;#39;&lt;/span> &lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>));
+pwr&lt;span style="color:#f92672">=&lt;/span>pwr&lt;span style="color:#f92672">*&lt;/span>&lt;span style="color:#ae81ff">26&lt;/span>;
+}
+&lt;span style="color:#66d9ef">return&lt;/span> ans;
+}
+};
+&lt;/code>&lt;/pre>&lt;/div></content></item><item><title>CodeChef : Breaking Bricks || Problem Code: BRKBKS</title><link>/posts/2020-01-26-codechef-breaking-bricks-problem-code-brkbks/</link><pubDate>Sun, 26 Jan 2020 01:14:00 +0530</pubDate><guid>/posts/2020-01-26-codechef-breaking-bricks-problem-code-brkbks/</guid><description>CodeChef : https://www.codechef.com/JAN20B/problems/BRKBKS
+Problem: For her next karate demonstration, Ada will break some bricks.
+Ada stacked three bricks on top of each other. Initially, their widths (from top to bottom) are W1,W2,W3.
+Ada&amp;rsquo;s strength is S. Whenever she hits a stack of bricks, consider the largest k≥0 such that the sum of widths of the topmost k bricks does not exceed S; the topmost k bricks break and are removed from the stack.</description><content>&lt;p>CodeChef : &lt;a href="https://www.codechef.com/JAN20B/problems/BRKBKS">https://www.codechef.com/JAN20B/problems/BRKBKS&lt;/a>&lt;/p>
+&lt;p>&lt;strong>Problem:&lt;/strong>
+For her next karate demonstration, Ada will break some bricks.&lt;/p>
+&lt;p>Ada stacked three bricks on top of each other. Initially, their widths
+(from top to bottom) are W1,W2,W3.&lt;/p>
+&lt;p>Ada&amp;rsquo;s strength is S. Whenever she hits a stack of bricks, consider the
+largest k≥0 such that the sum of widths of the topmost k bricks does not
+exceed S; the topmost k bricks break and are removed from the stack.
+Before each hit, Ada may also decide to reverse the current stack of
+bricks, with no cost.&lt;/p>
+&lt;p>Find the minimum number of hits Ada needs in order to break all bricks
+if she performs the reversals optimally. You are not required to
+minimise the number of reversals.&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;p>&lt;strong>Input&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The first and only line of each test case contains four space-separated integers S, W1, W2 and W3.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Output&lt;/strong>&lt;/p>
+&lt;p>For each test case, print a single line containing one integer ― the minimum
+required number of hits.&lt;/p>
+&lt;p>&lt;strong>Constraints&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>1≤T≤64&lt;/li>
+&lt;li>1≤S≤8&lt;/li>
+&lt;li>1≤Wi≤2
+for each valid i&lt;/li>
+&lt;li>1≤Wi≤2
+for each valid i&lt;br>
+ 
+It is guaranteed that Ada can break all bricks&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Example&lt;/strong>&lt;/p>
+&lt;p>Input :&lt;/p>
+&lt;pre tabindex="0">&lt;code>3
+3 1 2 2
+2 1 1 1
+3 2 2 1
+&lt;/code>&lt;/pre>&lt;p>Output :&lt;/p>
+&lt;pre tabindex="0">&lt;code>
+2
+2
+2
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Example Explanation :&lt;/strong>&lt;/p>
+&lt;p>Example case 1: Ada can reverse the stack and then hit it two times.
+Before the first hit, the widths of bricks in the stack (from top to
+bottom) are (2,2,1). After the first hit, the topmost brick breaks and
+the stack becomes (2,1). The second hit breaks both remaining bricks.&lt;/p>
+&lt;p>In this particular case, it is also possible to hit the stack two times
+without reversing. Before the first hit, it is (1,2,2). The first hit
+breaks the two bricks at the top (so the stack becomes (2)) and the
+second hit breaks the last brick.&lt;/p>
+&lt;p>&lt;strong>Solution :&lt;/strong>&lt;/p>
+&lt;p>This looks like a bit trivial problem of super easy category.And the logic is also too simple. All we need to do is that just think it in three parts, when Ada has enough strength to break all three blocks at a single hit, or in two hits or in three hits. There is no more than three hits needed
+because we know that the number of blocks in fixed to three.&lt;/p>
+&lt;p>Here is the C++ code for the problem :&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;bits/stdc++.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>
+&lt;span style="color:#66d9ef">using&lt;/span> &lt;span style="color:#66d9ef">namespace&lt;/span> std;
+&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>() {
+&lt;span style="color:#66d9ef">int&lt;/span> t;
+cin &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> t;
+&lt;span style="color:#66d9ef">int&lt;/span> s;
+vector &lt;span style="color:#f92672">&amp;lt;&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#f92672">&amp;gt;&lt;/span> w(&lt;span style="color:#ae81ff">3&lt;/span>);
+&lt;span style="color:#66d9ef">while&lt;/span> (t&lt;span style="color:#f92672">--&lt;/span>) {
+cin &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> s &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> w[&lt;span style="color:#ae81ff">0&lt;/span>] &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> w[&lt;span style="color:#ae81ff">1&lt;/span>] &lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> w[&lt;span style="color:#ae81ff">2&lt;/span>];
+&lt;span style="color:#66d9ef">if&lt;/span> (s &lt;span style="color:#f92672">&amp;gt;=&lt;/span> &lt;span style="color:#ae81ff">6&lt;/span>) {
+cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span> &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> endl;
+&lt;span style="color:#66d9ef">continue&lt;/span>;
+}
+&lt;span style="color:#66d9ef">if&lt;/span> (w[&lt;span style="color:#ae81ff">0&lt;/span>] &lt;span style="color:#f92672">+&lt;/span> w[&lt;span style="color:#ae81ff">1&lt;/span>] &lt;span style="color:#f92672">+&lt;/span> w[&lt;span style="color:#ae81ff">2&lt;/span>] &lt;span style="color:#f92672">&amp;lt;=&lt;/span> s) {
+cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span> &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> endl;
+} &lt;span style="color:#66d9ef">else&lt;/span> &lt;span style="color:#66d9ef">if&lt;/span> ((w[&lt;span style="color:#ae81ff">0&lt;/span>] &lt;span style="color:#f92672">+&lt;/span> w[&lt;span style="color:#ae81ff">1&lt;/span>] &lt;span style="color:#f92672">&amp;lt;=&lt;/span> s) &lt;span style="color:#f92672">||&lt;/span> (w[&lt;span style="color:#ae81ff">1&lt;/span>] &lt;span style="color:#f92672">+&lt;/span> w[&lt;span style="color:#ae81ff">2&lt;/span>] &lt;span style="color:#f92672">&amp;lt;=&lt;/span> s))
+{
+cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span> &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> endl;
+} &lt;span style="color:#66d9ef">else&lt;/span> cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#ae81ff">3&lt;/span> &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> endl;
+}
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+}
+&lt;/code>&lt;/pre>&lt;/div></content></item></channel></rss>

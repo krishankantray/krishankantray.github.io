@@ -1,0 +1,164 @@
+<!doctype html><html lang=en>
+<head>
+<title>LeetCode: 169 Majority Element :: Krishankant</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="LEETCODE : 169. Majority Element Link
+Problem Description :
+Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.
+You may assume that the array is non-empty and the majority element always exist in the array.
+For example:
+Example 1:
+Input: [3,2,3] Output: 3   Example 2:
+Input: [2,2,1,1,1,2,2] Output: 2 Explaination :
+There is pretty easy way to solve it by using count of every element and then returning the element which has count greater than n/2 .">
+<meta name=keywords content="Krishankant Ray">
+<meta name=robots content="noodp">
+<link rel=canonical href=../../posts/2020-02-16-leetcode-169-majority-element/>
+<link rel=stylesheet href=../../assets/style.css>
+<link rel=apple-touch-icon href=../../img/apple-touch-icon-192x192.png>
+<link rel="shortcut icon" href=../../img/favicon/orange.png>
+<meta name=twitter:card content="summary">
+<meta name=twitter:site content>
+<meta name=twitter:creator content="Krishankant Ray">
+<meta property="og:locale" content="en">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LeetCode: 169 Majority Element">
+<meta property="og:description" content="LEETCODE : 169. Majority Element Link
+Problem Description :
+Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.
+You may assume that the array is non-empty and the majority element always exist in the array.
+For example:
+Example 1:
+Input: [3,2,3] Output: 3   Example 2:
+Input: [2,2,1,1,1,2,2] Output: 2 Explaination :
+There is pretty easy way to solve it by using count of every element and then returning the element which has count greater than n/2 .">
+<meta property="og:url" content="/posts/2020-02-16-leetcode-169-majority-element/">
+<meta property="og:site_name" content="Krishankant">
+<meta property="og:image" content="/img/favicon/orange.png">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+<meta property="article:published_time" content="2020-02-16 11:36:00.002 +0530 +0530">
+</head>
+<body class=orange>
+<div class="container center headings--one-size">
+<header class=header>
+<div class=header__inner>
+<div class=header__logo>
+<a href=../../>
+<div class=logo>
+Krishankant
+</div>
+</a>
+</div>
+<div class=menu-trigger>menu</div>
+</div>
+<nav class=menu>
+<ul class="menu__inner menu__inner--desktop">
+<li><a href=../../about>About/Resume</a></li>
+<li><a href=../../posts>Blog</a></li>
+<li><a href=../../contact>Contact</a></li>
+<li><a href=../../projects>Projects</a></li>
+</ul>
+<ul class="menu__inner menu__inner--mobile">
+<li><a href=../../about>About/Resume</a></li>
+<li><a href=../../posts>Blog</a></li>
+<li><a href=../../contact>Contact</a></li>
+<li><a href=../../projects>Projects</a></li>
+</ul>
+</nav>
+</header>
+<div class=content>
+<div class=post>
+<h1 class=post-title>
+<a href=../../posts/2020-02-16-leetcode-169-majority-element/>LeetCode: 169 Majority Element</a></h1>
+<div class=post-meta>
+<span class=post-date>
+2020-02-16
+</span>
+<span class=post-author>:: Krishankant Ray</span>
+</div>
+<div class=post-content><div>
+<h2 id=leetcode--169-majority-element>LEETCODE : 169. Majority Element<a href=#leetcode--169-majority-element class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<p><a href=https://leetcode.com/problems/majority-element/>Link</a></p>
+<p><strong>Problem Description :</strong></p>
+<p>Given an array of size n, find the majority element. The majority element is
+the element that appears more than ⌊ n/2 ⌋ times.</p>
+<p>You may assume that the array is non-empty and the majority element
+always exist in the array.</p>
+<p>For example:<br>
+<strong>Example 1:</strong></p>
+<pre tabindex=0><code>Input: [3,2,3]
+Output: 3 
+</code></pre><pre><code> 
+</code></pre>
+<p><strong>Example 2:</strong></p>
+<pre tabindex=0><code>Input: [2,2,1,1,1,2,2]
+Output: 2
+</code></pre><p><strong>Explaination :</strong></p>
+<p>There is pretty easy way to solve it by using count of every element and then returning the element which has count greater than n/2 .</p>
+<p>But this solution comes with a cost of O(n) time and O(n) space.</p>
+<p>There is a better solution which can do the job in O(n) time and O(1) space.
+Atleast we are saving some of the space.
+How does our space efficient algorithm works ?</p>
+<p>Basically, what we do is that we go on cancelling those elements which has a
+counter element present, a counter element is an element whose value is
+different from the current element. In other words, we can say that, we
+cancel every element corresponding to every other uncancelled element
+whose value is different.</p>
+<p>In C++ we can write it as below :</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>
+<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Solution</span> {
+<span style=color:#66d9ef>public</span><span style=color:#f92672>:</span>
+    <span style=color:#66d9ef>int</span> majorityElement(vector<span style=color:#f92672>&lt;</span><span style=color:#66d9ef>int</span><span style=color:#f92672>&gt;&amp;</span> nums) {
+        
+        <span style=color:#66d9ef>int</span> val<span style=color:#f92672>=</span>nums[<span style=color:#ae81ff>0</span>];
+        <span style=color:#66d9ef>int</span> count<span style=color:#f92672>=</span><span style=color:#ae81ff>1</span>;
+        
+        <span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>int</span> i<span style=color:#f92672>=</span><span style=color:#ae81ff>1</span>; i<span style=color:#f92672>&lt;</span>nums.size(); i<span style=color:#f92672>++</span>){
+            <span style=color:#66d9ef>if</span>(count<span style=color:#f92672>==</span><span style=color:#ae81ff>0</span>){
+                val<span style=color:#f92672>=</span>nums[i];
+                
+            }
+            count <span style=color:#f92672>+=</span> nums[i]<span style=color:#f92672>==</span>val<span style=color:#f92672>?</span><span style=color:#ae81ff>1</span><span style=color:#f92672>:-</span><span style=color:#ae81ff>1</span> ;
+        }
+        <span style=color:#66d9ef>return</span> val; 
+    }
+};
+</code></pre></div>
+</div></div>
+<div class=pagination>
+<div class=pagination__title>
+<span class=pagination__title-h>Read other posts</span>
+<hr>
+</div>
+<div class=pagination__buttons>
+<span class="button previous">
+<a href=../../posts/2020-04-03-kadanes-algorithm/>
+<span class=button__icon>←</span>
+<span class=button__text>Kadane's Algorithm</span>
+</a>
+</span>
+<span class="button next">
+<a href=../../posts/2020-02-10-leetcode-171-excel-sheet-column-number/>
+<span class=button__text>LEETCODE : 171. Excel Sheet Column Number</span>
+<span class=button__icon>→</span>
+</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<footer class=footer>
+<div class=footer__inner>
+<div class=copyright>
+<span>© 2021 Powered by <a href=http://gohugo.io>Hugo</a></span>
+<span>:: Theme made by <a href=https://twitter.com/panr>panr</a></span>
+</div>
+</div>
+</footer>
+<script src=../../assets/main.js></script>
+<script src=../../assets/prism.js></script>
+</div>
+</body>
+</html>
