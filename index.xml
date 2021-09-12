@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Krishankant</title><link>/resume/</link><description>Recent content on Krishankant</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 19 Apr 2020 21:26:17 +0530</lastBuildDate><atom:link href="/resume/index.xml" rel="self" type="application/rss+xml"/><item><title>CSV to SQL import using Node, Express and React</title><link>/resume/posts/my-first-post/</link><pubDate>Sun, 19 Apr 2020 21:26:17 +0530</pubDate><guid>/resume/posts/my-first-post/</guid><description>CSV to SQL import
+Github : Front-End Part Back-End Part
+What is this app all about ? This app allows users to import a .csv file and save it in MySQL. The .csv file needs to be in a specified format, something like this . Once the data is saved we can see and delete the table data on the front-end.
+Whats there on back-end and front-end ? Back-End : NodeJS ExpressJS MySQL Front-End : ReactJS Here is the SQL table structure :</description><content>&lt;h1 id="csv-to-sql-import">CSV to SQL import&lt;/h1>
+&lt;p>&lt;a href="https://suspicious-carson-2627ba.netlify.app/">&lt;img src="https://raw.githubusercontent.com/krishankantray/temp/master/visit_button.JPG" alt="N|Solid">&lt;/a>&lt;/p>
+&lt;p>Github : &lt;a href="https://github.com/krishankantray/csv-to-sql-import-client">Front-End Part&lt;/a>
+              &lt;a href="https://github.com/krishankantray/csv-to-sql-import-server">Back-End Part&lt;/a>&lt;/p>
+&lt;h4 id="what-is-this-app-all-about-">&lt;strong>What is this app all about ?&lt;/strong>&lt;/h4>
+&lt;p>This app allows users to import a .csv file and save it in MySQL. The .csv file needs to be in a specified format, something like this .
+Once the data is saved we can see and delete the table data on the front-end.&lt;/p>
+&lt;h4 id="whats-there-on-back-end-and-front-end-">&lt;strong>Whats there on back-end and front-end ?&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Back-End :&lt;/strong>
+&lt;ul>
+&lt;li>NodeJS&lt;/li>
+&lt;li>ExpressJS&lt;/li>
+&lt;li>MySQL&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Front-End :&lt;/strong>
+&lt;ul>
+&lt;li>ReactJS&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Here is the SQL table structure :&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Field&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>id&lt;/td>
+&lt;td>int(11)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>level_col&lt;/td>
+&lt;td>varchar(255)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>cvss&lt;/td>
+&lt;td>varchar(255)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>title&lt;/td>
+&lt;td>varchar(255)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>vulnerability&lt;/td>
+&lt;td>varchar(255)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>solution&lt;/td>
+&lt;td>varchar(255)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>reference_col&lt;/td>
+&lt;td>varchar(255)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4 id="where-is-it-deployed-">&lt;strong>Where is it deployed ?&lt;/strong>&lt;/h4>
+&lt;p>Client side app ( React app ) is deployed on &lt;a href="https://www.netlify.com/">Netlify&lt;/a>
+Server side app ( Node app ) is deployed on &lt;a href="https://www.heroku.com/">Heroku&lt;/a>
+MySQL database is deployed on Remote &lt;a href="https://remotemysql.com/">Mysql&lt;/a>&lt;/p>
+&lt;h4 id="how-to-run-it-locally-">How to run it locally ?&lt;/h4>
+&lt;p>To run it locally we need to clone two git repositories, one for the server and other for the client ( front-end).&lt;/p>
+&lt;h5 id="to-clone-the-client-repo-">To clone the client repo :&lt;/h5>
+&lt;p>&lt;code>git clone https://github.com/krishankantray/csv-to-sql-import-client.git &lt;/code>&lt;/p>
+&lt;h5 id="to-clone-the-server-repo-">To clone the server repo :&lt;/h5>
+&lt;p>&lt;code>git clone https://github.com/krishankantray/csv-to-sql-import-server.git&lt;/code>&lt;/p>
+&lt;p>The above git setup is for online server auto deployment on &lt;strong>Heroku&lt;/strong> and &lt;strong>Netlify&lt;/strong> .
+We need to make some changes in it to run it locally.&lt;/p>
+&lt;h5 id="first-we-setup-the-server-locally--">First we setup the server locally :&lt;/h5>
+&lt;ul>
+&lt;li>Open the directory : &lt;code>csv-to-sql-import-server&lt;/code> , in any vscode or any other editor.&lt;/li>
+&lt;li>If you have a local MySql db then do replace the details in the &lt;code>app&amp;gt;&amp;gt;config&amp;gt;&amp;gt;db.config.js&lt;/code>
+If you don&amp;rsquo;t have a local MySql db then leave it as it is.&lt;/li>
+&lt;/ul>
+&lt;p>Now, open terminal ( &lt;em>in the directory&lt;/em> : csv-to-sql-import-server ):&lt;/p>
+&lt;p>&lt;code>npm install&lt;/code>
+&lt;code>npm start&lt;/code>
+It should print in terminal : &lt;code>Server is running on port 9000.&lt;/code>&lt;/p>
+&lt;blockquote>
+&lt;p>( Make sure there is nothing previously running on port 9000, if there is then change the &amp;gt;port from line 25 of server.js )&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>To test if all APIs are working, open postman and use following APIs&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>GET call for obtaining all the records, url should be :&lt;code>http://localhost:9000/customers/&lt;/code>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>GET call for single records by id, for eg : &lt;code>http://localhost:9000/customers/963&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>POST call for bulk create records : &lt;code>http://localhost:9000/bulkcreate&lt;/code> This call needs a body to be passed&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>POST call for single create records &lt;code>http://localhost:9000/customers&lt;/code> This call needs a body to be passed&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>DELETE call for all records deletion &lt;code>http://localhost:9000/customers &lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>DELETE call for records deletion &lt;code>http://localhost:9000/customers/963 &lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>PUT call to update a single record &lt;code>http://localhost:9000/customers/963 &lt;/code>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h5 id="now-we-will-configure-the-local-front-end--react-app--">Now, we will configure the local front-end ( React app ) :&lt;/h5>
+&lt;p>We only need to make some changes in App.js within src directory.
+Just change the line 35 , 69 and 97, i.e we need to change the URL of all the fetch calls from Apps.js.&lt;/p>
+&lt;p>&lt;em>For Example :&lt;/em>&lt;/p>
+&lt;blockquote>
+&lt;p>35 : Before &lt;a href="https://csv-to-sql-import.herokuapp.com/bulkcreate">https://csv-to-sql-import.herokuapp.com/bulkcreate&lt;/a>
+35 : After http:localhost:9000/bulkcreate&lt;/p>
+&lt;/blockquote>
+&lt;p>Similarly for line 69 and 97 , just replace this part of URL -
+&lt;a href="https://csv-to-sql-import.herokuapp.com">https://csv-to-sql-import.herokuapp.com&lt;/a>
+with
+http:localhost:9000&lt;/p>
+&lt;p>and rest of the part of url remains same.&lt;/p></content></item><item><title>About</title><link>/resume/about/</link><pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate><guid>/resume/about/</guid><description>Hi there My name is Radek and I&amp;rsquo;m the author of this theme. I made it to help you present your ideas easier.
+We all know how hard is to start something on the web, especially these days. You need to prepare a bunch of stuff, configure them and when that’s done — create the content.
+This theme is pretty basic and covers all of the essentials. All you have to do is start typing!</description><content>&lt;h1 id="hi-there">Hi there&lt;/h1>
+&lt;p>My name is Radek and I&amp;rsquo;m the author of this theme. I made it to help you present your ideas easier.&lt;/p>
+&lt;p>We all know how hard is to start something on the web, especially these days. You need to prepare a bunch of stuff, configure them and when that’s done — create the content.&lt;/p>
+&lt;p>This theme is pretty basic and covers all of the essentials. All you have to do is start typing!&lt;/p>
+&lt;p>The theme includes:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>5 duotone themes&lt;/strong>, depending on your preferences (orange, red, blue, green, pink)&lt;/li>
+&lt;li>&lt;a href="https://github.com/tonsky/FiraCode">&lt;strong>Fira Code&lt;/strong>&lt;/a> as default monospaced font. It&amp;rsquo;s gorgeous!&lt;/li>
+&lt;li>&lt;strong>really nice, custom duotone&lt;/strong> syntax highlighting based on &lt;a href="https://prismjs.com">&lt;strong>PrismJS&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>mobile friendly layout&lt;/li>
+&lt;/ul>
+&lt;p>So, there you have it&amp;hellip; enjoy!&lt;/p></content></item><item><title>About Me</title><link>/resume/resume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/resume/resume/</guid><description>Download Resume
+Hi there My name is Krishankant and I&amp;rsquo;m a software engineer based in India 🇮🇳.
+I have 2+ years of experience in software engineering.
+I currently work as a Software Engineer in a Netherland based cyber security startup called - Breachlock Inc. And previously I worked at Cvent for 12 months.
+Skills :
+Languages : Javascript, C++, Java, MySQL
+Frameworks/Tools : ReactJS, ExpressJS, NodeJS
+Others : Algorithms, Data Structures, OOP, System Design</description><content>&lt;p>&lt;a href="./pdf/KrishankantRay.pdf">&lt;img src="https://img.icons8.com/color/30/000000/pdf.png" alt="Download Resume"> Download Resume&lt;/a>&lt;/p>
+&lt;h1 id="hi-there">Hi there&lt;/h1>
+&lt;p>My name is Krishankant and I&amp;rsquo;m a software engineer based in India 🇮🇳.&lt;/p>
+&lt;p>I have 2+ years of experience in software engineering.&lt;/p>
+&lt;p>I currently work as a &lt;strong>Software Engineer&lt;/strong> in a Netherland based cyber security startup called - &lt;a href="http://breachlock.com/">Breachlock Inc&lt;/a>. And previously I worked at &lt;a href="https://www.cvent.com/">Cvent&lt;/a> for 12 months.&lt;/p>
+&lt;p>&lt;strong>Skills&lt;/strong> :&lt;/p>
+&lt;p>Languages : &lt;code>Javascript&lt;/code>, &lt;code>C++&lt;/code>, &lt;code>Java&lt;/code>, &lt;code>MySQL&lt;/code>&lt;/p>
+&lt;p>Frameworks/Tools : &lt;code>ReactJS&lt;/code>, &lt;code>ExpressJS&lt;/code>, &lt;code>NodeJS&lt;/code>&lt;/p>
+&lt;p>Others : &lt;code>Algorithms&lt;/code>, &lt;code>Data Structures&lt;/code>, &lt;code>OOP&lt;/code>, &lt;code>System Design&lt;/code>&lt;/p>
+&lt;hr>
+&lt;p>Feel free to reach out to me at &lt;a href="https://krishankantray.github.io/contact">contacts&lt;/a> page.&lt;/p></content></item><item><title>Contact</title><link>/resume/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/resume/contact/</guid><description> Contact Email: krishankant_rai@rediffmail.com LinkedIn: linkedin.com/in/krishankantray Phone: +91 9560621994 GitHub: github.com/krishankantray‌</description><content>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Contact&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>Email&lt;/code>: &lt;a href="mailto:krishankant_rai@rediffmail.com">krishankant_rai@rediffmail.com&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>LinkedIn&lt;/code>: &lt;a href="https://www.linkedin.com/in/krishankantray/">linkedin.com/in/krishankantray&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>Phone&lt;/code>: +91 9560621994&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>GitHub&lt;/code>: &lt;a href="github.com/krishankantray%E2%80%8C">github.com/krishankantray‌&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></content></item><item><title>Projects</title><link>/resume/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/resume/projects/</guid><description>1. Blog CMS This‌‌ is‌‌ a‌‌ full‌‌ stack‌‌ blogging‌‌ app‌‌ which‌‌ provides ability‌‌ to‌‌ read‌‌ and‌‌ write‌‌ blogs. There‌‌ can‌‌ be‌‌ guest‌‌ users‌‌ and‌‌ logged‌‌ in‌‌ users.‌‌ The‌‌ guest ‌‌users‌‌ can‌‌ only‌‌ read‌‌ blog‌‌ as‌‌ compared‌‌ to‌‌ logged in‌‌ user‌‌ who‌‌ can‌‌ create‌‌ posts.‌ Technologies‌‌‌ -‌‌ NodeJs ,‌‌ Express,‌‌ MongoDB,‌‌ ReactJs‌
+Github‌‌‌:‌ github.com/krishankantray/blog-cms‌ ‌
+Project‌:‌ https://blog-cms-1561.herokuapp.com‌
+2. Portfolio Site Its‌‌ a‌‌ portfolio‌‌ site‌‌ built‌‌ mainly‌‌ around‌‌ ReactJS‌‌ and redux.</description><content>&lt;h4 id="1-blog-cms">1. Blog CMS&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-shell" data-lang="shell">This‌‌ is‌‌ a‌‌ full‌‌ stack‌‌ blogging‌‌ app‌‌ which‌‌ provides ability‌‌ to‌‌ read‌‌ and‌‌ write‌‌ blogs.
+There‌‌ can‌‌ be‌‌ guest‌‌ users‌‌ and‌‌ logged‌‌ in‌‌ users.‌‌ The‌‌ guest ‌‌users‌‌ can‌‌ only‌‌
+read‌‌ blog‌‌ as‌‌ compared‌‌ to‌‌ logged in‌‌ user‌‌ who‌‌ can‌‌ create‌‌ posts.‌
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>Technologies‌‌‌&lt;/code> -‌‌ NodeJs ,‌‌ Express,‌‌ MongoDB,‌‌ ReactJs‌&lt;/p>
+&lt;p>&lt;code>Github‌‌‌&lt;/code>:‌ &lt;a href="github.com/krishankantray/blog-cms%E2%80%8C">github.com/krishankantray/blog-cms‌&lt;/a> ‌&lt;/p>
+&lt;p>&lt;code>Project‌&lt;/code>:‌ &lt;a href="https://blog-cms-1561.herokuapp.com%E2%80%8C">https://blog-cms-1561.herokuapp.com‌&lt;/a>&lt;/p>
+&lt;p>&lt;img src="./img/blog-cms.png" alt="Blog CMS">&lt;/p>
+&lt;hr>
+&lt;hr>
+&lt;h4 id="2-portfolio-site">2. Portfolio Site&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-shell" data-lang="shell">Its‌‌ a‌‌ portfolio‌‌ site‌‌ built‌‌ mainly‌‌ around‌‌ ReactJS‌‌ and redux.
+‌‌It‌‌ has‌‌ only‌‌ frontend‌‌ as‌‌ most‌‌ of‌‌ its‌‌ contents‌‌ are controlled‌‌
+through‌‌ static‌‌ json‌‌ ﬁles.
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>Technologies‌‌‌&lt;/code> -‌‌ NodeJs ,‌‌ Express,‌‌ MongoDB,‌‌ ReactJs‌&lt;/p>
+&lt;p>&lt;code>Github‌‌‌&lt;/code>:‌ &lt;a href="https://github.com/krishankantray/krishankantray-4">github.com/krishankantray/krishankantray-4‌&lt;/a> ‌&lt;/p>
+&lt;p>&lt;code>Project‌&lt;/code>:‌ &lt;a href="https://krishankantray.netlify.app/">krishankantray.netlify.app/‌&lt;/a>&lt;/p>
+&lt;p>&lt;img src="./img/portfolio.png" alt="Portfolio Site">&lt;/p></content></item></channel></rss>

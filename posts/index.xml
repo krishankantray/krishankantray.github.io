@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Krishankant</title><link>/resume/posts/</link><description>Recent content in Posts on Krishankant</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 19 Apr 2020 21:26:17 +0530</lastBuildDate><atom:link href="/resume/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>CSV to SQL import using Node, Express and React</title><link>/resume/posts/my-first-post/</link><pubDate>Sun, 19 Apr 2020 21:26:17 +0530</pubDate><guid>/resume/posts/my-first-post/</guid><description>CSV to SQL import
+Github : Front-End Part Back-End Part
+What is this app all about ? This app allows users to import a .csv file and save it in MySQL. The .csv file needs to be in a specified format, something like this . Once the data is saved we can see and delete the table data on the front-end.
+Whats there on back-end and front-end ? Back-End : NodeJS ExpressJS MySQL Front-End : ReactJS Here is the SQL table structure :</description><content>&lt;h1 id="csv-to-sql-import">CSV to SQL import&lt;/h1>
+&lt;p>&lt;a href="https://suspicious-carson-2627ba.netlify.app/">&lt;img src="https://raw.githubusercontent.com/krishankantray/temp/master/visit_button.JPG" alt="N|Solid">&lt;/a>&lt;/p>
+&lt;p>Github : &lt;a href="https://github.com/krishankantray/csv-to-sql-import-client">Front-End Part&lt;/a>
+              &lt;a href="https://github.com/krishankantray/csv-to-sql-import-server">Back-End Part&lt;/a>&lt;/p>
+&lt;h4 id="what-is-this-app-all-about-">&lt;strong>What is this app all about ?&lt;/strong>&lt;/h4>
+&lt;p>This app allows users to import a .csv file and save it in MySQL. The .csv file needs to be in a specified format, something like this .
+Once the data is saved we can see and delete the table data on the front-end.&lt;/p>
+&lt;h4 id="whats-there-on-back-end-and-front-end-">&lt;strong>Whats there on back-end and front-end ?&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Back-End :&lt;/strong>
+&lt;ul>
+&lt;li>NodeJS&lt;/li>
+&lt;li>ExpressJS&lt;/li>
+&lt;li>MySQL&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Front-End :&lt;/strong>
+&lt;ul>
+&lt;li>ReactJS&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Here is the SQL table structure :&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Field&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>id&lt;/td>
+&lt;td>int(11)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>level_col&lt;/td>
+&lt;td>varchar(255)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>cvss&lt;/td>
+&lt;td>varchar(255)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>title&lt;/td>
+&lt;td>varchar(255)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>vulnerability&lt;/td>
+&lt;td>varchar(255)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>solution&lt;/td>
+&lt;td>varchar(255)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>reference_col&lt;/td>
+&lt;td>varchar(255)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4 id="where-is-it-deployed-">&lt;strong>Where is it deployed ?&lt;/strong>&lt;/h4>
+&lt;p>Client side app ( React app ) is deployed on &lt;a href="https://www.netlify.com/">Netlify&lt;/a>
+Server side app ( Node app ) is deployed on &lt;a href="https://www.heroku.com/">Heroku&lt;/a>
+MySQL database is deployed on Remote &lt;a href="https://remotemysql.com/">Mysql&lt;/a>&lt;/p>
+&lt;h4 id="how-to-run-it-locally-">How to run it locally ?&lt;/h4>
+&lt;p>To run it locally we need to clone two git repositories, one for the server and other for the client ( front-end).&lt;/p>
+&lt;h5 id="to-clone-the-client-repo-">To clone the client repo :&lt;/h5>
+&lt;p>&lt;code>git clone https://github.com/krishankantray/csv-to-sql-import-client.git &lt;/code>&lt;/p>
+&lt;h5 id="to-clone-the-server-repo-">To clone the server repo :&lt;/h5>
+&lt;p>&lt;code>git clone https://github.com/krishankantray/csv-to-sql-import-server.git&lt;/code>&lt;/p>
+&lt;p>The above git setup is for online server auto deployment on &lt;strong>Heroku&lt;/strong> and &lt;strong>Netlify&lt;/strong> .
+We need to make some changes in it to run it locally.&lt;/p>
+&lt;h5 id="first-we-setup-the-server-locally--">First we setup the server locally :&lt;/h5>
+&lt;ul>
+&lt;li>Open the directory : &lt;code>csv-to-sql-import-server&lt;/code> , in any vscode or any other editor.&lt;/li>
+&lt;li>If you have a local MySql db then do replace the details in the &lt;code>app&amp;gt;&amp;gt;config&amp;gt;&amp;gt;db.config.js&lt;/code>
+If you don&amp;rsquo;t have a local MySql db then leave it as it is.&lt;/li>
+&lt;/ul>
+&lt;p>Now, open terminal ( &lt;em>in the directory&lt;/em> : csv-to-sql-import-server ):&lt;/p>
+&lt;p>&lt;code>npm install&lt;/code>
+&lt;code>npm start&lt;/code>
+It should print in terminal : &lt;code>Server is running on port 9000.&lt;/code>&lt;/p>
+&lt;blockquote>
+&lt;p>( Make sure there is nothing previously running on port 9000, if there is then change the &amp;gt;port from line 25 of server.js )&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>To test if all APIs are working, open postman and use following APIs&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>GET call for obtaining all the records, url should be :&lt;code>http://localhost:9000/customers/&lt;/code>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>GET call for single records by id, for eg : &lt;code>http://localhost:9000/customers/963&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>POST call for bulk create records : &lt;code>http://localhost:9000/bulkcreate&lt;/code> This call needs a body to be passed&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>POST call for single create records &lt;code>http://localhost:9000/customers&lt;/code> This call needs a body to be passed&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>DELETE call for all records deletion &lt;code>http://localhost:9000/customers &lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>DELETE call for records deletion &lt;code>http://localhost:9000/customers/963 &lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>PUT call to update a single record &lt;code>http://localhost:9000/customers/963 &lt;/code>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h5 id="now-we-will-configure-the-local-front-end--react-app--">Now, we will configure the local front-end ( React app ) :&lt;/h5>
+&lt;p>We only need to make some changes in App.js within src directory.
+Just change the line 35 , 69 and 97, i.e we need to change the URL of all the fetch calls from Apps.js.&lt;/p>
+&lt;p>&lt;em>For Example :&lt;/em>&lt;/p>
+&lt;blockquote>
+&lt;p>35 : Before &lt;a href="https://csv-to-sql-import.herokuapp.com/bulkcreate">https://csv-to-sql-import.herokuapp.com/bulkcreate&lt;/a>
+35 : After http:localhost:9000/bulkcreate&lt;/p>
+&lt;/blockquote>
+&lt;p>Similarly for line 69 and 97 , just replace this part of URL -
+&lt;a href="https://csv-to-sql-import.herokuapp.com">https://csv-to-sql-import.herokuapp.com&lt;/a>
+with
+http:localhost:9000&lt;/p>
+&lt;p>and rest of the part of url remains same.&lt;/p></content></item></channel></rss>
