@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Krishankant</title><link>/resume/</link><description>Recent content on Krishankant</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 19 Apr 2020 21:26:17 +0530</lastBuildDate><atom:link href="/resume/index.xml" rel="self" type="application/rss+xml"/><item><title>CSV to SQL import using Node, Express and React</title><link>/resume/posts/my-first-post/</link><pubDate>Sun, 19 Apr 2020 21:26:17 +0530</pubDate><guid>/resume/posts/my-first-post/</guid><description>CSV to SQL import
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Krishankant</title><link>krishankantray.github.io/</link><description>Recent content on Krishankant</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 19 Apr 2020 21:26:17 +0530</lastBuildDate><atom:link href="krishankantray.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>CSV to SQL import using Node, Express and React</title><link>krishankantray.github.io/posts/my-first-post/</link><pubDate>Sun, 19 Apr 2020 21:26:17 +0530</pubDate><guid>krishankantray.github.io/posts/my-first-post/</guid><description>CSV to SQL import
 Github : Front-End Part Back-End Part
 What is this app all about ? This app allows users to import a .csv file and save it in MySQL. The .csv file needs to be in a specified format, something like this . Once the data is saved we can see and delete the table data on the front-end.
 Whats there on back-end and front-end ? Back-End : NodeJS ExpressJS MySQL Front-End : ReactJS Here is the SQL table structure :</description><content>&lt;h1 id="csv-to-sql-import">CSV to SQL import&lt;/h1>
@@ -123,7 +123,7 @@ Just change the line 35 , 69 and 97, i.e we need to change the URL of all the fe
 &lt;a href="https://csv-to-sql-import.herokuapp.com">https://csv-to-sql-import.herokuapp.com&lt;/a>
 with
 http:localhost:9000&lt;/p>
-&lt;p>and rest of the part of url remains same.&lt;/p></content></item><item><title>About</title><link>/resume/about/</link><pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate><guid>/resume/about/</guid><description>Hi there My name is Radek and I&amp;rsquo;m the author of this theme. I made it to help you present your ideas easier.
+&lt;p>and rest of the part of url remains same.&lt;/p></content></item><item><title>About</title><link>krishankantray.github.io/about/</link><pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate><guid>krishankantray.github.io/about/</guid><description>Hi there My name is Radek and I&amp;rsquo;m the author of this theme. I made it to help you present your ideas easier.
 We all know how hard is to start something on the web, especially these days. You need to prepare a bunch of stuff, configure them and when that’s done — create the content.
 This theme is pretty basic and covers all of the essentials. All you have to do is start typing!</description><content>&lt;h1 id="hi-there">Hi there&lt;/h1>
 &lt;p>My name is Radek and I&amp;rsquo;m the author of this theme. I made it to help you present your ideas easier.&lt;/p>
@@ -136,7 +136,7 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
 &lt;li>&lt;strong>really nice, custom duotone&lt;/strong> syntax highlighting based on &lt;a href="https://prismjs.com">&lt;strong>PrismJS&lt;/strong>&lt;/a>&lt;/li>
 &lt;li>mobile friendly layout&lt;/li>
 &lt;/ul>
-&lt;p>So, there you have it&amp;hellip; enjoy!&lt;/p></content></item><item><title>About Me</title><link>/resume/resume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/resume/resume/</guid><description>Download Resume
+&lt;p>So, there you have it&amp;hellip; enjoy!&lt;/p></content></item><item><title>About Me</title><link>krishankantray.github.io/resume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>krishankantray.github.io/resume/</guid><description>Download Resume
 Hi there My name is Krishankant and I&amp;rsquo;m a software engineer based in India 🇮🇳.
 I have 2+ years of experience in software engineering.
 I currently work as a Software Engineer in a Netherland based cyber security startup called - Breachlock Inc. And previously I worked at Cvent for 12 months.
@@ -153,7 +153,7 @@ Others : Algorithms, Data Structures, OOP, System Design</description><content>&
 &lt;p>Frameworks/Tools : &lt;code>ReactJS&lt;/code>, &lt;code>ExpressJS&lt;/code>, &lt;code>NodeJS&lt;/code>&lt;/p>
 &lt;p>Others : &lt;code>Algorithms&lt;/code>, &lt;code>Data Structures&lt;/code>, &lt;code>OOP&lt;/code>, &lt;code>System Design&lt;/code>&lt;/p>
 &lt;hr>
-&lt;p>Feel free to reach out to me at &lt;a href="https://krishankantray.github.io/contact">contacts&lt;/a> page.&lt;/p></content></item><item><title>Contact</title><link>/resume/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/resume/contact/</guid><description> Contact Email: krishankant_rai@rediffmail.com LinkedIn: linkedin.com/in/krishankantray Phone: +91 9560621994 GitHub: github.com/krishankantray‌</description><content>&lt;table>
+&lt;p>Feel free to reach out to me at &lt;a href="https://krishankantray.github.io/contact">contacts&lt;/a> page.&lt;/p></content></item><item><title>Contact</title><link>krishankantray.github.io/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>krishankantray.github.io/contact/</guid><description> Contact Email: krishankant_rai@rediffmail.com LinkedIn: linkedin.com/in/krishankantray Phone: +91 9560621994 GitHub: github.com/krishankantray‌</description><content>&lt;table>
 &lt;thead>
 &lt;tr>
 &lt;th>Contact&lt;/th>
@@ -173,7 +173,7 @@ Others : Algorithms, Data Structures, OOP, System Design</description><content>&
 &lt;td>&lt;code>GitHub&lt;/code>: &lt;a href="github.com/krishankantray%E2%80%8C">github.com/krishankantray‌&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></content></item><item><title>Projects</title><link>/resume/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/resume/projects/</guid><description>1. Blog CMS This‌‌ is‌‌ a‌‌ full‌‌ stack‌‌ blogging‌‌ app‌‌ which‌‌ provides ability‌‌ to‌‌ read‌‌ and‌‌ write‌‌ blogs. There‌‌ can‌‌ be‌‌ guest‌‌ users‌‌ and‌‌ logged‌‌ in‌‌ users.‌‌ The‌‌ guest ‌‌users‌‌ can‌‌ only‌‌ read‌‌ blog‌‌ as‌‌ compared‌‌ to‌‌ logged in‌‌ user‌‌ who‌‌ can‌‌ create‌‌ posts.‌ Technologies‌‌‌ -‌‌ NodeJs ,‌‌ Express,‌‌ MongoDB,‌‌ ReactJs‌
+&lt;/table></content></item><item><title>Projects</title><link>krishankantray.github.io/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>krishankantray.github.io/projects/</guid><description>1. Blog CMS This‌‌ is‌‌ a‌‌ full‌‌ stack‌‌ blogging‌‌ app‌‌ which‌‌ provides ability‌‌ to‌‌ read‌‌ and‌‌ write‌‌ blogs. There‌‌ can‌‌ be‌‌ guest‌‌ users‌‌ and‌‌ logged‌‌ in‌‌ users.‌‌ The‌‌ guest ‌‌users‌‌ can‌‌ only‌‌ read‌‌ blog‌‌ as‌‌ compared‌‌ to‌‌ logged in‌‌ user‌‌ who‌‌ can‌‌ create‌‌ posts.‌ Technologies‌‌‌ -‌‌ NodeJs ,‌‌ Express,‌‌ MongoDB,‌‌ ReactJs‌
 Github‌‌‌:‌ github.com/krishankantray/blog-cms‌ ‌
 Project‌:‌ https://blog-cms-1561.herokuapp.com‌
 2. Portfolio Site Its‌‌ a‌‌ portfolio‌‌ site‌‌ built‌‌ mainly‌‌ around‌‌ ReactJS‌‌ and redux.</description><content>&lt;h4 id="1-blog-cms">1. Blog CMS&lt;/h4>
