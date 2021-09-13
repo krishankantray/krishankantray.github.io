@@ -399,7 +399,57 @@ cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="c
 }
 &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
 }
-&lt;/code>&lt;/pre>&lt;/div></content></item><item><title>CodeChef OCT17 : Problem Code: PERFCONT</title><link>/posts/2017-10-22-codechef-oct17-problem-code-perfcont/</link><pubDate>Sun, 22 Oct 2017 16:21:00 +0530</pubDate><guid>/posts/2017-10-22-codechef-oct17-problem-code-perfcont/</guid><description>Problem:
+&lt;/code>&lt;/pre>&lt;/div></content></item><item><title>Tricky frontend questions</title><link>/posts/tricky-frontend-questions/</link><pubDate>Sat, 11 Jan 2020 12:30:00 +0000</pubDate><guid>/posts/tricky-frontend-questions/</guid><description>Q: How would you optimise your React app performance ?
+A: https://www.telerik.com/blogs/5-techniques-optimizing-performance-react-app
+Q : What is the second argument that can optionally be passed to setState and what is its purpose?
+A: https://www.geeksforgeeks.org/what-is-the-second-argument-that-can-optionally-be-passed-to-setstate-and-what-is-its-purpose/
+Q: What are refs in React? When to use them?
+A: https://reactjs.org/docs/hooks-reference.html#useref
+Q: What is the use of arrow function in react ?
+A: https://dev.to/sag1v/javascript-the-this-key-word-in-depth-4pkm
+Q: What are Pure Components ?</description><content>&lt;p>&lt;strong>Q:&lt;/strong> How would you optimise your React app performance ?&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>A:&lt;/strong> &lt;a href="https://www.telerik.com/blogs/5-techniques-optimizing-performance-react-app" title="https://www.telerik.com/blogs/5-techniques-optimizing-performance-react-app">https://www.telerik.com/blogs/5-techniques-optimizing-performance-react-app&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>Q :&lt;/strong> What is the second argument that can optionally be passed to setState and what is its purpose?&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>A:&lt;/strong> &lt;a href="https://www.geeksforgeeks.org/what-is-the-second-argument-that-can-optionally-be-passed-to-setstate-and-what-is-its-purpose/" title="https://www.geeksforgeeks.org/what-is-the-second-argument-that-can-optionally-be-passed-to-setstate-and-what-is-its-purpose/">https://www.geeksforgeeks.org/what-is-the-second-argument-that-can-optionally-be-passed-to-setstate-and-what-is-its-purpose/&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>Q:&lt;/strong> What are refs in React? When to use them?&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>A:&lt;/strong> &lt;a href="https://reactjs.org/docs/hooks-reference.html#useref" title="https://reactjs.org/docs/hooks-reference.html#useref">https://reactjs.org/docs/hooks-reference.html#useref&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>Q:&lt;/strong> What is the use of arrow function in react ?&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>A:&lt;/strong> &lt;a href="https://dev.to/sag1v/javascript-the-this-key-word-in-depth-4pkm" title="https://dev.to/sag1v/javascript-the-this-key-word-in-depth-4pkm">https://dev.to/sag1v/javascript-the-this-key-word-in-depth-4pkm&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>Q:&lt;/strong> What are Pure Components ?&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>A:&lt;/strong> &lt;a href="https://medium.com/technofunnel/working-with-react-pure-components-166ded26ae48" title="https://medium.com/technofunnel/working-with-react-pure-components-166ded26ae48">https://medium.com/technofunnel/working-with-react-pure-components-166ded26ae48&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>Q:&lt;/strong> Explain the components of Redux&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>A :&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Action&lt;/strong> — The action is the only source of information that sends data from our application to our store. Actions are sent the store using store.dispatch().&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Reducer&lt;/strong> — Reducers specify how the app’s state changes in response to actions sent to the store. Since the actions don’t show the application’s state changes, this place determines how the state will change to an action.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Store&lt;/strong> — The Store is the object that brings Action and Reducer together. The store has the following responsibilities: Holds application state; Allows access to the state via getState(); Allows state to be updated via dispatch(action); Registers listeners via subscribe(listener); Handles unregistering of listeners via the function returned by subscribe (listener).&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;p>&lt;strong>Q:&lt;/strong> What is Context?&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>A:&lt;/strong> &lt;a href="https://www.freecodecamp.org/news/react-context-for-beginners/" title="https://www.freecodecamp.org/news/react-context-for-beginners/">https://www.freecodecamp.org/news/react-context-for-beginners/&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>Q:&lt;/strong> What are HOCs ( Higher Order Components ) in react ?&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>A:&lt;/strong> &lt;a href="https://dev.to/codebucks/what-is-higher-order-component-hoc-in-react-2e1p" title="https://dev.to/codebucks/what-is-higher-order-component-hoc-in-react-2e1p">https://dev.to/codebucks/what-is-higher-order-component-hoc-in-react-2e1p&lt;/a>&lt;/p>
+&lt;/blockquote></content></item><item><title>CodeChef OCT17 : Problem Code: PERFCONT</title><link>/posts/2017-10-22-codechef-oct17-problem-code-perfcont/</link><pubDate>Sun, 22 Oct 2017 16:21:00 +0530</pubDate><guid>/posts/2017-10-22-codechef-oct17-problem-code-perfcont/</guid><description>Problem:
 Chef wants to organize a contest. Predicting difficulty levels of the problems can be a daunting task. Chef wants his contests to be balanced in terms of difficulty levels of the problems.
 Assume a contest had total P participants. A problem that was solved by at least half of the participants (i.e. P / 2 (integer division)) is said to be cakewalk difficulty. A problem solved by at max P / 10 (integer division) participants is categorized to be a hard difficulty.</description><content>&lt;p>&lt;strong>Problem:&lt;/strong>&lt;br>
 Chef wants to organize a contest. Predicting difficulty levels of the
