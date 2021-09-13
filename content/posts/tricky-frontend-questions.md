@@ -1,7 +1,6 @@
 +++
 author = "Krishankant"
 authorTwitter = "\"\""
-cover = "\"\""
 date = 2020-01-11T12:30:00Z
 description = "\"\""
 keywords = ["frontend"]
