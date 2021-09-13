@@ -1,7 +1,7 @@
 +++
 author = "Krishankant"
 authorTwitter = "\"\""
-cover = ""
+cover = "/uploads/ood-patterns.png"
 date = 2021-09-12T18:30:00Z
 description = "\"\""
 keywords = []
