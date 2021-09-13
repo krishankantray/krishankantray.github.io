@@ -22,12 +22,6 @@ fields:
     required: false
   label: authorTwitter
   default: '""'
-- name: cover
-  type: text
-  config:
-    required: false
-  label: cover
-  default: '""'
 - name: tags
   type: tag_list
   default: []
