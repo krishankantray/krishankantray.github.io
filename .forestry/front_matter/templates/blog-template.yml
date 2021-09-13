@@ -1,0 +1,62 @@
+---
+label: Blog-Template
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: date
+  type: datetime
+  label: date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: authorTwitter
+  type: text
+  config:
+    required: false
+  label: authorTwitter
+  default: '""'
+- name: cover
+  type: text
+  config:
+    required: false
+  label: cover
+  default: '""'
+- name: tags
+  type: tag_list
+  default: []
+  label: tags
+- name: keywords
+  type: tag_list
+  default: []
+  label: keywords
+- name: description
+  type: text
+  config:
+    required: false
+  label: description
+  default: '""'
+- name: showfullcontent
+  type: boolean
+  label: showFullContent
+- name: author
+  type: select
+  default: Krishankant
+  config:
+    required: false
+    options:
+    - Krishankant
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: author
+pages:
+- content/posts/system-design-template.md
