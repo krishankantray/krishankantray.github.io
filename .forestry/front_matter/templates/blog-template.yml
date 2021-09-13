@@ -1,6 +1,6 @@
 ---
 label: Blog-Template
-hide_body: true
+hide_body: false
 fields:
 - name: title
   type: text
