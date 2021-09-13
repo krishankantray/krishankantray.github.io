@@ -16,6 +16,7 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
+  default: now
 - name: authorTwitter
   type: text
   config:
@@ -59,4 +60,5 @@ fields:
   label: cover
 pages:
 - content/posts/system-design-template.md
+- content/posts/test.md
 - content/posts/tricky-frontend-questions.md
