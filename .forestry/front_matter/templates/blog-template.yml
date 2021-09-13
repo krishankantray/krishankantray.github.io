@@ -16,11 +16,6 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
-- name: author
-  type: text
-  config:
-    required: false
-  label: author
 - name: authorTwitter
   type: text
   config:
@@ -50,5 +45,27 @@ fields:
 - name: showfullcontent
   type: boolean
   label: showFullContent
+- name: author
+  type: select
+  default: Krishankant
+  config:
+    required: false
+    options:
+    - Krishankant
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: author
+- name: body
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: body
 pages:
 - content/posts/system-design-template.md
