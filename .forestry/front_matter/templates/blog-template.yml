@@ -60,3 +60,4 @@ fields:
   label: author
 pages:
 - content/posts/system-design-template.md
+- content/posts/tricky-frontend-questions.md
