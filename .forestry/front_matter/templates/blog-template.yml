@@ -7,5 +7,48 @@ fields:
   config:
     required: false
   label: Title
+- name: date
+  type: datetime
+  label: date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: author
+  type: text
+  config:
+    required: false
+  label: author
+- name: authorTwitter
+  type: text
+  config:
+    required: false
+  label: authorTwitter
+  default: '""'
+- name: cover
+  type: text
+  config:
+    required: false
+  label: cover
+  default: '""'
+- name: tags
+  type: tag_list
+  default: []
+  label: tags
+- name: keywords
+  type: tag_list
+  default: []
+  label: keywords
+- name: description
+  type: text
+  config:
+    required: false
+  label: description
+  default: '""'
+- name: showfullcontent
+  type: boolean
+  label: showFullContent
 pages:
 - content/posts/system-design-template.md
