@@ -30,15 +30,9 @@ Q: What are Pure Components ?</description><content>&lt;p>&lt;strong>Q:&lt;/stro
 &lt;blockquote>
 &lt;p>&lt;strong>A :&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Action&lt;/strong> — The action is the only source of information that sends data from our application to our store. Actions are sent the store using store.dispatch().&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Reducer&lt;/strong> — Reducers specify how the app’s state changes in response to actions sent to the store. Since the actions don’t show the application’s state changes, this place determines how the state will change to an action.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Store&lt;/strong> — The Store is the object that brings Action and Reducer together. The store has the following responsibilities: Holds application state; Allows access to the state via getState(); Allows state to be updated via dispatch(action); Registers listeners via subscribe(listener); Handles unregistering of listeners via the function returned by subscribe (listener).&lt;/p>
-&lt;/li>
+&lt;li>&lt;strong>Action&lt;/strong> — The action is the only source of information that sends data from our application to our store. Actions are sent the store using store.dispatch().&lt;/li>
+&lt;li>&lt;strong>Reducer&lt;/strong> — Reducers specify how the app’s state changes in response to actions sent to the store. Since the actions don’t show the application’s state changes, this place determines how the state will change to an action.&lt;/li>
+&lt;li>&lt;strong>Store&lt;/strong> — The Store is the object that brings Action and Reducer together. The store has the following responsibilities: Holds application state; Allows access to the state via getState(); Allows state to be updated via dispatch(action); Registers listeners via subscribe(listener); Handles unregistering of listeners via the function returned by subscribe (listener).&lt;/li>
 &lt;/ul>
 &lt;/blockquote>
 &lt;p>&lt;strong>Q:&lt;/strong> What is Context?&lt;/p>
