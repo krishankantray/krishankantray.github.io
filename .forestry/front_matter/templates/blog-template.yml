@@ -58,14 +58,5 @@ fields:
       file: 
       path: 
   label: author
-- name: body
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: body
 pages:
 - content/posts/system-design-template.md
