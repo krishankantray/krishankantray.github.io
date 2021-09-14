@@ -1,8 +1,9 @@
 +++
 author = "Krishankant"
-authorTwitter = "\"\""
+authorTwitter = ""
+cover = ""
 date = 2020-01-11T12:30:00Z
-description = "\"\""
+description = "It contains some of the interview questions that are asked to React developers these days."
 keywords = ["frontend"]
 showfullcontent = false
 tags = ["frontend"]
