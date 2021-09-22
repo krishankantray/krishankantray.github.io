@@ -8,7 +8,7 @@ description = "This is a template "
 keywords = []
 showfullcontent = false
 tags = ["system design"]
-title = "System Design Template"
+title = "System Design Fundamentals"
 
 +++
 ...in progress
