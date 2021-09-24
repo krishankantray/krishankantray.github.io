@@ -3,7 +3,7 @@
 <title>Codechef - Courses in an university - Problem Code: UNICOURS :: Krishankant</title>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Problem There are n courses in a university being offered. These courses are numbered from 1 to n in the increasing order of their difficulty. For each course, you can have some courses as prerequisites. The prerequisite courses for a course should be of lower difficulty than it. You are given an array a of size n, where aidenotes that there should be at least aiprerequisite courses for i-th course.">
+<meta name=description content="Problem There are n courses in a university being offered. These courses are numbered from 1 to n in the increasing order of their difficulty. For each course, you can have some courses as prerequisites. The prerequisite courses for a course should be of lower difficulty than it. You are given an array a of size n, where ai denotes that there should be at least ai prerequisite courses for i-th course.">
 <meta name=keywords content="Krishankant Ray">
 <meta name=robots content="noodp">
 <link rel=canonical href=../../posts/2017-09-14-codechef-courses-in-an-university-problem-code-unicours/>
@@ -16,7 +16,7 @@
 <meta property="og:locale" content="en">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Codechef - Courses in an university - Problem Code: UNICOURS">
-<meta property="og:description" content="Problem There are n courses in a university being offered. These courses are numbered from 1 to n in the increasing order of their difficulty. For each course, you can have some courses as prerequisites. The prerequisite courses for a course should be of lower difficulty than it. You are given an array a of size n, where aidenotes that there should be at least aiprerequisite courses for i-th course.">
+<meta property="og:description" content="Problem There are n courses in a university being offered. These courses are numbered from 1 to n in the increasing order of their difficulty. For each course, you can have some courses as prerequisites. The prerequisite courses for a course should be of lower difficulty than it. You are given an array a of size n, where ai denotes that there should be at least ai prerequisite courses for i-th course.">
 <meta property="og:url" content="/posts/2017-09-14-codechef-courses-in-an-university-problem-code-unicours/">
 <meta property="og:site_name" content="Krishankant">
 <meta property="og:image" content="/img/favicon/orange.png">
@@ -63,42 +63,42 @@ Krishankant
 <span class=post-author>:: Krishankant Ray</span>
 </div>
 <div class=post-content><div>
-<h3 id=span-stylecolor-redproblemspan>Problem<a href=#span-stylecolor-redproblemspan class=hanchor arialabel=Anchor>&#8983;</a> </h3>
+<h3 id=span-stylecolor-redproblemspan><span style=color:red>Problem</span><a href=#span-stylecolor-redproblemspan class=hanchor arialabel=Anchor>&#8983;</a> </h3>
 <p>There are <strong>n</strong> courses in a university being offered. These courses are
 numbered from 1 to <strong>n</strong> in the increasing order of their difficulty.
 For each course, you can have some courses as prerequisites. The
 prerequisite courses for a course should be of lower difficulty than it.
-You are given an array <strong>a</strong> of size <strong>n</strong>, where <strong>a</strong>i
-denotes that there should be at least <strong>a</strong>i prerequisite
+You are given an array <strong>a</strong> of size <strong>n</strong>, where <strong>a</strong><sub>i</sub>
+denotes that there should be at least <strong>a</strong><sub>i</sub> prerequisite
 courses for i-th course.<br>
 The university wants to estimate the efficiency of the allocation of
 prerequisites of courses by maximizing the number of courses that are
 not prerequisites for any other course. Find out what&rsquo;s the maximum such
-number of courses possible. It is guaranteed that <strong>a</strong>i &lt;
+number of courses possible. It is guaranteed that <strong>a</strong><sub>i</sub> &lt;
 i, thus making sure that it is possible to allocate the prerequisites
 for each of the course.</p>
-<h3 id=span-stylecolor-redinputspan>Input<a href=#span-stylecolor-redinputspan class=hanchor arialabel=Anchor>&#8983;</a> </h3>
+<h3 id=span-stylecolor-redinputspan><span style=color:red>Input</span><a href=#span-stylecolor-redinputspan class=hanchor arialabel=Anchor>&#8983;</a> </h3>
 <p>The first line of the input contains an integer <strong>T</strong> denoting the
 number of test cases. The description of <strong>T</strong> test cases follows.<br>
 The first line of each test case contains an integer <strong>n</strong>.<br>
 The second line of each test case contains <strong>n</strong> space separated
 integers denoting array <strong>a</strong>.</p>
-<h3 id=span-stylecolor-redoutputspan>Output<a href=#span-stylecolor-redoutputspan class=hanchor arialabel=Anchor>&#8983;</a> </h3>
+<h3 id=span-stylecolor-redoutputspan><span style=color:red>Output</span><a href=#span-stylecolor-redoutputspan class=hanchor arialabel=Anchor>&#8983;</a> </h3>
 <p>For each test case, output a single line containing an integer
 corresponding to the maximum number of possible courses which are not
 prerequisite for any other course.</p>
-<h3 id=span-stylecolor-redconstraintsspan>Constraints<a href=#span-stylecolor-redconstraintsspan class=hanchor arialabel=Anchor>&#8983;</a> </h3>
+<h3 id=span-stylecolor-redconstraintsspan><span style=color:red>Constraints</span><a href=#span-stylecolor-redconstraintsspan class=hanchor arialabel=Anchor>&#8983;</a> </h3>
 <ul>
 <li><strong>1</strong> ≤ <strong>T</strong> ≤ <strong>10</strong></li>
-<li>1 ≤ <strong>n</strong> ≤ 105</li>
-<li>0 ≤ <strong>a</strong>i &lt; i</li>
+<li>1 ≤ <strong>n</strong> ≤ 10<sup>5</sup></li>
+<li>0 ≤ <strong>a</strong><sub>i</sub> &lt; i</li>
 </ul>
-<h3 id=span-stylecolor-redsubtasksspan>Subtasks<a href=#span-stylecolor-redsubtasksspan class=hanchor arialabel=Anchor>&#8983;</a> </h3>
+<h3 id=span-stylecolor-redsubtasksspan><span style=color:red>Subtasks</span><a href=#span-stylecolor-redsubtasksspan class=hanchor arialabel=Anchor>&#8983;</a> </h3>
 <ul>
 <li><strong>Subtask #1</strong> (40 points) : 1 ≤ <strong>n</strong> ≤ 100</li>
 <li><strong>Subtask #2</strong> (60 points) : original constraints</li>
 </ul>
-<h3 id=span-stylecolor-redexamplespan>Example<a href=#span-stylecolor-redexamplespan class=hanchor arialabel=Anchor>&#8983;</a> </h3>
+<h3 id=span-stylecolor-redexamplespan><span style=color:red>Example</span><a href=#span-stylecolor-redexamplespan class=hanchor arialabel=Anchor>&#8983;</a> </h3>
 <pre><code>Input:
 2
 3
@@ -114,8 +114,8 @@ Output:
 
  
 </code></pre>
-<h3 id=span-stylecolor-redsolution-span>Solution :<a href=#span-stylecolor-redsolution-span class=hanchor arialabel=Anchor>&#8983;</a> </h3>
-<h3 id=span-stylecolor-red-span> <a href=#span-stylecolor-red-span class=hanchor arialabel=Anchor>&#8983;</a> </h3>
+<h3 id=span-stylecolor-redsolution-span><span style=color:red>Solution :</span><a href=#span-stylecolor-redsolution-span class=hanchor arialabel=Anchor>&#8983;</a> </h3>
+<h3 id=span-stylecolor-red-span><span style=color:red> </span><a href=#span-stylecolor-red-span class=hanchor arialabel=Anchor>&#8983;</a> </h3>
 <h3 id=heading><a href=#heading class=hanchor arialabel=Anchor>&#8983;</a> </h3>
 <pre><code>#include&lt;iostream&gt;
 #include&lt;climits&gt;
@@ -141,7 +141,7 @@ int main()
     return 0;
 }
 </code></pre>
-<h3 id=span-stylecolor-redspan><a href=#span-stylecolor-redspan class=hanchor arialabel=Anchor>&#8983;</a> </h3>
+<h3 id=span-stylecolor-redspan><span style=color:red></span><a href=#span-stylecolor-redspan class=hanchor arialabel=Anchor>&#8983;</a> </h3>
 </div></div>
 <div class=pagination>
 <div class=pagination__title>

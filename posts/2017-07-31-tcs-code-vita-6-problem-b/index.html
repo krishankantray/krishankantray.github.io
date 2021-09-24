@@ -3,9 +3,11 @@
 <title>TCS Code Vita 6 ( problem-B ) :: Krishankant</title>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Problem : Concatenating primesIf you like numbers, you may have been fascinated by prime numbers. Sometimes we obtain by concatenating two primes. For example, concatenating 2 and 3, we obtain the prime 23. The aim is to find all such distinct &amp;ldquo;concatenated primes&amp;rdquo; that could be obtained by concatenating primes ≤ a given integer N.
+<meta name=description content="Problem : Concatenating primes
+If you like numbers, you may have been fascinated by prime numbers. Sometimes we obtain by concatenating two primes. For example, concatenating 2 and 3, we obtain the prime 23. The aim is to find all such distinct &amp;ldquo;concatenated primes&amp;rdquo; that could be obtained by concatenating primes ≤ a given integer N.
 **
-Input Format:**Integer N
+Input Format:**
+Integer N
 Output Format:
 M, the number of distinct primes that could be obtained by concatenating two primes ≤ N">
 <meta name=keywords content="Krishankant Ray">
@@ -20,9 +22,11 @@ M, the number of distinct primes that could be obtained by concatenating two pri
 <meta property="og:locale" content="en">
 <meta property="og:type" content="article">
 <meta property="og:title" content="TCS Code Vita 6 ( problem-B )">
-<meta property="og:description" content="Problem : Concatenating primesIf you like numbers, you may have been fascinated by prime numbers. Sometimes we obtain by concatenating two primes. For example, concatenating 2 and 3, we obtain the prime 23. The aim is to find all such distinct &amp;ldquo;concatenated primes&amp;rdquo; that could be obtained by concatenating primes ≤ a given integer N.
+<meta property="og:description" content="Problem : Concatenating primes
+If you like numbers, you may have been fascinated by prime numbers. Sometimes we obtain by concatenating two primes. For example, concatenating 2 and 3, we obtain the prime 23. The aim is to find all such distinct &amp;ldquo;concatenated primes&amp;rdquo; that could be obtained by concatenating primes ≤ a given integer N.
 **
-Input Format:**Integer N
+Input Format:**
+Integer N
 Output Format:
 M, the number of distinct primes that could be obtained by concatenating two primes ≤ N">
 <meta property="og:url" content="/posts/2017-07-31-tcs-code-vita-6-problem-b/">
@@ -71,39 +75,39 @@ Krishankant
 <span class=post-author>:: Krishankant Ray</span>
 </div>
 <div class=post-content><div>
-<p><strong>Problem : Concatenating
-primes</strong></p>
+<p><span style=color:red><span style=font-family:Verdana,sans-serif><strong>Problem : Concatenating
+primes</strong></span></span></p>
 <p>If you like numbers, you may have been fascinated by prime numbers.
 Sometimes we obtain by concatenating two primes. For example,
 concatenating 2 and 3, we obtain the prime 23. The aim is to find all
 such distinct &ldquo;concatenated primes&rdquo; that could be obtained by
 concatenating primes ≤ a given integer N.<br>
-**<br>
-Input Format:**</p>
+<span style=color:red><span style=font-family:Verdana,sans-serif>**<br>
+Input Format:**</span></span></p>
 <p>Integer N</p>
-<p><strong>Output
-Format</strong>:</p>
+<p><span style=color:red><span style=font-family:Verdana,sans-serif><strong>Output
+Format</strong></span></span>:</p>
 <p>M, the number of distinct primes that could be obtained by concatenating
 two primes ≤ N<br>
 Constraints:<br>
 N ≤ 70</p>
-<p><strong>Example 1</strong><br>
-Input<br>
+<p><u><strong>Example 1</strong></u><br>
+<span style=color:#ff0>Input<br>
 10<br>
 Output<br>
-4<br>
-** **<br>
-**Explanations**<br>
+4</span><br>
+<span style=color:red><span style=font-family:Verdana,sans-serif>** **</span></span><br>
+<u><span style=font-family:inherit>**Explanations**</span></u><br>
 The primes ≤ 10 are 2, 3, 5, 7. These can be used to form the following
 concatenated numbers: 22, 23, 25, 27, 32, 33, 35, 37,<br>
 52, 53, 55, 57, 72, 73, 75, 77. Of these, there are four primes: 23 37
 53 and 73. Hence the output is 4.</p>
-<p><strong>Example 2</strong></p>
-<p>Input<br>
+<p><u><strong>Example 2</strong></u></p>
+<p><span style=color:#ff0>Input<br>
 20<br>
 Output<br>
-17</p>
-<p><strong>Explanation</strong></p>
+17</span></p>
+<p><u><strong>Explanation</strong></u></p>
 <p>The prime numbers up to 20 are 2 3 5 7 11 13 17 and 19.<br>
 Concatenating these two at a time in all possible ways, we get the
 following numbers:<br>
@@ -118,7 +122,7 @@ following numbers:<br>
 We have the following 17 primes numbers in this list: 23 37 53 73 113
 137 173 193 197 211 311 313 317 719 1117 1319 1913 .<br>
 Hence the output would be <strong>17</strong>.</p>
-<p><strong>Solution:</strong></p>
+<p><span style=color:red><span style=font-family:Verdana,sans-serif><strong>Solution:</strong></span></span></p>
 <pre><code>#include &lt;iostream&gt;
 #include &lt;vector&gt;
 int checkprime(int n)

@@ -3,7 +3,11 @@
 <title>Codevita 2017 Round-1 Problem-C :: Krishankant</title>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Problem:CodeVita 2017 Round 1 Problem -C(download from below &amp;hellip; if any problem in downloading then comment) http://s000.tinyupload.com/?file_id=52952119059621072275Solution:
+<meta name=description content="Problem:
+CodeVita 2017 Round 1 Problem -C
+(download from below &amp;hellip; if any problem in downloading then comment) 
+http://s000.tinyupload.com/?file_id=52952119059621072275
+Solution:
 /* Author: Krishankant Ray * CodeVita 2017 Round 1 */ #include&amp;lt;iostream&amp;gt; #include&amp;lt;vector&amp;gt; using namespace std; int main() { int d,k=0; string arr; cin&amp;gt;&amp;gt;d; cin&amp;gt;&amp;gt;arr; int n=arr.length(); char R[n]; for(int f=0; f&amp;lt;n; ) { R[f]=arr[k++]; f+=((2*d)-2); } for(int i=1; i&amp;lt;d-1;i++) { R[i]=arr[k++]; for(int j=i; j&amp;lt;n;) { j+=((2*d)-2-(2*i)); R[j]=arr[k++]; j+=((2*i)); if(j&amp;lt;n) R[j]=arr[k++]; } } for(int l=d-1; l&amp;lt;n;l+=((2*d)-2)) { R[l]=arr[k++]; } for(int f=0; f&amp;lt;n;f++) { if(R[f]=='X') break; else cout&amp;lt;&amp;lt;R[f]; } return 0; }  ">
 <meta name=keywords content="Krishankant Ray">
 <meta name=robots content="noodp">
@@ -17,7 +21,11 @@
 <meta property="og:locale" content="en">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Codevita 2017 Round-1 Problem-C">
-<meta property="og:description" content="Problem:CodeVita 2017 Round 1 Problem -C(download from below &amp;hellip; if any problem in downloading then comment) http://s000.tinyupload.com/?file_id=52952119059621072275Solution:
+<meta property="og:description" content="Problem:
+CodeVita 2017 Round 1 Problem -C
+(download from below &amp;hellip; if any problem in downloading then comment) 
+http://s000.tinyupload.com/?file_id=52952119059621072275
+Solution:
 /* Author: Krishankant Ray * CodeVita 2017 Round 1 */ #include&amp;lt;iostream&amp;gt; #include&amp;lt;vector&amp;gt; using namespace std; int main() { int d,k=0; string arr; cin&amp;gt;&amp;gt;d; cin&amp;gt;&amp;gt;arr; int n=arr.length(); char R[n]; for(int f=0; f&amp;lt;n; ) { R[f]=arr[k++]; f+=((2*d)-2); } for(int i=1; i&amp;lt;d-1;i++) { R[i]=arr[k++]; for(int j=i; j&amp;lt;n;) { j+=((2*d)-2-(2*i)); R[j]=arr[k++]; j+=((2*i)); if(j&amp;lt;n) R[j]=arr[k++]; } } for(int l=d-1; l&amp;lt;n;l+=((2*d)-2)) { R[l]=arr[k++]; } for(int f=0; f&amp;lt;n;f++) { if(R[f]=='X') break; else cout&amp;lt;&amp;lt;R[f]; } return 0; }  ">
 <meta property="og:url" content="/posts/2017-09-26-codevita-2017-round-1-problem-c/">
 <meta property="og:site_name" content="Krishankant">
@@ -65,14 +73,14 @@ Krishankant
 <span class=post-author>:: Krishankant Ray</span>
 </div>
 <div class=post-content><div>
-<p><strong>Problem:</strong><br>
-CodeVita 2017
-Round 1 Problem -C<br>
-(download from
+<p><span style=color:red><span style=font-family:Verdana,sans-serif></span><strong><span style=font-family:Verdana,sans-serif>Problem:</span></strong></span><br>
+<span style=color:red><span style=font-family:Verdana,sans-serif><span style=font-size:x-small><span style=color:#000>CodeVita 2017
+Round 1 Problem -C</span></span></span></span><br>
+<span style=color:red><span style=font-family:Verdana,sans-serif><span style=font-size:x-small><span style=color:#000>(download from
 below &mldr;  if any problem in downloading then
-comment) <strong> </strong><br>
-<strong><a href="http://s000.tinyupload.com/?file_id=52952119059621072275">http://s000.tinyupload.com/?file_id=52952119059621072275</a></strong></p>
-<p><strong>Solution</strong>:</p>
+comment) </span></span></span><strong><span style=font-family:Verdana,sans-serif> </span></strong></span><br>
+<span style=color:red><strong><span style=font-family:Verdana,sans-serif><a href="http://s000.tinyupload.com/?file_id=52952119059621072275">http://s000.tinyupload.com/?file_id=52952119059621072275</a></span></strong></span></p>
+<p><span style=color:red><strong><span style=font-family:Verdana,sans-serif>Solution</span></strong></span>:</p>
 <pre><code>/*
  Author: Krishankant Ray
  * CodeVita 2017 Round 1

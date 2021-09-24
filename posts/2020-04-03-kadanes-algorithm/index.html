@@ -65,7 +65,7 @@ Krishankant
 <span class=post-author>:: Krishankant Ray</span>
 </div>
 <div class=post-content><div>
-<h2 id=span-stylecolor-redspan-stylefont-size-x-largespan-stylefont-family-verdana-sans-serifkadanes-algorithmspanspanspan>Kadane&rsquo;s Algorithm<a href=#span-stylecolor-redspan-stylefont-size-x-largespan-stylefont-family-verdana-sans-serifkadanes-algorithmspanspanspan class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<h2 id=span-stylecolor-redspan-stylefont-size-x-largespan-stylefont-family-verdana-sans-serifkadanes-algorithmspanspanspan><span style=color:red><span style=font-size:x-large><span style=font-family:Verdana,sans-serif>Kadane&rsquo;s Algorithm</span></span></span><a href=#span-stylecolor-redspan-stylefont-size-x-largespan-stylefont-family-verdana-sans-serifkadanes-algorithmspanspanspan class=hanchor arialabel=Anchor>&#8983;</a> </h2>
 <p>TL;DR</p>
 <ul>
 <li>This algorithm is used to find maximum sum sub-array from a given
@@ -80,41 +80,41 @@ sub-array and then return maximum out of them. </li>
 <p>Since brute force approach is very obvious and easy to implement, so, I
 am not discussing it here.</p>
 <h4 id=lets-directly-jump-to-kadanes-algorithm->Lets directly jump to Kadane&rsquo;s Algorithm : <a href=#lets-directly-jump-to-kadanes-algorithm- class=hanchor arialabel=Anchor>&#8983;</a> </h4>
-<p>Its uses two variables one stores local maximum ( local_maximum
-) and other stores global maximum ( global_maximum
-) .<br>
-Initialise , local_maximum
-= 0 and global_maximum
-= -Infinity </p>
+<p>Its uses two variables one stores local maximum ( <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">local_maximum
+</span></span>) and other stores global maximum ( <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">global_maximum</span>
+</span>) .<br>
+Initialise , <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">local_maximum
+= 0 </span></span>and <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">global_maximum</span>
+= -Infinity </span></p>
 <dl>
 <dt>We start iteration from the first element, and for each element we check</dt>
 <dt>following condition before updating the &lt;span</dt>
 <dt>style=&ldquo;color: #e69138;">&lt;span</dt>
-<dt>style=&ldquo;font-family: "Courier New", Courier, monospace;">local_maximum</dt>
+<dt>style=&ldquo;font-family: "Courier New", Courier, monospace;">local_maximum</span></span></dt>
 <dd></dd>
 </dl>
 <ul>
-<li>if  local_maximum
-&lt; 0 ,  then local_maximum
-= arr[i] ,  this is because if local_maximum
-is negative value then adding it with current value
+<li>if  <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">local_maximum
+&lt; 0</span> </span>,  then <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">local_maximum
+= arr[i]</span></span> ,  this is because if <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">local_maximum
+</span></span>is negative value then adding it with current value
 will result into lower value.<br>
-Otherwise, if
-local_maximum >=0 then local_maximum=
-local_maximum + arr[i] .</li>
+Otherwise, if<span style=color:#e69138><span style="font-family:courier new,Courier,monospace">
+local_maximum >=0 </span></span>then <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">local_maximum=
+local_maximum + arr[i]</span></span> .</li>
 </ul>
-<p>Now, we got local_maximum
-till current element, its time to compare it with global_maximum
-. </p>
+<p>Now, we got <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">local_maximum
+</span></span>till current element, its time to compare it with <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">global_maximum</span>
+</span>. </p>
 <p> </p>
 <ul>
-<li>If global_maximum
-&lt; local_maximum then  global
-maximum = local_maximum              </li>
+<li>If <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">global_maximum
+&lt; local_maximum</span></span> then  <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">global
+maximum = local_maximum</span></span>              </li>
 </ul>
 <p> </p>
 <p> Thats it, now after whole iteration is finished the our answer is the
-value of global_maximum. </p>
+value of <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">global_maximum</span></span>. </p>
 <p> </p>
 <h4 id=now-its-time-to-code-it-out->Now, its time to code it out : <a href=#now-its-time-to-code-it-out- class=hanchor arialabel=Anchor>&#8983;</a> </h4>
 <p>Language used : <code>JavaScript</code></p>

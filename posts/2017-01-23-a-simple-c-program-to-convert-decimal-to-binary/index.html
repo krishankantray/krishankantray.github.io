@@ -3,7 +3,40 @@
 <title> A Simple C program to convert DECIMAL to BINARY :: Krishankant</title>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="A Simple C program to convert DECIMAL to BINARY1#include&amp;lt;iostream&amp;gt;2#include&amp;lt;stdio.h&amp;gt;3using namespace std;4int main()5{6int n, arr[100] ;7int i=0,j;8cout&amp;lt;&amp;lt;&amp;ldquo;Enter the decimal number &amp;mdash;&amp;gt;&amp;rdquo; ;9cin&amp;gt;&amp;gt;n;10// using while loop to store in arr[]11while( (n/2) &amp;gt;=1)12{13arr[i++]= (n%2);14n=n/2;15}16if(n==3)17{18arr[i++]=1;19arr[i]=1;20}21else if(n==2)22arr[i]=0;23else if(n==1)24arr[i]=1;2526cout&amp;lt;&amp;lt;endl ;27for(j=i;j&amp;gt;=0;j&amp;ndash;)28cout&amp;lt;&amp;lt;arr[j];2930return 0;31}OUTPUT">
+<meta name=description content="A Simple C program to convert DECIMAL to BINARY
+1#include&amp;lt;iostream&amp;gt;
+2#include&amp;lt;stdio.h&amp;gt;
+3using namespace std;
+4int main()
+5{
+6int n, arr[100] ;
+7int i=0,j;
+8cout&amp;lt;&amp;lt;&amp;ldquo;Enter the decimal number &amp;mdash;&amp;gt;&amp;rdquo; ;
+9cin&amp;gt;&amp;gt;n;
+10// using while loop to store in arr[]
+11while( (n/2) &amp;gt;=1)
+12{
+13arr[i++]= (n%2);
+14n=n/2;
+15}
+16if(n==3)
+17{
+18arr[i++]=1;
+19arr[i]=1;
+20}
+21else if(n==2)
+22arr[i]=0;
+23else if(n==1)
+24arr[i]=1;
+25
+26cout&amp;lt;&amp;lt;endl ;
+27for(j=i;j&amp;gt;=0;j&amp;ndash;)
+28cout&amp;lt;&amp;lt;arr[j];
+29
+30return 0;
+31}
+
+OUTPUT">
 <meta name=keywords content="Krishankant Ray">
 <meta name=robots content="noodp">
 <link rel=canonical href=../../posts/2017-01-23-a-simple-c-program-to-convert-decimal-to-binary/>
@@ -16,7 +49,40 @@
 <meta property="og:locale" content="en">
 <meta property="og:type" content="article">
 <meta property="og:title" content=" A Simple C program to convert DECIMAL to BINARY">
-<meta property="og:description" content="A Simple C program to convert DECIMAL to BINARY1#include&amp;lt;iostream&amp;gt;2#include&amp;lt;stdio.h&amp;gt;3using namespace std;4int main()5{6int n, arr[100] ;7int i=0,j;8cout&amp;lt;&amp;lt;&amp;ldquo;Enter the decimal number &amp;mdash;&amp;gt;&amp;rdquo; ;9cin&amp;gt;&amp;gt;n;10// using while loop to store in arr[]11while( (n/2) &amp;gt;=1)12{13arr[i++]= (n%2);14n=n/2;15}16if(n==3)17{18arr[i++]=1;19arr[i]=1;20}21else if(n==2)22arr[i]=0;23else if(n==1)24arr[i]=1;2526cout&amp;lt;&amp;lt;endl ;27for(j=i;j&amp;gt;=0;j&amp;ndash;)28cout&amp;lt;&amp;lt;arr[j];2930return 0;31}OUTPUT">
+<meta property="og:description" content="A Simple C program to convert DECIMAL to BINARY
+1#include&amp;lt;iostream&amp;gt;
+2#include&amp;lt;stdio.h&amp;gt;
+3using namespace std;
+4int main()
+5{
+6int n, arr[100] ;
+7int i=0,j;
+8cout&amp;lt;&amp;lt;&amp;ldquo;Enter the decimal number &amp;mdash;&amp;gt;&amp;rdquo; ;
+9cin&amp;gt;&amp;gt;n;
+10// using while loop to store in arr[]
+11while( (n/2) &amp;gt;=1)
+12{
+13arr[i++]= (n%2);
+14n=n/2;
+15}
+16if(n==3)
+17{
+18arr[i++]=1;
+19arr[i]=1;
+20}
+21else if(n==2)
+22arr[i]=0;
+23else if(n==1)
+24arr[i]=1;
+25
+26cout&amp;lt;&amp;lt;endl ;
+27for(j=i;j&amp;gt;=0;j&amp;ndash;)
+28cout&amp;lt;&amp;lt;arr[j];
+29
+30return 0;
+31}
+
+OUTPUT">
 <meta property="og:url" content="/posts/2017-01-23-a-simple-c-program-to-convert-decimal-to-binary/">
 <meta property="og:site_name" content="Krishankant">
 <meta property="og:image" content="/img/favicon/orange.png">
@@ -63,68 +129,68 @@ Krishankant
 <span class=post-author>:: Krishankant Ray</span>
 </div>
 <div class=post-content><div>
-<p><strong>A Simple C program to convert
-DECIMAL to BINARY</strong></p>
-<p> 1 
-#include&lt;iostream></p>
-<p> 2 
-#include&lt;stdio.h></p>
-<p> 3 
-<strong>using
-namespace std</strong>;</p>
-<p> 4 
-<strong>int
-</strong>main()</p>
-<p> 5 
-{</p>
-<p> 6      <strong>int
-</strong>n,
-arr[100]
-;</p>
-<p> 7      <strong>int
-</strong>i=0,j;</p>
-<p> 8      <strong>cout</strong>&lt;&lt;&ldquo;Enter
-the decimal number &mdash;>  &rdquo;
-;</p>
-<p> 9      <strong>cin</strong>>>n;</p>
-<p>10      //
-using while loop to store in arr[]</p>
-<p>11      <strong>while</strong>(
-(n/2)
->=1)</p>
-<p>12      {</p>
-<p>13          arr[i++]=
-(n%2);</p>
-<p>14          n=n/2;</p>
-<p>15      }</p>
-<p>16      <strong>if</strong>(n==3)</p>
-<p>17      {</p>
-<p>18          arr[i++]=1;</p>
-<p>19          arr[i]=1;</p>
-<p>20      }</p>
-<p>21      <strong>else
-if</strong>(n==2)</p>
-<p>22          arr[i]=0;</p>
-<p>23      <strong>else
-if</strong>(n==1)</p>
-<p>24          arr[i]=1;</p>
-<p>25  </p>
-<p>26      <strong>cout</strong>&lt;&lt;<strong>endl
-</strong>;</p>
-<p>27      <strong>for</strong>(j=i;j>=0;j&ndash;)</p>
-<p>28          <strong>cout</strong>&lt;&lt;arr[j];</p>
-<p>29  </p>
-<p>30  <strong>return
-</strong>0;</p>
-<p>31  }</p>
-<p><br>
-<strong>OUTPUT</strong>
-<br>
-<br>
-<strong></strong><strong></strong><strong></strong>
-</p>
+<p><u><strong><span style=font-family:verdana,sans-serif><span style=color:#0070c0;font-size:14pt>A Simple C program to convert
+DECIMAL to BINARY</span></span></strong></u></p>
+<p><span style="font-family:courier new;font-size:12pt"><span style=mso-spacerun:yes> </span>1<span style=mso-spacerun:yes> 
+</span><span style=color:#00a000>#include&lt;iostream></span></span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt"><span style=mso-spacerun:yes> </span>2<span style=mso-spacerun:yes> 
+</span></span><span style="color:#00a000;font-family:courier new;font-size:12pt">#include&lt;stdio.h></span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt"><span style=mso-spacerun:yes> </span>3<span style=mso-spacerun:yes> 
+</span></span><strong><span style="color:#0000a0;font-family:courier new;font-size:12pt">using
+namespace </span><span style="color:#00a000;font-family:courier new;font-size:12pt">std</span></strong><span style="color:red;font-family:courier new;font-size:12pt">;</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt"><span style=mso-spacerun:yes> </span>4<span style=mso-spacerun:yes> 
+</span></span><strong><span style="color:#0000a0;font-family:courier new;font-size:12pt">int
+</span></strong><span style="color:#000;font-family:courier new;font-size:12pt">main</span><span style="color:red;font-family:courier new;font-size:12pt">()</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt"><span style=mso-spacerun:yes> </span>5<span style=mso-spacerun:yes> 
+</span></span><span style="color:red;font-family:courier new;font-size:12pt">{</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt"><span style=mso-spacerun:yes> </span>6<span style=mso-spacerun:yes>      </span></span><strong><span style="color:#0000a0;font-family:courier new;font-size:12pt">int
+</span></strong><span style="color:#000;font-family:courier new;font-size:12pt">n</span><span style="color:red;font-family:courier new;font-size:12pt">,
+</span><span style="color:#000;font-family:courier new;font-size:12pt">arr</span><span style="color:red;font-family:courier new;font-size:12pt">[</span><span style="color:#f000f0;font-family:courier new;font-size:12pt">100</span><span style="color:red;font-family:courier new;font-size:12pt">]
+;</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt"><span style=mso-spacerun:yes> </span>7<span style=mso-spacerun:yes>      </span></span><strong><span style="color:#0000a0;font-family:courier new;font-size:12pt">int
+</span></strong><span style="color:#000;font-family:courier new;font-size:12pt">i</span><span style="color:red;font-family:courier new;font-size:12pt">=</span><span style="color:#f000f0;font-family:courier new;font-size:12pt">0</span><span style="color:red;font-family:courier new;font-size:12pt">,</span><span style="color:#000;font-family:courier new;font-size:12pt">j</span><span style="color:red;font-family:courier new;font-size:12pt">;</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt"><span style=mso-spacerun:yes> </span>8<span style=mso-spacerun:yes>      </span></span><strong><span style="color:#00a000;font-family:courier new;font-size:12pt">cout</span></strong><span style="color:red;font-family:courier new;font-size:12pt">&lt;&lt;</span><span style="color:blue;font-family:courier new;font-size:12pt">&ldquo;Enter
+the decimal number &mdash;><span style=mso-spacerun:yes>  </span>&rdquo;
+</span><span style="color:red;font-family:courier new;font-size:12pt">;</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt"><span style=mso-spacerun:yes> </span>9<span style=mso-spacerun:yes>      </span></span><strong><span style="color:#00a000;font-family:courier new;font-size:12pt">cin</span></strong><span style="color:red;font-family:courier new;font-size:12pt">>></span><span style="color:#000;font-family:courier new;font-size:12pt">n</span><span style="color:red;font-family:courier new;font-size:12pt">;</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt">10<span style=mso-spacerun:yes>      </span></span><span style="color:#bebee6;font-family:courier new;font-size:12pt">//
+using while loop to store in arr[]</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt">11<span style=mso-spacerun:yes>      </span></span><strong><span style="color:#0000a0;font-family:courier new;font-size:12pt">while</span></strong><span style="color:red;font-family:courier new;font-size:12pt">(
+(</span><span style="color:#000;font-family:courier new;font-size:12pt">n</span><span style="color:red;font-family:courier new;font-size:12pt">/</span><span style="color:#f000f0;font-family:courier new;font-size:12pt">2</span><span style="color:red;font-family:courier new;font-size:12pt">)
+>=</span><span style="color:#f000f0;font-family:courier new;font-size:12pt">1</span><span style="color:red;font-family:courier new;font-size:12pt">)</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt">12<span style=mso-spacerun:yes>      </span></span><span style="color:red;font-family:courier new;font-size:12pt">{</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt">13<span style=mso-spacerun:yes>          </span>arr</span><span style="color:red;font-family:courier new;font-size:12pt">[</span><span style="color:#000;font-family:courier new;font-size:12pt">i</span><span style="color:red;font-family:courier new;font-size:12pt">++]=
+(</span><span style="color:#000;font-family:courier new;font-size:12pt">n</span><span style="color:red;font-family:courier new;font-size:12pt">%</span><span style="color:#f000f0;font-family:courier new;font-size:12pt">2</span><span style="color:red;font-family:courier new;font-size:12pt">);</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt">14<span style=mso-spacerun:yes>          </span>n</span><span style="color:red;font-family:courier new;font-size:12pt">=</span><span style="color:#000;font-family:courier new;font-size:12pt">n</span><span style="color:red;font-family:courier new;font-size:12pt">/</span><span style="color:#f000f0;font-family:courier new;font-size:12pt">2</span><span style="color:red;font-family:courier new;font-size:12pt">;</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt">15<span style=mso-spacerun:yes>      </span></span><span style="color:red;font-family:courier new;font-size:12pt">}</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt">16<span style=mso-spacerun:yes>      </span></span><strong><span style="color:#0000a0;font-family:courier new;font-size:12pt">if</span></strong><span style="color:red;font-family:courier new;font-size:12pt">(</span><span style="color:#000;font-family:courier new;font-size:12pt">n</span><span style="color:red;font-family:courier new;font-size:12pt">==</span><span style="color:#f000f0;font-family:courier new;font-size:12pt">3</span><span style="color:red;font-family:courier new;font-size:12pt">)</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt">17<span style=mso-spacerun:yes>      </span></span><span style="color:red;font-family:courier new;font-size:12pt">{</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt">18<span style=mso-spacerun:yes>          </span>arr</span><span style="color:red;font-family:courier new;font-size:12pt">[</span><span style="color:#000;font-family:courier new;font-size:12pt">i</span><span style="color:red;font-family:courier new;font-size:12pt">++]=</span><span style="color:#f000f0;font-family:courier new;font-size:12pt">1</span><span style="color:red;font-family:courier new;font-size:12pt">;</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt">19<span style=mso-spacerun:yes>          </span>arr</span><span style="color:red;font-family:courier new;font-size:12pt">[</span><span style="color:#000;font-family:courier new;font-size:12pt">i</span><span style="color:red;font-family:courier new;font-size:12pt">]=</span><span style="color:#f000f0;font-family:courier new;font-size:12pt">1</span><span style="color:red;font-family:courier new;font-size:12pt">;</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt">20<span style=mso-spacerun:yes>      </span></span><span style="color:red;font-family:courier new;font-size:12pt">}</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt">21<span style=mso-spacerun:yes>      </span></span><strong><span style="color:#0000a0;font-family:courier new;font-size:12pt">else
+if</span></strong><span style="color:red;font-family:courier new;font-size:12pt">(</span><span style="color:#000;font-family:courier new;font-size:12pt">n</span><span style="color:red;font-family:courier new;font-size:12pt">==</span><span style="color:#f000f0;font-family:courier new;font-size:12pt">2</span><span style="color:red;font-family:courier new;font-size:12pt">)</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt">22<span style=mso-spacerun:yes>          </span>arr</span><span style="color:red;font-family:courier new;font-size:12pt">[</span><span style="color:#000;font-family:courier new;font-size:12pt">i</span><span style="color:red;font-family:courier new;font-size:12pt">]=</span><span style="color:#f000f0;font-family:courier new;font-size:12pt">0</span><span style="color:red;font-family:courier new;font-size:12pt">;</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt">23<span style=mso-spacerun:yes>      </span></span><strong><span style="color:#0000a0;font-family:courier new;font-size:12pt">else
+if</span></strong><span style="color:red;font-family:courier new;font-size:12pt">(</span><span style="color:#000;font-family:courier new;font-size:12pt">n</span><span style="color:red;font-family:courier new;font-size:12pt">==</span><span style="color:#f000f0;font-family:courier new;font-size:12pt">1</span><span style="color:red;font-family:courier new;font-size:12pt">)</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt">24<span style=mso-spacerun:yes>          </span>arr</span><span style="color:red;font-family:courier new;font-size:12pt">[</span><span style="color:#000;font-family:courier new;font-size:12pt">i</span><span style="color:red;font-family:courier new;font-size:12pt">]=</span><span style="color:#f000f0;font-family:courier new;font-size:12pt">1</span><span style="color:red;font-family:courier new;font-size:12pt">;</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt">25<span style=mso-spacerun:yes>  </span></span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt">26<span style=mso-spacerun:yes>      </span></span><strong><span style="color:#00a000;font-family:courier new;font-size:12pt">cout</span></strong><span style="color:red;font-family:courier new;font-size:12pt">&lt;&lt;</span><strong><span style="color:#00a000;font-family:courier new;font-size:12pt">endl
+</span></strong><span style="color:red;font-family:courier new;font-size:12pt">;</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt">27<span style=mso-spacerun:yes>      </span></span><strong><span style="color:#0000a0;font-family:courier new;font-size:12pt">for</span></strong><span style="color:red;font-family:courier new;font-size:12pt">(</span><span style="color:#000;font-family:courier new;font-size:12pt">j</span><span style="color:red;font-family:courier new;font-size:12pt">=</span><span style="color:#000;font-family:courier new;font-size:12pt">i</span><span style="color:red;font-family:courier new;font-size:12pt">;</span><span style="color:#000;font-family:courier new;font-size:12pt">j</span><span style="color:red;font-family:courier new;font-size:12pt">>=</span><span style="color:#f000f0;font-family:courier new;font-size:12pt">0</span><span style="color:red;font-family:courier new;font-size:12pt">;</span><span style="color:#000;font-family:courier new;font-size:12pt">j</span><span style="color:red;font-family:courier new;font-size:12pt">&ndash;)</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt">28<span style=mso-spacerun:yes>          </span></span><strong><span style="color:#00a000;font-family:courier new;font-size:12pt">cout</span></strong><span style="color:red;font-family:courier new;font-size:12pt">&lt;&lt;</span><span style="color:#000;font-family:courier new;font-size:12pt">arr</span><span style="color:red;font-family:courier new;font-size:12pt">[</span><span style="color:#000;font-family:courier new;font-size:12pt">j</span><span style="color:red;font-family:courier new;font-size:12pt">];</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt">29<span style=mso-spacerun:yes>  </span></span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt">30<span style=mso-spacerun:yes>  </span></span><strong><span style="color:#0000a0;font-family:courier new;font-size:12pt">return
+</span></strong><span style="color:#f000f0;font-family:courier new;font-size:12pt">0</span><span style="color:red;font-family:courier new;font-size:12pt">;</span></p>
+<p><span style="color:#000;font-family:courier new;font-size:12pt;line-height:107%">31<span style=mso-spacerun:yes>  </span></span><span style="color:red;font-family:courier new;font-size:12pt;line-height:107%">}</span></p>
+<p><span style="color:red;font-family:courier new;font-size:12pt;line-height:107%"></span><br>
+<span style="color:red;font-family:courier new;font-size:12pt;line-height:107%"><strong><u><span style="color:#0070c0;font-family:berlin sans fb demi,sans-serif;font-size:14pt;line-height:107%">OUTPUT</span></u></strong>
+</span><br>
+<span style="color:red;font-family:courier new;font-size:12pt;line-height:107%"></span><br>
+<span style="color:red;font-family:courier new;font-size:12pt;line-height:107%"><span style=color:#f0f><u><strong><span style="font-family:berlin sans fb demi,sans-serif;font-size:14pt;line-height:107%"></span></strong></u></span><strong><span style="color:#0070c0;font-family:berlin sans fb demi,sans-serif;font-size:14pt;line-height:107%"></span></strong><u><strong><span style="color:#0070c0;font-family:berlin sans fb demi,sans-serif;font-size:14pt;line-height:107%"></span><span style="color:#0070c0;font-family:berlin sans fb demi,sans-serif;font-size:14pt;line-height:107%"></span></strong></u>
+</span></p>
 <p><a href=../images/2017-01-23-a-simple-c-program-to-convert-decimal-to-binary-Capture.JPG><img src=../images/thumbnails/2017-01-23-a-simple-c-program-to-convert-decimal-to-binary-Capture.JPG alt></a></p>
-<p></p>
+<p><span style=mso-no-proof:yes></span><span style="color:red;font-family:courier new;font-size:8pt"></span></p>
 </div></div>
 <div class=pagination>
 <div class=pagination__title>
