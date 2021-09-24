@@ -59,5 +59,6 @@ fields:
     maxSize: 64
   label: cover
 pages:
+- content/posts/javascript-tricky-interview-questions.md
 - content/posts/system-design-template.md
 - content/posts/tricky-frontend-questions.md
