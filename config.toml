@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://krishankant.in"
 languageCode = "en-us"
 theme = "terminal"
 paginate = 15
