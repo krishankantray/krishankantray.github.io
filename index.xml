@@ -6628,7 +6628,7 @@ Krishankant Ray</description><content>&lt;table>
 &lt;/tbody>
 &lt;/table>
 &lt;p>or Connect me LinkedIn :&lt;/p>
-&lt;script src="[https://platform.linkedin.com/badges/js/profile.js](https://platform.linkedin.com/badges/js/profile.js "https://platform.linkedin.com/badges/js/profile.js")" async defer type="text/javascript">&lt;/script>
+&lt;script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript">&lt;/script>
 &lt;div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="krishankantray" data-version="v1">&lt;a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/krishankantray?trk=profile-badge">Krishankant Ray&lt;/a>&lt;/div></content></item><item><title>Projects</title><link>/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/</guid><description>1. Blog CMS This‌‌ is‌‌ a‌‌ full‌‌ stack‌‌ blogging‌‌ app‌‌ which‌‌ provides ability‌‌ to‌‌ read‌‌ and‌‌ write‌‌ blogs. There‌‌ can‌‌ be‌‌ guest‌‌ users‌‌ and‌‌ logged‌‌ in‌‌ users.‌‌ The‌‌ guest ‌‌users‌‌ can‌‌ only‌‌ read‌‌ blog‌‌ as‌‌ compared‌‌ to‌‌ logged in‌‌ user‌‌ who‌‌ can‌‌ create‌‌ posts.‌ Technologies‌‌‌ -‌‌ NodeJs ,‌‌ Express,‌‌ MongoDB,‌‌ ReactJs‌
 Github‌‌‌:‌ github.com/krishankantray/blog-cms‌ ‌
 Project‌:‌ https://blog-cms-1561.herokuapp.com‌
