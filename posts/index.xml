@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Krishankant</title><link>https://krishankant.in/posts/</link><description>Recent content in Posts on Krishankant</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 24 Sep 2021 13:50:00 +0000</lastBuildDate><atom:link href="https://krishankant.in/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>System Design Fundamentals</title><link>https://krishankant.in/posts/system-design-template/</link><pubDate>Fri, 24 Sep 2021 13:50:00 +0000</pubDate><guid>https://krishankant.in/posts/system-design-template/</guid><description>work in progress&amp;hellip;..</description><content>&lt;h1 id="work-in-progress">work in progress&amp;hellip;..&lt;/h1></content></item><item><title>Javascript tricky interview questions</title><link>https://krishankant.in/posts/javascript-tricky-interview-questions/</link><pubDate>Fri, 24 Sep 2021 13:23:41 +0000</pubDate><guid>https://krishankant.in/posts/javascript-tricky-interview-questions/</guid><description>The original author is : Lydiya
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Krishankant</title><link>/posts/</link><description>Recent content in Posts on Krishankant</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 24 Sep 2021 13:50:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>System Design Fundamentals</title><link>/posts/system-design-template/</link><pubDate>Fri, 24 Sep 2021 13:50:00 +0000</pubDate><guid>/posts/system-design-template/</guid><description>work in progress&amp;hellip;..</description><content>&lt;h1 id="work-in-progress">work in progress&amp;hellip;..&lt;/h1></content></item><item><title>Javascript tricky interview questions</title><link>/posts/javascript-tricky-interview-questions/</link><pubDate>Fri, 24 Sep 2021 13:23:41 +0000</pubDate><guid>/posts/javascript-tricky-interview-questions/</guid><description>The original author is : Lydiya
 Below are the list of questions : 1. What&amp;rsquo;s the output? function sayHi() { console.log(name); console.log(age); var name = &amp;#39;Lydia&amp;#39;; let age = 21; } sayHi(); A: Lydia and undefined B: Lydia and ReferenceError C: ReferenceError and 21 D: undefined and ReferenceError Answer Answer: D Within the function, we first declare the name variable with the var keyword. This means that the variable gets hoisted (memory space is set up during the creation phase) with the default value of undefined, until we actually get to the line where we define the variable.</description><content>&lt;p>The original author is : &lt;a href="https://github.com/lydiahallie/javascript-questions/blob/master/README.md">Lydiya&lt;/a>&lt;/p>
 &lt;h3 id="below-are-the-list-of-questions-">Below are the list of questions :&lt;/h3>
 &lt;h6 id="1-whats-the-output">1. What&amp;rsquo;s the output?&lt;/h6>
@@ -3383,7 +3383,7 @@ Object[&lt;span style="color:#a6e22e">method&lt;/span>](&lt;span style="color:#a
 &lt;p>The condition within the &lt;code>if&lt;/code> statement checks whether the value of &lt;code>!typeof randomValue&lt;/code> is equal to &lt;code>&amp;quot;string&amp;quot;&lt;/code>. The &lt;code>!&lt;/code> operator converts the value to a boolean value. If the value is truthy, the returned value will be &lt;code>false&lt;/code>, if the value is falsy, the returned value will be &lt;code>true&lt;/code>. In this case, the returned value of &lt;code>typeof randomValue&lt;/code> is the truthy value &lt;code>&amp;quot;number&amp;quot;&lt;/code>, meaning that the value of &lt;code>!typeof randomValue&lt;/code> is the boolean value &lt;code>false&lt;/code>.&lt;/p>
 &lt;p>&lt;code>!typeof randomValue === &amp;quot;string&amp;quot;&lt;/code> always returns false, since we&amp;rsquo;re actually checking &lt;code>false === &amp;quot;string&amp;quot;&lt;/code>. Since the condition returned &lt;code>false&lt;/code>, the code block of the &lt;code>else&lt;/code> statement gets run, and &lt;code>Yay it's a string!&lt;/code> gets logged.&lt;/p>
 &lt;/p>
-&lt;/details></content></item><item><title>CSV to SQL import using Node, Express and React</title><link>https://krishankant.in/posts/csv-to-sql-import/</link><pubDate>Sun, 19 Apr 2020 21:26:17 +0530</pubDate><guid>https://krishankant.in/posts/csv-to-sql-import/</guid><description>CSV to SQL import
+&lt;/details></content></item><item><title>CSV to SQL import using Node, Express and React</title><link>/posts/csv-to-sql-import/</link><pubDate>Sun, 19 Apr 2020 21:26:17 +0530</pubDate><guid>/posts/csv-to-sql-import/</guid><description>CSV to SQL import
 Github : Front-End Part Back-End Part
 What is this app all about ? This app allows users to import a .csv file and save it in MySQL. The .csv file needs to be in a specified format, something like this . Once the data is saved we can see and delete the table data on the front-end.
 Whats there on back-end and front-end ? Back-End : NodeJS ExpressJS MySQL Front-End : ReactJS Here is the SQL table structure :</description><content>&lt;h1 id="csv-to-sql-import">CSV to SQL import&lt;/h1>
@@ -3508,7 +3508,7 @@ Just change the line 35 , 69 and 97, i.e we need to change the URL of all the fe
 &lt;a href="https://csv-to-sql-import.herokuapp.com">https://csv-to-sql-import.herokuapp.com&lt;/a>
 with
 http:localhost:9000&lt;/p>
-&lt;p>and rest of the part of url remains same.&lt;/p></content></item><item><title>Kadane's Algorithm</title><link>https://krishankant.in/posts/2020-04-03-kadanes-algorithm/</link><pubDate>Fri, 03 Apr 2020 06:16:00 +0530</pubDate><guid>https://krishankant.in/posts/2020-04-03-kadanes-algorithm/</guid><description>Kadane&amp;rsquo;s Algorithm TL;DR
+&lt;p>and rest of the part of url remains same.&lt;/p></content></item><item><title>Kadane's Algorithm</title><link>/posts/2020-04-03-kadanes-algorithm/</link><pubDate>Fri, 03 Apr 2020 06:16:00 +0530</pubDate><guid>/posts/2020-04-03-kadanes-algorithm/</guid><description>Kadane&amp;rsquo;s Algorithm TL;DR
 This algorithm is used to find maximum sum sub-array from a given array.  Its has O(n) time complexity and O(1) space complexity.  It works irrespective of whether the elements are positive or negative, whether sorted or unsorted.  Its DP approach Its brute force approach takes O(n^2) as it calculates all possible sub-array and then return maximum out of them.  Since brute force approach is very obvious and easy to implement, so, I am not discussing it here.</description><content>&lt;h2 id="span-stylecolor-redspan-stylefont-size-x-largespan-stylefont-family-verdana-sans-serifkadanes-algorithmspanspanspan">&lt;span style="color: red;">&lt;span style="font-size: x-large;">&lt;span style="font-family: Verdana, sans-serif;">Kadane&amp;rsquo;s Algorithm&lt;/span>&lt;/span>&lt;/span>&lt;/h2>
 &lt;p>TL;DR&lt;/p>
 &lt;ul>
@@ -3597,7 +3597,7 @@ style="font-family: &amp;quot;Courier New&amp;quot;, Courier, monospace;">global
 }, &lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#66d9ef">Infinity&lt;/span>);
 };
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Please read about reduce function in JS if you don&amp;rsquo;t already know about
-it.&lt;/p></content></item><item><title>LeetCode: 169 Majority Element</title><link>https://krishankant.in/posts/2020-02-16-leetcode-169-majority-element/</link><pubDate>Sun, 16 Feb 2020 11:36:00 +0530</pubDate><guid>https://krishankant.in/posts/2020-02-16-leetcode-169-majority-element/</guid><description>LEETCODE : 169. Majority Element Link
+it.&lt;/p></content></item><item><title>LeetCode: 169 Majority Element</title><link>/posts/2020-02-16-leetcode-169-majority-element/</link><pubDate>Sun, 16 Feb 2020 11:36:00 +0530</pubDate><guid>/posts/2020-02-16-leetcode-169-majority-element/</guid><description>LEETCODE : 169. Majority Element Link
 Problem Description :
 Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.
 You may assume that the array is non-empty and the majority element always exist in the array.
@@ -3648,7 +3648,7 @@ count &lt;span style="color:#f92672">+=&lt;/span> nums[i]&lt;span style="color:#
 &lt;span style="color:#66d9ef">return&lt;/span> val;
 }
 };
-&lt;/code>&lt;/pre>&lt;/div></content></item><item><title>LEETCODE : 171. Excel Sheet Column Number</title><link>https://krishankant.in/posts/2020-02-10-leetcode-171-excel-sheet-column-number/</link><pubDate>Mon, 10 Feb 2020 00:25:00 +0530</pubDate><guid>https://krishankant.in/posts/2020-02-10-leetcode-171-excel-sheet-column-number/</guid><description>LEETCODE : 171. Excel Sheet Column Number Link
+&lt;/code>&lt;/pre>&lt;/div></content></item><item><title>LEETCODE : 171. Excel Sheet Column Number</title><link>/posts/2020-02-10-leetcode-171-excel-sheet-column-number/</link><pubDate>Mon, 10 Feb 2020 00:25:00 +0530</pubDate><guid>/posts/2020-02-10-leetcode-171-excel-sheet-column-number/</guid><description>LEETCODE : 171. Excel Sheet Column Number Link
 Problem Description :
 Given a column title as appear in an Excel sheet, return its corresponding column number.
 For example:
@@ -3718,7 +3718,7 @@ pwr&lt;span style="color:#f92672">=&lt;/span>pwr&lt;span style="color:#f92672">*
 &lt;span style="color:#66d9ef">return&lt;/span> ans;
 }
 };
-&lt;/code>&lt;/pre>&lt;/div></content></item><item><title>CodeChef : Breaking Bricks || Problem Code: BRKBKS</title><link>https://krishankant.in/posts/2020-01-26-codechef-breaking-bricks-problem-code-brkbks/</link><pubDate>Sun, 26 Jan 2020 01:14:00 +0530</pubDate><guid>https://krishankant.in/posts/2020-01-26-codechef-breaking-bricks-problem-code-brkbks/</guid><description>CodeChef : https://www.codechef.com/JAN20B/problems/BRKBKS
+&lt;/code>&lt;/pre>&lt;/div></content></item><item><title>CodeChef : Breaking Bricks || Problem Code: BRKBKS</title><link>/posts/2020-01-26-codechef-breaking-bricks-problem-code-brkbks/</link><pubDate>Sun, 26 Jan 2020 01:14:00 +0530</pubDate><guid>/posts/2020-01-26-codechef-breaking-bricks-problem-code-brkbks/</guid><description>CodeChef : https://www.codechef.com/JAN20B/problems/BRKBKS
 Problem: For her next karate demonstration, Ada will break some bricks.
 Ada stacked three bricks on top of each other. Initially, their widths (from top to bottom) are W1,W2,W3.
 Ada&amp;rsquo;s strength is S. Whenever she hits a stack of bricks, consider the largest k≥0 such that the sum of widths of the topmost k bricks does not exceed S; the topmost k bricks break and are removed from the stack.</description><content>&lt;p>CodeChef : &lt;a href="https://www.codechef.com/JAN20B/problems/BRKBKS">https://www.codechef.com/JAN20B/problems/BRKBKS&lt;/a>&lt;/p>
@@ -3804,7 +3804,7 @@ cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="c
 }
 &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
 }
-&lt;/code>&lt;/pre>&lt;/div></content></item><item><title>Tricky frontend questions</title><link>https://krishankant.in/posts/tricky-frontend-questions/</link><pubDate>Sat, 11 Jan 2020 12:30:00 +0000</pubDate><guid>https://krishankant.in/posts/tricky-frontend-questions/</guid><description>Q: How would you optimise your React app performance ?
+&lt;/code>&lt;/pre>&lt;/div></content></item><item><title>Tricky frontend questions</title><link>/posts/tricky-frontend-questions/</link><pubDate>Sat, 11 Jan 2020 12:30:00 +0000</pubDate><guid>/posts/tricky-frontend-questions/</guid><description>Q: How would you optimise your React app performance ?
 A: https://www.telerik.com/blogs/5-techniques-optimizing-performance-react-app
 Q : What is the second argument that can optionally be passed to setState and what is its purpose?
 A: https://www.geeksforgeeks.org/what-is-the-second-argument-that-can-optionally-be-passed-to-setstate-and-what-is-its-purpose/
@@ -3848,7 +3848,7 @@ Q: What are Pure Components ?</description><content>&lt;p>&lt;strong>Q:&lt;/stro
 &lt;p>&lt;strong>Q:&lt;/strong> What are HOCs ( Higher Order Components ) in react ?&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;strong>A:&lt;/strong> &lt;a href="https://dev.to/codebucks/what-is-higher-order-component-hoc-in-react-2e1p" title="https://dev.to/codebucks/what-is-higher-order-component-hoc-in-react-2e1p">https://dev.to/codebucks/what-is-higher-order-component-hoc-in-react-2e1p&lt;/a>&lt;/p>
-&lt;/blockquote></content></item><item><title>CodeChef OCT17 : Problem Code: PERFCONT</title><link>https://krishankant.in/posts/2017-10-22-codechef-oct17-problem-code-perfcont/</link><pubDate>Sun, 22 Oct 2017 16:21:00 +0530</pubDate><guid>https://krishankant.in/posts/2017-10-22-codechef-oct17-problem-code-perfcont/</guid><description>Problem:
+&lt;/blockquote></content></item><item><title>CodeChef OCT17 : Problem Code: PERFCONT</title><link>/posts/2017-10-22-codechef-oct17-problem-code-perfcont/</link><pubDate>Sun, 22 Oct 2017 16:21:00 +0530</pubDate><guid>/posts/2017-10-22-codechef-oct17-problem-code-perfcont/</guid><description>Problem:
 Chef wants to organize a contest. Predicting difficulty levels of the problems can be a daunting task. Chef wants his contests to be balanced in terms of difficulty levels of the problems.
 Assume a contest had total P participants. A problem that was solved by at least half of the participants (i.e. P / 2 (integer division)) is said to be cakewalk difficulty. A problem solved by at max P / 10 (integer division) participants is categorized to be a hard difficulty.</description><content>&lt;p>&lt;strong>Problem:&lt;/strong>&lt;br>
 Chef wants to organize a contest. Predicting difficulty levels of the
@@ -3947,7 +3947,7 @@ cout&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>&lt;span style="col
 }
 &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
 }
-&lt;/code>&lt;/pre>&lt;/div></content></item><item><title>HackerRank(greedy): Minimum Absolute Difference in an Array</title><link>https://krishankant.in/posts/2017-10-22-hackerrank-greedy-minimum-absolute-difference-in-an-array/</link><pubDate>Sun, 22 Oct 2017 16:15:00 +0530</pubDate><guid>https://krishankant.in/posts/2017-10-22-hackerrank-greedy-minimum-absolute-difference-in-an-array/</guid><description>Problem:
+&lt;/code>&lt;/pre>&lt;/div></content></item><item><title>HackerRank(greedy): Minimum Absolute Difference in an Array</title><link>/posts/2017-10-22-hackerrank-greedy-minimum-absolute-difference-in-an-array/</link><pubDate>Sun, 22 Oct 2017 16:15:00 +0530</pubDate><guid>/posts/2017-10-22-hackerrank-greedy-minimum-absolute-difference-in-an-array/</guid><description>Problem:
 Consider an array of integers, A = a0, a1, a2&amp;hellip;.an-1. We define the absolute difference between two elements, ai and aj
 (where ai not equal to aj ), to be the absolute value of ai-aj.
 Given an array of n integers, find and print the minimum absolute difference between any two elements in the array.
@@ -4002,7 +4002,7 @@ min&lt;span style="color:#f92672">=&lt;/span>abs(arr[i]&lt;span style="color:#f9
 cout&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>min;
 &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
 }
-&lt;/code>&lt;/pre>&lt;/div></content></item><item><title>Codevita 2017 Round-1 Problem-C</title><link>https://krishankant.in/posts/2017-09-26-codevita-2017-round-1-problem-c/</link><pubDate>Tue, 26 Sep 2017 20:20:00 +0530</pubDate><guid>https://krishankant.in/posts/2017-09-26-codevita-2017-round-1-problem-c/</guid><description>Problem:
+&lt;/code>&lt;/pre>&lt;/div></content></item><item><title>Codevita 2017 Round-1 Problem-C</title><link>/posts/2017-09-26-codevita-2017-round-1-problem-c/</link><pubDate>Tue, 26 Sep 2017 20:20:00 +0530</pubDate><guid>/posts/2017-09-26-codevita-2017-round-1-problem-c/</guid><description>Problem:
 CodeVita 2017 Round 1 Problem -C
 (download from below &amp;hellip; if any problem in downloading then comment) 
 http://s000.tinyupload.com/?file_id=52952119059621072275
@@ -4069,7 +4069,7 @@ cout&amp;lt;&amp;lt;R[f];
 }
 return 0;
 }
-&lt;/code>&lt;/pre></content></item><item><title>CodeVita 2017 Round-1 Problem-B</title><link>https://krishankant.in/posts/2017-09-26-codevita-2017-round-1-problem-b/</link><pubDate>Tue, 26 Sep 2017 19:47:00 +0530</pubDate><guid>https://krishankant.in/posts/2017-09-26-codevita-2017-round-1-problem-b/</guid><description>Problem : Concatenating primes
+&lt;/code>&lt;/pre></content></item><item><title>CodeVita 2017 Round-1 Problem-B</title><link>/posts/2017-09-26-codevita-2017-round-1-problem-b/</link><pubDate>Tue, 26 Sep 2017 19:47:00 +0530</pubDate><guid>/posts/2017-09-26-codevita-2017-round-1-problem-b/</guid><description>Problem : Concatenating primes
 If you like numbers, you may have been fascinated by prime numbers. Sometimes we obtain by concatenating two primes. For
 example, concatenating 2 and 3, we obtain the prime 23. The aim is to find all such distinct &amp;ldquo;concatenated primes&amp;rdquo; that could
 be obtained by concatenating primes ≤ a given integer N.
@@ -4246,7 +4246,7 @@ return 0;
 }
 &lt;/code>&lt;/pre>
 &lt;p>&lt;span style="color: red;">&lt;strong>&lt;span
-style="font-family: Verdana,sans-serif;">&lt;/span>&lt;/strong>&lt;/span>&lt;/p></content></item><item><title>TCS-Codevita 2017 Round-1 Problem-A</title><link>https://krishankant.in/posts/2017-09-26-tcs-codevita-2017-round-1-problem-a/</link><pubDate>Tue, 26 Sep 2017 19:39:00 +0530</pubDate><guid>https://krishankant.in/posts/2017-09-26-tcs-codevita-2017-round-1-problem-a/</guid><description>**Problem : **Mountain peak sequence
+style="font-family: Verdana,sans-serif;">&lt;/span>&lt;/strong>&lt;/span>&lt;/p></content></item><item><title>TCS-Codevita 2017 Round-1 Problem-A</title><link>/posts/2017-09-26-tcs-codevita-2017-round-1-problem-a/</link><pubDate>Tue, 26 Sep 2017 19:39:00 +0530</pubDate><guid>/posts/2017-09-26-tcs-codevita-2017-round-1-problem-a/</guid><description>**Problem : **Mountain peak sequence
 Consider the first three natural numbers 1, 2, 3. These can be arranged in the following ways: 2, 3, 1 and 1, 3, 2. Inboth of
 these arrangements, the numbers increase to a certain point and then decrease. A sequence with this property is called a
 &amp;ldquo;mountain peak sequence&amp;rdquo;.
@@ -4344,7 +4344,7 @@ m+=bino(N-1,i,mod);
 cout&amp;lt;&amp;lt;(m%mod);
 return 0;
 }
-&lt;/code>&lt;/pre></content></item><item><title>Codechef SEPT17 CookOff - Subsequence Equality Problem Code: LIKECS01</title><link>https://krishankant.in/posts/2017-09-18-codechef-sept17-cookoff-subsequence-equality-problem-code-likecs01/</link><pubDate>Mon, 18 Sep 2017 00:46:00 +0530</pubDate><guid>https://krishankant.in/posts/2017-09-18-codechef-sept17-cookoff-subsequence-equality-problem-code-likecs01/</guid><description>Problem: (Link: https://www.codechef.com/problems/LIKECS01 ) Chef Tobby is playing a rapid fire with Bhuvan. He gives Bhuvan a string S and each time, Bhuvan has to guess whether there exists 2 equal subsequences in the string or not.
+&lt;/code>&lt;/pre></content></item><item><title>Codechef SEPT17 CookOff - Subsequence Equality Problem Code: LIKECS01</title><link>/posts/2017-09-18-codechef-sept17-cookoff-subsequence-equality-problem-code-likecs01/</link><pubDate>Mon, 18 Sep 2017 00:46:00 +0530</pubDate><guid>/posts/2017-09-18-codechef-sept17-cookoff-subsequence-equality-problem-code-likecs01/</guid><description>Problem: (Link: https://www.codechef.com/problems/LIKECS01 ) Chef Tobby is playing a rapid fire with Bhuvan. He gives Bhuvan a string S and each time, Bhuvan has to guess whether there exists 2 equal subsequences in the string or not.
 Bhuvan got a perfect score in the game with Chef Tobby. However, Chef Tobby has now asked Bhuvan to write a program that will do this automatically given a string S. Bhuvan is an intelligent man but he does not know how to write a code.</description><content>&lt;h3 id="span-stylecolor-redproblemspan-linkhttpswwwcodechefcomproblemslikecs01-">&lt;span style="color: red;">Problem:&lt;/span> (Link: &lt;a href="https://www.codechef.com/problems/LIKECS01">https://www.codechef.com/problems/LIKECS01&lt;/a> )&lt;/h3>
 &lt;p>Chef Tobby is playing a rapid fire with Bhuvan. He gives Bhuvan a string
 &lt;strong>S&lt;/strong> and each time, Bhuvan has to guess whether there exists &lt;strong>2&lt;/strong>
@@ -4421,7 +4421,7 @@ cout &amp;lt;&amp;lt; &amp;quot;yes&amp;quot; &amp;lt;&amp;lt; endl;
 }
 return 0;
 }
-&lt;/code>&lt;/pre></content></item><item><title>Codechef - Courses in an university - Problem Code: UNICOURS</title><link>https://krishankant.in/posts/2017-09-14-codechef-courses-in-an-university-problem-code-unicours/</link><pubDate>Thu, 14 Sep 2017 23:39:00 +0530</pubDate><guid>https://krishankant.in/posts/2017-09-14-codechef-courses-in-an-university-problem-code-unicours/</guid><description>Problem There are n courses in a university being offered. These courses are numbered from 1 to n in the increasing order of their difficulty. For each course, you can have some courses as prerequisites. The prerequisite courses for a course should be of lower difficulty than it. You are given an array a of size n, where ai denotes that there should be at least ai prerequisite courses for i-th course.</description><content>&lt;h3 id="span-stylecolor-redproblemspan">&lt;span style="color: red;">Problem&lt;/span>&lt;/h3>
+&lt;/code>&lt;/pre></content></item><item><title>Codechef - Courses in an university - Problem Code: UNICOURS</title><link>/posts/2017-09-14-codechef-courses-in-an-university-problem-code-unicours/</link><pubDate>Thu, 14 Sep 2017 23:39:00 +0530</pubDate><guid>/posts/2017-09-14-codechef-courses-in-an-university-problem-code-unicours/</guid><description>Problem There are n courses in a university being offered. These courses are numbered from 1 to n in the increasing order of their difficulty. For each course, you can have some courses as prerequisites. The prerequisite courses for a course should be of lower difficulty than it. You are given an array a of size n, where ai denotes that there should be at least ai prerequisite courses for i-th course.</description><content>&lt;h3 id="span-stylecolor-redproblemspan">&lt;span style="color: red;">Problem&lt;/span>&lt;/h3>
 &lt;p>There are &lt;strong>n&lt;/strong> courses in a university being offered. These courses are
 numbered from 1 to &lt;strong>n&lt;/strong> in the increasing order of their difficulty.
 For each course, you can have some courses as prerequisites. The
@@ -4495,7 +4495,7 @@ cout&amp;lt;&amp;lt;(n-max)&amp;lt;&amp;lt;endl;
 return 0;
 }
 &lt;/code>&lt;/pre>
-&lt;h3 id="span-stylecolor-redspan">&lt;span style="color: red;">&lt;/span>&lt;/h3></content></item><item><title>Codechef MAY17 chef and his daily routine ( code: CHEFROUT )</title><link>https://krishankant.in/posts/2017-09-14-codechef-may17-chef-and-his-daily-routine-code-chefrout/</link><pubDate>Thu, 14 Sep 2017 18:01:00 +0530</pubDate><guid>https://krishankant.in/posts/2017-09-14-codechef-may17-chef-and-his-daily-routine-code-chefrout/</guid><description>Problem : https://www.codechef.com/problems/CHEFROUT Chef&amp;rsquo;s daily routine is very simple. He starts his day with cooking food, then he eats the food and finally proceeds for sleeping thus ending his day. Chef carries a robot as his personal assistant whose job is to log the activities of Chef at various instants during the day. Today it recorded activities that Chef was doing at N different instants. These instances are recorded in chronological order (in increasing order of time).</description><content>&lt;h3 id="span-stylecolor-redproblem-span-httpswwwcodechefcomproblemschefrout">&lt;span style="color: red;">Problem &lt;/span>: &lt;a href="https://www.codechef.com/problems/CHEFROUT">https://www.codechef.com/problems/CHEFROUT&lt;/a>&lt;/h3>
+&lt;h3 id="span-stylecolor-redspan">&lt;span style="color: red;">&lt;/span>&lt;/h3></content></item><item><title>Codechef MAY17 chef and his daily routine ( code: CHEFROUT )</title><link>/posts/2017-09-14-codechef-may17-chef-and-his-daily-routine-code-chefrout/</link><pubDate>Thu, 14 Sep 2017 18:01:00 +0530</pubDate><guid>/posts/2017-09-14-codechef-may17-chef-and-his-daily-routine-code-chefrout/</guid><description>Problem : https://www.codechef.com/problems/CHEFROUT Chef&amp;rsquo;s daily routine is very simple. He starts his day with cooking food, then he eats the food and finally proceeds for sleeping thus ending his day. Chef carries a robot as his personal assistant whose job is to log the activities of Chef at various instants during the day. Today it recorded activities that Chef was doing at N different instants. These instances are recorded in chronological order (in increasing order of time).</description><content>&lt;h3 id="span-stylecolor-redproblem-span-httpswwwcodechefcomproblemschefrout">&lt;span style="color: red;">Problem &lt;/span>: &lt;a href="https://www.codechef.com/problems/CHEFROUT">https://www.codechef.com/problems/CHEFROUT&lt;/a>&lt;/h3>
 &lt;p>Chef&amp;rsquo;s daily routine is very simple. He starts his day with cooking
 food, then he eats the food and finally proceeds for sleeping thus
 ending his day. Chef carries a robot as his personal assistant whose job
@@ -4577,7 +4577,7 @@ return 0;
 }
 &lt;/code>&lt;/pre>
 &lt;h3 id="heading-1">&lt;/h3>
-&lt;h3 id="heading-2">&lt;/h3></content></item><item><title>ProjectEuler -01 Multiple of 3 and 5</title><link>https://krishankant.in/posts/2017-09-13-projecteuler-01-multiple-of-3-and-5/</link><pubDate>Wed, 13 Sep 2017 16:56:00 +0530</pubDate><guid>https://krishankant.in/posts/2017-09-13-projecteuler-01-multiple-of-3-and-5/</guid><description>PROBLEM : https://www.hackerrank.com/contests/projecteuler/challenges/euler001
+&lt;h3 id="heading-2">&lt;/h3></content></item><item><title>ProjectEuler -01 Multiple of 3 and 5</title><link>/posts/2017-09-13-projecteuler-01-multiple-of-3-and-5/</link><pubDate>Wed, 13 Sep 2017 16:56:00 +0530</pubDate><guid>/posts/2017-09-13-projecteuler-01-multiple-of-3-and-5/</guid><description>PROBLEM : https://www.hackerrank.com/contests/projecteuler/challenges/euler001
 If we list all the natural numbers below that are multiples of or , we get and . The sum of these multiples is .
 Find the sum of all the multiples of or below .
 Input Format
@@ -4695,7 +4695,7 @@ sum = 0;
 return 0;
 }
 &lt;/code>&lt;/pre>
-&lt;p>&lt;span style="color: red;"> &lt;/span>&lt;/p></content></item><item><title>CodeChef SEPT17 Sereja and Commands (code: SEACO)</title><link>https://krishankant.in/posts/2017-09-11-codechef-sept17-sereja-and-commands-code-seaco/</link><pubDate>Mon, 11 Sep 2017 20:15:00 +0530</pubDate><guid>https://krishankant.in/posts/2017-09-11-codechef-sept17-sereja-and-commands-code-seaco/</guid><description>Problem: Little Chef and Sum 
+&lt;p>&lt;span style="color: red;"> &lt;/span>&lt;/p></content></item><item><title>CodeChef SEPT17 Sereja and Commands (code: SEACO)</title><link>/posts/2017-09-11-codechef-sept17-sereja-and-commands-code-seaco/</link><pubDate>Mon, 11 Sep 2017 20:15:00 +0530</pubDate><guid>/posts/2017-09-11-codechef-sept17-sereja-and-commands-code-seaco/</guid><description>Problem: Little Chef and Sum 
 https://www.codechef.com/SEPT17/problems/SEACO
 Sereja has an array A consisting of n integers. Initially, all the elements of array are zero.
 Sereja writes down m commands on a piece of a paper. The commands are enumerated from 1 to m. These commands can be of the following two types of commands:
@@ -4836,7 +4836,7 @@ cout&amp;lt;&amp;lt;endl;
 }
 return 0;
 }
-&lt;/code>&lt;/pre></content></item><item><title>CodeChef SEPT17 Chef and Pick Digit (code: CHEFPDIG)</title><link>https://krishankant.in/posts/2017-09-11-codechef-sept17-chef-and-pick-digit-code-chefpdig/</link><pubDate>Mon, 11 Sep 2017 20:07:00 +0530</pubDate><guid>https://krishankant.in/posts/2017-09-11-codechef-sept17-chef-and-pick-digit-code-chefpdig/</guid><description>Problem: Little Chef and Sum 
+&lt;/code>&lt;/pre></content></item><item><title>CodeChef SEPT17 Chef and Pick Digit (code: CHEFPDIG)</title><link>/posts/2017-09-11-codechef-sept17-chef-and-pick-digit-code-chefpdig/</link><pubDate>Mon, 11 Sep 2017 20:07:00 +0530</pubDate><guid>/posts/2017-09-11-codechef-sept17-chef-and-pick-digit-code-chefpdig/</guid><description>Problem: Little Chef and Sum 
 https://www.codechef.com/SEPT17/problems/CHEFPDIG
 Chef likes to play with big numbers. Today, he has a big positive integer N. He can select any two digits from this number (the digits can be same but their positions should be different) and orders them in any one of the two possible ways. For each of these ways, he creates a two digit number from it (might contain leading zeros). Then, he will pick a character corresponding to the ASCII value equal to this number, i.</description><content>&lt;p>&lt;span style="color: red;">&lt;strong>&lt;span
 style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">Problem: Little
@@ -4958,7 +4958,7 @@ return 0;
 }
 &lt;/code>&lt;/pre>
 &lt;p>&lt;strong>&lt;span style="color: red;">&lt;/strong>&lt;span
-style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;"> &lt;/span>&lt;strong>&lt;/span>&lt;/strong>&lt;/p></content></item><item><title>CodeChef SEPT17 Little Chef and Sum ( code: CHEFSUM)</title><link>https://krishankant.in/posts/2017-09-11-codechef-sept17-little-chef-and-sum-code-chefsum/</link><pubDate>Mon, 11 Sep 2017 19:59:00 +0530</pubDate><guid>https://krishankant.in/posts/2017-09-11-codechef-sept17-little-chef-and-sum-code-chefsum/</guid><description>Problem: Little Chef and Sum 
+style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;"> &lt;/span>&lt;strong>&lt;/span>&lt;/strong>&lt;/p></content></item><item><title>CodeChef SEPT17 Little Chef and Sum ( code: CHEFSUM)</title><link>/posts/2017-09-11-codechef-sept17-little-chef-and-sum-code-chefsum/</link><pubDate>Mon, 11 Sep 2017 19:59:00 +0530</pubDate><guid>/posts/2017-09-11-codechef-sept17-little-chef-and-sum-code-chefsum/</guid><description>Problem: Little Chef and Sum 
 https://www.codechef.com/SEPT17/problems/CHEFSUM
 Our little chef is fond of doing additions/sums in his free time. Today, he has an array A consisting of N positive integers and he will compute prefix and suffix sums over this array.
 He first defines two functions prefixSum(i) and suffixSum(i) for the array as follows. The function prefixSum(i) denotes the sum of first i numbers of the array. Similarly, he defines suffixSum(i) as the sum of last N - i + 1 numbers of the array.</description><content>&lt;p>&lt;span style="color: red;">&lt;strong>&lt;span
@@ -5086,7 +5086,7 @@ return 0;
 &lt;p>&lt;span style="color: red;">&lt;strong>&lt;span
 style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">&lt;/span>&lt;/strong>&lt;/span>&lt;/p>
 &lt;p>&lt;span style="color: red;">&lt;strong>&lt;span
-style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;"> &lt;/span>&lt;/strong>&lt;/span>&lt;/p></content></item><item><title>CodeChef SEPT17 Problem: MINPERM</title><link>https://krishankant.in/posts/2017-09-03-codechef-sept17-problem-minperm/</link><pubDate>Sun, 03 Sep 2017 23:01:00 +0530</pubDate><guid>https://krishankant.in/posts/2017-09-03-codechef-sept17-problem-minperm/</guid><description>Problem:Minimum Good Permutation
+style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;"> &lt;/span>&lt;/strong>&lt;/span>&lt;/p></content></item><item><title>CodeChef SEPT17 Problem: MINPERM</title><link>/posts/2017-09-03-codechef-sept17-problem-minperm/</link><pubDate>Sun, 03 Sep 2017 23:01:00 +0530</pubDate><guid>/posts/2017-09-03-codechef-sept17-problem-minperm/</guid><description>Problem:Minimum Good Permutation
 A permutation of length n is an array of size n consisting of n distinct integers in the range [1, n]. For example, (3, 2, 4, 1) is a permutation of length 4, but (3, 3, 1, 4) and (2, 3, 4, 5) are not, as (3, 3, 1, 4) contains duplicate elements, and (2, 3, 4, 5) contains elements not in range [1,4].
 A permutation p of length n is good if and only if for any 1 ≤ i ≤ n, pi ≠ i.</description><content>&lt;p>&lt;span style="color: red;">&lt;strong>&lt;span
 style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">Problem:Minimum
@@ -5220,7 +5220,7 @@ style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">** **&lt;/span>&
 &lt;span style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">**&lt;span
 style="color: red;"> &lt;/span>**&lt;/span>&lt;br>
 &lt;span style="color: red;">**&lt;span
-style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">&lt;/span>**&lt;/span>&lt;/p></content></item><item><title>CodeChef SEPT17 Problem: CHEFSUM</title><link>https://krishankant.in/posts/2017-09-03-codechef-sept17-problem-chefsum/</link><pubDate>Sun, 03 Sep 2017 22:52:00 +0530</pubDate><guid>https://krishankant.in/posts/2017-09-03-codechef-sept17-problem-chefsum/</guid><description>Problem: Little Chef and Sums
+style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">&lt;/span>**&lt;/span>&lt;/p></content></item><item><title>CodeChef SEPT17 Problem: CHEFSUM</title><link>/posts/2017-09-03-codechef-sept17-problem-chefsum/</link><pubDate>Sun, 03 Sep 2017 22:52:00 +0530</pubDate><guid>/posts/2017-09-03-codechef-sept17-problem-chefsum/</guid><description>Problem: Little Chef and Sums
 Our little chef is fond of doing additions/sums in his free time. Today, he has an array A consisting of N positive integers and he will compute prefix and suffix sums over this array.
 He first defines two functions prefixSum(i) and suffixSum(i) for the array as follows. The function prefixSum(i) denotes the sum of first i numbers of the array. Similarly, he defines suffixSum(i) as the sum of last N - i + 1 numbers of the array.</description><content>&lt;p>&lt;span style="color: red;">&lt;strong>&lt;span
 style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">Problem: Little
@@ -5320,7 +5320,7 @@ style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">** **&lt;/span>&
 &lt;span style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">**&lt;span
 style="color: red;"> &lt;/span>**&lt;/span>&lt;br>
 &lt;span style="color: red;">**&lt;span
-style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">&lt;/span>**&lt;/span>&lt;/p></content></item><item><title>CodeChef (AUG17 LunchTime) : Mathison and pangrams - MATPAN</title><link>https://krishankant.in/posts/2017-08-30-codechef-aug17-lunchtime-mathison-and-pangrams-matpan/</link><pubDate>Wed, 30 Aug 2017 21:10:00 +0530</pubDate><guid>https://krishankant.in/posts/2017-08-30-codechef-aug17-lunchtime-mathison-and-pangrams-matpan/</guid><description>Problem: Mathison and pangrams
+style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">&lt;/span>**&lt;/span>&lt;/p></content></item><item><title>CodeChef (AUG17 LunchTime) : Mathison and pangrams - MATPAN</title><link>/posts/2017-08-30-codechef-aug17-lunchtime-mathison-and-pangrams-matpan/</link><pubDate>Wed, 30 Aug 2017 21:10:00 +0530</pubDate><guid>/posts/2017-08-30-codechef-aug17-lunchtime-mathison-and-pangrams-matpan/</guid><description>Problem: Mathison and pangrams
 Mathison recently inherited an ancient papyrus that contained some text. Unfortunately, the text was not a pangram. Now, Mathison has a particular liking for holoalphabetic strings and the text bothers him. The good news is that Mathison can buy letters from the local store in order to turn his text into a pangram.
 However, each letter has a price and Mathison is not very rich. Can you help Mathison find the cheapest way to obtain a pangram?</description><content>&lt;p>&lt;span style="color: red;">&lt;strong>&lt;span
 style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">Problem: Mathison
@@ -5430,7 +5430,7 @@ return 0;
 }
 &lt;/code>&lt;/pre>
 &lt;p>&lt;strong>&lt;span style="color: red;">&lt;/strong>&lt;span
-style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;"> &lt;/span>**&lt;/span> **&lt;/p></content></item><item><title>HackerRank - 101 Hack 51 - Fair Cake Cutting</title><link>https://krishankant.in/posts/2017-08-08-hackerrank-101-hack-51-fair-cake-cutting/</link><pubDate>Tue, 08 Aug 2017 00:25:00 +0530</pubDate><guid>https://krishankant.in/posts/2017-08-08-hackerrank-101-hack-51-fair-cake-cutting/</guid><description>Problem: Fair Cake Cutting
+style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;"> &lt;/span>**&lt;/span> **&lt;/p></content></item><item><title>HackerRank - 101 Hack 51 - Fair Cake Cutting</title><link>/posts/2017-08-08-hackerrank-101-hack-51-fair-cake-cutting/</link><pubDate>Tue, 08 Aug 2017 00:25:00 +0530</pubDate><guid>/posts/2017-08-08-hackerrank-101-hack-51-fair-cake-cutting/</guid><description>Problem: Fair Cake Cutting
 Leha is a young man from Belarus. He loves cakes really much. In Leha&amp;rsquo;s country, cakes are always evenly divided between people.
 Leha wants to know how many people he should invite to his party if he has a cake whose size is equal to units and he wants each person to get exactly units of cake. Note that Leha doesn&amp;rsquo;t take a piece for himself; in other words, the cake is only divided among the people he invited to the party.</description><content>&lt;p>&lt;span style="color: red;">&lt;strong>&lt;span
 style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">Problem: Fair
@@ -5527,7 +5527,7 @@ style="display: inline-block; font-size: 100%;">&lt;img src="data:image/svg+xml;
 &lt;span id="MathJax-Element-8-Frame" class="MathJax_SVG"
 style="display: inline-block; font-size: 100%;">&lt;img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjIuMTc2ZXgiIHN0eWxlPSJ2ZXJ0aWNhbC1hbGlnbjogLTAuMzM4ZXg7IiB2aWV3Ym94PSIwIC03OTEuMyAyMjY0LjEgOTM2LjkiIHdpZHRoPSI1LjI1OGV4Ij48ZyBmaWxsPSJjdXJyZW50Q29sb3IiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjAiIHRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIC0xIDAgMCkiPjwvZz48L3N2Zz4=" alt="">&lt;/span>&lt;br>
 &lt;span id="MathJax-Element-8-Frame" class="MathJax_SVG"
-style="display: inline-block; font-size: 100%;">&lt;img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjIuMTc2ZXgiIHN0eWxlPSJ2ZXJ0aWNhbC1hbGlnbjogLTAuMzM4ZXg7IiB2aWV3Ym94PSIwIC03OTEuMyAyMjY0LjEgOTM2LjkiIHdpZHRoPSI1LjI1OGV4Ij48ZyBmaWxsPSJjdXJyZW50Q29sb3IiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjAiIHRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIC0xIDAgMCkiPjxwYXRoIGQ9Ik03MyA2NDdRNzMgNjU3IDc3IDY3MFQ4OSA2ODNROTAgNjgzIDE2MSA2ODhUMjM0IDY5NFEyNDYgNjk0IDI0NiA2ODVUMjEyIDU0MlEyMDQgNTA4IDE5NSA0NzJUMTgwIDQxOEwxNzYgMzk5UTE3NiAzOTYgMTgyIDQwMlEyMzEgNDQyIDI4MyA0NDJRMzQ1IDQ0MiAzODMgMzk2VDQyMiAyODBRNDIyIDE2OSAzNDMgNzlUMTczIC0xMVExMjMgLTExIDgyIDI3VDQwIDE1MFYxNTlRNDAgMTgwIDQ4IDIxN1Q5NyA0MTRRMTQ3IDYxMSAxNDcgNjIzVDEwOSA2MzdRMTA0IDYzNyAxMDEgNjM3SDk2UTg2IDYzNyA4MyA2MzdUNzYgNjQwVDczIDY0N1pNMzM2IDMyNVYzMzFRMzM2IDQwNSAyNzUgNDA1UTI1OCA0MDUgMjQwIDM5N1QyMDcgMzc2VDE4MSAzNTJUMTYzIDMzMEwxNTcgMzIyTDEzNiAyMzZRMTE0IDE1MCAxMTQgMTE0UTExNCA2NiAxMzggNDJRMTU0IDI2IDE3OCAyNlEyMTEgMjYgMjQ1IDU4UTI3MCA4MSAyODUgMTE0VDMxOCAyMTlRMzM2IDI5MSAzMzYgMzI1WiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzA3LDApIj48cGF0aCBkPSJNNTYgMzQ3UTU2IDM2MCA3MCAzNjdINzA3UTcyMiAzNTkgNzIyIDM0N1E3MjIgMzM2IDcwOCAzMjhMMzkwIDMyN0g3MlE1NiAzMzIgNTYgMzQ3Wk01NiAxNTNRNTYgMTY4IDcyIDE3M0g3MDhRNzIyIDE2MyA3MjIgMTUzUTcyMiAxNDAgNzA3IDEzM0g3MFE1NiAxNDAgNTYgMTUzWiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE3NjMsMCkiPjxwYXRoIGQ9Ik0xMDkgNDI5UTgyIDQyOSA2NiA0NDdUNTAgNDkxUTUwIDU2MiAxMDMgNjE0VDIzNSA2NjZRMzI2IDY2NiAzODcgNjEwVDQ0OSA0NjVRNDQ5IDQyMiA0MjkgMzgzVDM4MSAzMTVUMzAxIDI0MVEyNjUgMjEwIDIwMSAxNDlMMTQyIDkzTDIxOCA5MlEzNzUgOTIgMzg1IDk3UTM5MiA5OSA0MDkgMTg2VjE4OUg0NDlWMTg2UTQ0OCAxODMgNDM2IDk1VDQyMSAzVjBINTBWMTlWMzFRNTAgMzggNTYgNDZUODYgODFRMTE1IDExMyAxMzYgMTM3UTE0NSAxNDcgMTcwIDE3NFQyMDQgMjExVDIzMyAyNDRUMjYxIDI3OFQyODQgMzA4VDMwNSAzNDBUMzIwIDM2OVQzMzMgNDAxVDM0MCA0MzFUMzQzIDQ2NFEzNDMgNTI3IDMwOSA1NzNUMjEyIDYxOVExNzkgNjE5IDE1NCA2MDJUMTE5IDU2OVQxMDkgNTUwUTEwOSA1NDkgMTE0IDU0OVExMzIgNTQ5IDE1MSA1MzVUMTcwIDQ4OVExNzAgNDY0IDE1NCA0NDdUMTA5IDQyOVoiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPjwvZz48L2c+PC9zdmc+" alt="">&lt;/span>&lt;/p></content></item><item><title>TCS Code Vita 6 ( problem-B )</title><link>https://krishankant.in/posts/2017-07-31-tcs-code-vita-6-problem-b/</link><pubDate>Mon, 31 Jul 2017 21:03:00 +0530</pubDate><guid>https://krishankant.in/posts/2017-07-31-tcs-code-vita-6-problem-b/</guid><description>Problem : Concatenating primes
+style="display: inline-block; font-size: 100%;">&lt;img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjIuMTc2ZXgiIHN0eWxlPSJ2ZXJ0aWNhbC1hbGlnbjogLTAuMzM4ZXg7IiB2aWV3Ym94PSIwIC03OTEuMyAyMjY0LjEgOTM2LjkiIHdpZHRoPSI1LjI1OGV4Ij48ZyBmaWxsPSJjdXJyZW50Q29sb3IiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjAiIHRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIC0xIDAgMCkiPjxwYXRoIGQ9Ik03MyA2NDdRNzMgNjU3IDc3IDY3MFQ4OSA2ODNROTAgNjgzIDE2MSA2ODhUMjM0IDY5NFEyNDYgNjk0IDI0NiA2ODVUMjEyIDU0MlEyMDQgNTA4IDE5NSA0NzJUMTgwIDQxOEwxNzYgMzk5UTE3NiAzOTYgMTgyIDQwMlEyMzEgNDQyIDI4MyA0NDJRMzQ1IDQ0MiAzODMgMzk2VDQyMiAyODBRNDIyIDE2OSAzNDMgNzlUMTczIC0xMVExMjMgLTExIDgyIDI3VDQwIDE1MFYxNTlRNDAgMTgwIDQ4IDIxN1Q5NyA0MTRRMTQ3IDYxMSAxNDcgNjIzVDEwOSA2MzdRMTA0IDYzNyAxMDEgNjM3SDk2UTg2IDYzNyA4MyA2MzdUNzYgNjQwVDczIDY0N1pNMzM2IDMyNVYzMzFRMzM2IDQwNSAyNzUgNDA1UTI1OCA0MDUgMjQwIDM5N1QyMDcgMzc2VDE4MSAzNTJUMTYzIDMzMEwxNTcgMzIyTDEzNiAyMzZRMTE0IDE1MCAxMTQgMTE0UTExNCA2NiAxMzggNDJRMTU0IDI2IDE3OCAyNlEyMTEgMjYgMjQ1IDU4UTI3MCA4MSAyODUgMTE0VDMxOCAyMTlRMzM2IDI5MSAzMzYgMzI1WiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzA3LDApIj48cGF0aCBkPSJNNTYgMzQ3UTU2IDM2MCA3MCAzNjdINzA3UTcyMiAzNTkgNzIyIDM0N1E3MjIgMzM2IDcwOCAzMjhMMzkwIDMyN0g3MlE1NiAzMzIgNTYgMzQ3Wk01NiAxNTNRNTYgMTY4IDcyIDE3M0g3MDhRNzIyIDE2MyA3MjIgMTUzUTcyMiAxNDAgNzA3IDEzM0g3MFE1NiAxNDAgNTYgMTUzWiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE3NjMsMCkiPjxwYXRoIGQ9Ik0xMDkgNDI5UTgyIDQyOSA2NiA0NDdUNTAgNDkxUTUwIDU2MiAxMDMgNjE0VDIzNSA2NjZRMzI2IDY2NiAzODcgNjEwVDQ0OSA0NjVRNDQ5IDQyMiA0MjkgMzgzVDM4MSAzMTVUMzAxIDI0MVEyNjUgMjEwIDIwMSAxNDlMMTQyIDkzTDIxOCA5MlEzNzUgOTIgMzg1IDk3UTM5MiA5OSA0MDkgMTg2VjE4OUg0NDlWMTg2UTQ0OCAxODMgNDM2IDk1VDQyMSAzVjBINTBWMTlWMzFRNTAgMzggNTYgNDZUODYgODFRMTE1IDExMyAxMzYgMTM3UTE0NSAxNDcgMTcwIDE3NFQyMDQgMjExVDIzMyAyNDRUMjYxIDI3OFQyODQgMzA4VDMwNSAzNDBUMzIwIDM2OVQzMzMgNDAxVDM0MCA0MzFUMzQzIDQ2NFEzNDMgNTI3IDMwOSA1NzNUMjEyIDYxOVExNzkgNjE5IDE1NCA2MDJUMTE5IDU2OVQxMDkgNTUwUTEwOSA1NDkgMTE0IDU0OVExMzIgNTQ5IDE1MSA1MzVUMTcwIDQ4OVExNzAgNDY0IDE1NCA0NDdUMTA5IDQyOVoiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPjwvZz48L2c+PC9zdmc+" alt="">&lt;/span>&lt;/p></content></item><item><title>TCS Code Vita 6 ( problem-B )</title><link>/posts/2017-07-31-tcs-code-vita-6-problem-b/</link><pubDate>Mon, 31 Jul 2017 21:03:00 +0530</pubDate><guid>/posts/2017-07-31-tcs-code-vita-6-problem-b/</guid><description>Problem : Concatenating primes
 If you like numbers, you may have been fascinated by prime numbers. Sometimes we obtain by concatenating two primes. For example, concatenating 2 and 3, we obtain the prime 23. The aim is to find all such distinct &amp;ldquo;concatenated primes&amp;rdquo; that could be obtained by concatenating primes ≤ a given integer N.
 **
 Input Format:**
@@ -5626,7 +5626,7 @@ else if (N &amp;lt;= 2)
 std::cout &amp;lt;&amp;lt; 0;
 return 0;
 }
-&lt;/code>&lt;/pre></content></item><item><title>Codechef Probem : NITIKA</title><link>https://krishankant.in/posts/2017-07-10-codechef-probem-nitika/</link><pubDate>Mon, 10 Jul 2017 12:24:00 +0530</pubDate><guid>https://krishankant.in/posts/2017-07-10-codechef-probem-nitika/</guid><description>Problem : Link: ( https://www.codechef.com/JULY17/problems/NITIKA )
+&lt;/code>&lt;/pre></content></item><item><title>Codechef Probem : NITIKA</title><link>/posts/2017-07-10-codechef-probem-nitika/</link><pubDate>Mon, 10 Jul 2017 12:24:00 +0530</pubDate><guid>/posts/2017-07-10-codechef-probem-nitika/</guid><description>Problem : Link: ( https://www.codechef.com/JULY17/problems/NITIKA )
 Nitika was once reading a history book and wanted to analyze it. So she asked her brother to create a list of names of the various famous personalities in the book. Her brother gave Nitika the list. Nitika was furious when she saw the list. The names of the people were not properly formatted. She doesn&amp;rsquo;t like this and would like to properly format it.</description><content>&lt;p>&lt;span style="color: red;">&lt;span
 style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">&lt;strong>Problem
 :&lt;/strong>&lt;/span>&lt;/span> Link: (
@@ -5774,7 +5774,7 @@ cout &amp;lt;&amp;lt; s &amp;lt;&amp;lt; endl;
 }
 return 0;
 }
-&lt;/code>&lt;/pre></content></item><item><title>HackerRank Problem : Min Max Sum ( easy )</title><link>https://krishankant.in/posts/2017-07-06-hackerrank-problem-min-max-sum-easy/</link><pubDate>Thu, 06 Jul 2017 23:02:00 +0530</pubDate><guid>https://krishankant.in/posts/2017-07-06-hackerrank-problem-min-max-sum-easy/</guid><description>Problem : ( Link : Click here to visit this HackerRank problem page.)
+&lt;/code>&lt;/pre></content></item><item><title>HackerRank Problem : Min Max Sum ( easy )</title><link>/posts/2017-07-06-hackerrank-problem-min-max-sum-easy/</link><pubDate>Thu, 06 Jul 2017 23:02:00 +0530</pubDate><guid>/posts/2017-07-06-hackerrank-problem-min-max-sum-easy/</guid><description>Problem : ( Link : Click here to visit this HackerRank problem page.)
 Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.
 Input Format
 A single line of five space-separated integers.
@@ -5948,7 +5948,7 @@ style="color: blue;">i&lt;/span>++) {&lt;br>
     }&lt;br>
     cout &amp;lt;&amp;lt; sum;&lt;/p>
 &lt;p>    &lt;span style="color: #9933ff;">return&lt;/span> 0;&lt;br>
-}&lt;/span>&lt;/p></content></item><item><title>HackerRank Problem : Reverse and capitalise first alphabet of each word.</title><link>https://krishankant.in/posts/2017-07-06-hackerrank-problem-reverse-and-capitalise-first-alphabet-of-each-word/</link><pubDate>Thu, 06 Jul 2017 22:36:00 +0530</pubDate><guid>https://krishankant.in/posts/2017-07-06-hackerrank-problem-reverse-and-capitalise-first-alphabet-of-each-word/</guid><description>* Problem : (Link : Click here to visit this problem on HackerRank. )
+}&lt;/span>&lt;/p></content></item><item><title>HackerRank Problem : Reverse and capitalise first alphabet of each word.</title><link>/posts/2017-07-06-hackerrank-problem-reverse-and-capitalise-first-alphabet-of-each-word/</link><pubDate>Thu, 06 Jul 2017 22:36:00 +0530</pubDate><guid>/posts/2017-07-06-hackerrank-problem-reverse-and-capitalise-first-alphabet-of-each-word/</guid><description>* Problem : (Link : Click here to visit this problem on HackerRank. )
 *
 Reverse the words in a string and capitalize the first letter of each reversed word, preserving the capitalization in the original stri. For eg: &amp;ldquo;Hello World&amp;rdquo; would be transformed to &amp;ldquo;OlleH DlroW&amp;rdquo;.
 Input :
@@ -6098,9 +6098,9 @@ style="color: #9933ff;">if&lt;/span> (line[i] == ' ' || line[i] == &amp;
 &lt;p>        cout &amp;lt;&amp;lt; line &amp;lt;&amp;lt; endl;&lt;br>
     }&lt;br>
     &lt;span style="color: #9933ff;">return&lt;/span> 0;&lt;br>
-}&lt;/span>&lt;/p></content></item><item><title>My Github repository</title><link>https://krishankant.in/posts/2017-06-12-my-github-repository/</link><pubDate>Mon, 12 Jun 2017 03:05:00 +0530</pubDate><guid>https://krishankant.in/posts/2017-06-12-my-github-repository/</guid><description>Check out my github account for more programs :
+}&lt;/span>&lt;/p></content></item><item><title>My Github repository</title><link>/posts/2017-06-12-my-github-repository/</link><pubDate>Mon, 12 Jun 2017 03:05:00 +0530</pubDate><guid>/posts/2017-06-12-my-github-repository/</guid><description>Check out my github account for more programs :
 https://github.com/krishankantray/</description><content>&lt;p>Check out my github account for more programs :&lt;/p>
-&lt;p>&lt;a href="https://github.com/krishankantray/">https://github.com/krishankantray/&lt;/a>&lt;/p></content></item><item><title> A Simple C program to convert DECIMAL to BINARY</title><link>https://krishankant.in/posts/2017-01-23-a-simple-c-program-to-convert-decimal-to-binary/</link><pubDate>Mon, 23 Jan 2017 20:21:00 +0530</pubDate><guid>https://krishankant.in/posts/2017-01-23-a-simple-c-program-to-convert-decimal-to-binary/</guid><description>A Simple C program to convert DECIMAL to BINARY
+&lt;p>&lt;a href="https://github.com/krishankantray/">https://github.com/krishankantray/&lt;/a>&lt;/p></content></item><item><title> A Simple C program to convert DECIMAL to BINARY</title><link>/posts/2017-01-23-a-simple-c-program-to-convert-decimal-to-binary/</link><pubDate>Mon, 23 Jan 2017 20:21:00 +0530</pubDate><guid>/posts/2017-01-23-a-simple-c-program-to-convert-decimal-to-binary/</guid><description>A Simple C program to convert DECIMAL to BINARY
 1#include&amp;lt;iostream&amp;gt;
 2#include&amp;lt;stdio.h&amp;gt;
 3using namespace std;
@@ -6390,7 +6390,7 @@ style="color: #0070c0; font-family: &amp;quot;berlin sans fb demi&amp;quot; , &a
 &lt;/span>&lt;/p>
 &lt;p>&lt;a href="../images/2017-01-23-a-simple-c-program-to-convert-decimal-to-binary-Capture.JPG">&lt;img src="../images/thumbnails/2017-01-23-a-simple-c-program-to-convert-decimal-to-binary-Capture.JPG" alt="">&lt;/a>&lt;/p>
 &lt;p>&lt;span style="mso-no-proof: yes;">&lt;/span>&lt;span
-style="color: red; font-family: &amp;quot;courier new&amp;quot;; font-size: 8.0pt;">&lt;/span>&lt;/p></content></item><item><title>Make USB flash drive a bootable media via Command Prompt</title><link>https://krishankant.in/posts/2017-01-12-make-usb-flash-drive-a-bootable-media-via-command-prompt/</link><pubDate>Thu, 12 Jan 2017 20:01:00 +0530</pubDate><guid>https://krishankant.in/posts/2017-01-12-make-usb-flash-drive-a-bootable-media-via-command-prompt/</guid><description>Follow the following steps :- Step I : Open command prompt as administrator
+style="color: red; font-family: &amp;quot;courier new&amp;quot;; font-size: 8.0pt;">&lt;/span>&lt;/p></content></item><item><title>Make USB flash drive a bootable media via Command Prompt</title><link>/posts/2017-01-12-make-usb-flash-drive-a-bootable-media-via-command-prompt/</link><pubDate>Thu, 12 Jan 2017 20:01:00 +0530</pubDate><guid>/posts/2017-01-12-make-usb-flash-drive-a-bootable-media-via-command-prompt/</guid><description>Follow the following steps :- Step I : Open command prompt as administrator
 Step II: Type &amp;ldquo;diskpart&amp;rdquo; and hit enter
 Step III: Type &amp;ldquo;list disk&amp;rdquo; and then press enter.
 Step III: Check the disk number of you USB drive. ( in example it is 1 )
@@ -6422,7 +6422,7 @@ drive.&lt;/p>
 &lt;p>Step XII: Restart your computer and set your boot menu to boot via
 USB.&lt;br>
 Step XIII: Thats all, you are done, your can install windows OS to your
-computer.&lt;/p></content></item><item><title>Bypass Windows User Login</title><link>https://krishankant.in/posts/2016-01-25-bypass-windows-user-login/</link><pubDate>Mon, 25 Jan 2016 19:06:00 +0530</pubDate><guid>https://krishankant.in/posts/2016-01-25-bypass-windows-user-login/</guid><description>Bypass Microsoft Windows User Login  Step I :Get any Linux Distribution live bootable disk (generally all Linux Distros comes with live boot option). 
+computer.&lt;/p></content></item><item><title>Bypass Windows User Login</title><link>/posts/2016-01-25-bypass-windows-user-login/</link><pubDate>Mon, 25 Jan 2016 19:06:00 +0530</pubDate><guid>/posts/2016-01-25-bypass-windows-user-login/</guid><description>Bypass Microsoft Windows User Login  Step I :Get any Linux Distribution live bootable disk (generally all Linux Distros comes with live boot option). 
 If you don&amp;rsquo;t have bootable disk download it from the respective website. Although Ubuntu is most popular Linux distribution. You can download Ubuntu from :http://www.ubuntu.com/download/desktop( select the latest version according to your cpu artitecture viz. 32 bit or 64 bit). After download, you can burn it DVD or a USB flash drive).</description><content>&lt;span style="background-color: #f3f3f3;">
 &lt;/span>
 &lt;h2 id="span-stylebackground-color-f1c232span-stylecolor-3d85c6bypass-microsoft-windows-user-loginspanspan-stylecolor-20124dspanspan-stylecolor-20124dspanspan">&lt;span style="background-color: #f1c232;">&lt;span style="color: #3d85c6;">Bypass Microsoft Windows User Login  &lt;/span>&lt;span style="color: #20124d;"> &lt;/span>&lt;span style="color: #20124d;"> &lt;/span>&lt;/span>&lt;/h2>
