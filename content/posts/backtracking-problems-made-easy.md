@@ -13,7 +13,7 @@ title = "Backtracking problems made easy "
 Backtracking problems seems to be one of the tricky part while studying DSA. But once we figure out a pattern in it, then its even easier than array problems.
 
 A general code structure of a backtracking problem solution looks like :
-
+```cpp
     void Backtrack(int start, vector<int>&arr, int &ans)
     {
         //Base case 
@@ -27,7 +27,7 @@ A general code structure of a backtracking problem solution looks like :
             //backtrack by removing current element 
         }
     }
-
+```
 To avoid duplicates in backtracking, we generally sort the array/list, then keep track of the duplicates by `arr[i] == arr[i-1]`.  
 
 Here are some good backtracking problems which makes our understanding about the topic more firm : 
@@ -48,4 +48,4 @@ Here are some good backtracking problems which makes our understanding about the
 14.  [Word Break](https://leetcode.com/problems/word-break)
 15.  [Combination Sum III](https://leetcode.com/problems/combination-sum-iii)
 16.  [Target Sum](https://leetcode.com/problems/target-sum)
-17.  [Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation)  
+17.  [Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation)
