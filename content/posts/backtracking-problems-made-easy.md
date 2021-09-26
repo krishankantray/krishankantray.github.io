@@ -4,7 +4,6 @@ authorTwitter = ""
 cover = ""
 date = 2021-09-26T21:15:56Z
 description = ""
-draft = true
 keywords = []
 showfullcontent = false
 tags = ["DSA", "backtracking"]
