@@ -2,18 +2,20 @@
 A general code structure of a backtracking problem solution looks like :
 void Backtrack(int start, vector&amp;lt;int&amp;gt;&amp;amp;arr, int &amp;amp;ans) { //Base case for(int i=start; i&amp;lt;arr.size(); i++) { //include the current element at this position if possible in the ans Backtrack(start+1) // here take care whethere to pass start or start+1 dending on the usecase //backtrack by removing current element } } To avoid duplicates in backtracking, we generally sort the array/list, then keep track of the duplicates by arr[i] == arr[i-1].</description><content>&lt;p>Backtracking problems seems to be one of the tricky part while studying DSA. But once we figure out a pattern in it, then its even easier than array problems.&lt;/p>
 &lt;p>A general code structure of a backtracking problem solution looks like :&lt;/p>
-&lt;pre>&lt;code>void Backtrack(int start, vector&amp;lt;int&amp;gt;&amp;amp;arr, int &amp;amp;ans)
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-cpp" data-lang="cpp"> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">Backtrack&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> start, vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&amp;amp;&lt;/span>arr, &lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#f92672">&amp;amp;&lt;/span>ans)
 {
-//Base case
-for(int i=start; i&amp;lt;arr.size(); i++)
+&lt;span style="color:#75715e">//Base case
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>
+&lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i&lt;span style="color:#f92672">=&lt;/span>start; i&lt;span style="color:#f92672">&amp;lt;&lt;/span>arr.size(); i&lt;span style="color:#f92672">++&lt;/span>)
 {
-//include the current element at this position if possible in the ans
-Backtrack(start+1) // here take care whethere to pass start or start+1 dending on the usecase
-//backtrack by removing current element
+&lt;span style="color:#75715e">//include the current element at this position if possible in the ans
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>
+Backtrack(start&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>) &lt;span style="color:#75715e">// here take care whethere to pass start or start+1 dending on the usecase
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>
+&lt;span style="color:#75715e">//backtrack by removing current element
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> }
 }
-}
-&lt;/code>&lt;/pre>
-&lt;p>To avoid duplicates in backtracking, we generally sort the array/list, then keep track of the duplicates by &lt;code>arr[i] == arr[i-1]&lt;/code>.&lt;/p>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>To avoid duplicates in backtracking, we generally sort the array/list, then keep track of the duplicates by &lt;code>arr[i] == arr[i-1]&lt;/code>.&lt;/p>
 &lt;p>Here are some good backtracking problems which makes our understanding about the topic more firm :&lt;/p>
 &lt;ol>
 &lt;li>&lt;a href="https://leetcode.com/problems/letter-combinations-of-a-phone-number">Letter Combinations of a Phone Number&lt;/a>&lt;/li>
