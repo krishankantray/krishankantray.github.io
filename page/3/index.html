@@ -57,6 +57,55 @@ Krishankant
 <div class=posts>
 <div class="post on-list">
 <h1 class=post-title>
+<a href=../../posts/2017-01-23-a-simple-c-program-to-convert-decimal-to-binary/>A Simple C program to convert DECIMAL to BINARY</a>
+</h1>
+<div class=post-meta>
+<span class=post-date>
+2017-01-23
+</span>
+<span class=post-author>:: Krishankant Ray</span>
+</div>
+<div class=post-content>
+A Simple C program to convert DECIMAL to BINARY
+1#include&lt;iostream>
+2#include&lt;stdio.h>
+3using namespace std;
+4int main()
+5{
+6int n, arr[100] ;
+7int i=0,j;
+8cout&lt;&lt;&ldquo;Enter the decimal number &mdash;>&rdquo; ;
+9cin>>n;
+10// using while loop to store in arr[]
+11while( (n/2) >=1)
+12{
+13arr[i++]= (n%2);
+14n=n/2;
+15}
+16if(n==3)
+17{
+18arr[i++]=1;
+19arr[i]=1;
+20}
+21else if(n==2)
+22arr[i]=0;
+23else if(n==1)
+24arr[i]=1;
+25
+26cout&lt;&lt;endl ;
+27for(j=i;j>=0;j&ndash;)
+28cout&lt;&lt;arr[j];
+29
+30return 0;
+31}
+OUTPUT
+</div>
+<div>
+<a class="read-more button" href=../../posts/2017-01-23-a-simple-c-program-to-convert-decimal-to-binary/>Read more →</a>
+</div>
+</div>
+<div class="post on-list">
+<h1 class=post-title>
 <a href=../../posts/2017-01-12-make-usb-flash-drive-a-bootable-media-via-command-prompt/>Make USB flash drive a bootable media via Command Prompt</a>
 </h1>
 <div class=post-meta>

@@ -57,6 +57,29 @@ Krishankant
 <div class=posts>
 <div class="post on-list">
 <h1 class=post-title>
+<a href=./posts/backtracking-problems-made-easy/>Backtracking problems made easy</a>
+</h1>
+<div class=post-meta>
+<span class=post-date>
+2021-09-26
+</span>
+<span class=post-author>:: Krishankant</span>
+</div>
+<span class=post-tags>
+#<a href=./tags/dsa/>DSA</a>&nbsp;
+#<a href=./tags/backtracking/>backtracking</a>&nbsp;
+</span>
+<div class=post-content>
+Backtracking problems seems to be one of the tricky part while studying DSA. But once we figure out a pattern in it, then its even easier than array problems.
+A general code structure of a backtracking problem solution looks like :
+void Backtrack(int start, vector&lt;int>&arr, int &ans) { //Base case for(int i=start; i&lt;arr.size(); i++) { //include the current element at this position if possible in the ans Backtrack(start+1) // here take care whethere to pass start or start+1 dending on the usecase //backtrack by removing current element } } To avoid duplicates in backtracking, we generally sort the array/list, then keep track of the duplicates by arr[i] == arr[i-1].
+</div>
+<div>
+<a class="read-more button" href=./posts/backtracking-problems-made-easy/>Read more →</a>
+</div>
+</div>
+<div class="post on-list">
+<h1 class=post-title>
 <a href=./posts/system-design-template/>System Design Fundamentals</a>
 </h1>
 <div class=post-meta>
@@ -344,23 +367,6 @@ Bhuvan got a perfect score in the game with Chef Tobby. However, Chef Tobby has 
 </div>
 <div>
 <a class="read-more button" href=./posts/2017-09-18-codechef-sept17-cookoff-subsequence-equality-problem-code-likecs01/>Read more →</a>
-</div>
-</div>
-<div class="post on-list">
-<h1 class=post-title>
-<a href=./posts/2017-09-14-codechef-courses-in-an-university-problem-code-unicours/>Codechef - Courses in an university - Problem Code: UNICOURS</a>
-</h1>
-<div class=post-meta>
-<span class=post-date>
-2017-09-14
-</span>
-<span class=post-author>:: Krishankant Ray</span>
-</div>
-<div class=post-content>
-Problem There are n courses in a university being offered. These courses are numbered from 1 to n in the increasing order of their difficulty. For each course, you can have some courses as prerequisites. The prerequisite courses for a course should be of lower difficulty than it. You are given an array a of size n, where ai denotes that there should be at least ai prerequisite courses for i-th course.
-</div>
-<div>
-<a class="read-more button" href=./posts/2017-09-14-codechef-courses-in-an-university-problem-code-unicours/>Read more →</a>
 </div>
 </div>
 <div class=pagination>
