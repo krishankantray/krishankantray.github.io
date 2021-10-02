@@ -8,7 +8,33 @@ description = "This is a template "
 keywords = []
 showfullcontent = false
 tags = ["system design"]
-title = "System Design Fundamentals"
+title = "LLD or OOD Fundamentals"
 
 +++
-# work in progress.....
+### Pre-requisites : 
+
+🔵 OOPs Concepts
+
+🔵 Design Patterns ( [resource](https://refactoring.guru/design-patterns) )
+
+🔵 Multi threading 
+
+🔵 Locking mechanism
+
+### Some practice questions on LLD problems : 
+
+Easy : 
+
+* Ride Sharing app ( Uber, Ola etc...) 
+* Tic tac toe game
+* Snake and ladder game
+
+Medium : 
+
+* Parking lot design
+* Library Management System
+*  Splitwise design
+
+Hard : _( multi-threading + locking )_
+
+* Coffee Machine Design
