@@ -11,30 +11,32 @@ tags = ["system design"]
 title = "LLD or OOD Fundamentals"
 
 +++
-### Pre-requisites : 
+### Pre-requisites :
 
 🔵 OOPs Concepts
 
 🔵 Design Patterns ( [resource](https://refactoring.guru/design-patterns) )
 
-🔵 Multi threading 
+🔵 Multi threading
 
 🔵 Locking mechanism
 
-### Some practice questions on LLD problems : 
+### Some practice questions on LLD problems :
 
-Easy : 
+Easy :
 
-* Ride Sharing app ( Uber, Ola etc...) 
+* Ride Sharing app ( Uber, Ola etc...)
 * Tic tac toe game
 * Snake and ladder game
 
-Medium : 
+Medium :
 
 * Parking lot design
 * Library Management System
-*  Splitwise design
+* Splitwise design
 
 Hard : _( multi-threading + locking )_
 
 * Coffee Machine Design
+
+( .....to be continued )
