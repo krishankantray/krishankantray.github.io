@@ -2,9 +2,9 @@
 author = "Krishankant"
 authorTwitter = ""
 body = "....in progress"
-cover = ""
+cover = "/uploads/lld-thumnail.png"
 date = 2021-09-24T13:50:00Z
-description = "This is a template "
+description = "a list of resources for practice Low Level Design"
 keywords = []
 showfullcontent = false
 tags = ["system design"]
