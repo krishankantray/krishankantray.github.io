@@ -1,1 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>system design on Krishankant</title><link>/tags/system-design/</link><description>Recent content in system design on Krishankant</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 24 Sep 2021 13:50:00 +0000</lastBuildDate><atom:link href="/tags/system-design/index.xml" rel="self" type="application/rss+xml"/><item><title>System Design Fundamentals</title><link>/posts/system-design-template/</link><pubDate>Fri, 24 Sep 2021 13:50:00 +0000</pubDate><guid>/posts/system-design-template/</guid><description>work in progress&amp;hellip;..</description><content>&lt;h1 id="work-in-progress">work in progress&amp;hellip;..&lt;/h1></content></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>system design on Krishankant</title><link>/tags/system-design/</link><description>Recent content in system design on Krishankant</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 24 Sep 2021 13:50:00 +0000</lastBuildDate><atom:link href="/tags/system-design/index.xml" rel="self" type="application/rss+xml"/><item><title>LLD or OOD Fundamentals</title><link>/posts/system-design-template/</link><pubDate>Fri, 24 Sep 2021 13:50:00 +0000</pubDate><guid>/posts/system-design-template/</guid><description>Pre-requisites : 🔵 OOPs Concepts
+🔵 Design Patterns ( resource )
+🔵 Multi threading
+🔵 Locking mechanism
+Some practice questions on LLD problems : Easy :
+Ride Sharing app ( Uber, Ola etc&amp;hellip;) Tic tac toe game Snake and ladder game Medium :
+Parking lot design Library Management System Splitwise design Hard : ( multi-threading + locking )
+Coffee Machine Design</description><content>&lt;h3 id="pre-requisites-">Pre-requisites :&lt;/h3>
+&lt;p>🔵 OOPs Concepts&lt;/p>
+&lt;p>🔵 Design Patterns ( &lt;a href="https://refactoring.guru/design-patterns">resource&lt;/a> )&lt;/p>
+&lt;p>🔵 Multi threading&lt;/p>
+&lt;p>🔵 Locking mechanism&lt;/p>
+&lt;h3 id="some-practice-questions-on-lld-problems-">Some practice questions on LLD problems :&lt;/h3>
+&lt;p>Easy :&lt;/p>
+&lt;ul>
+&lt;li>Ride Sharing app ( Uber, Ola etc&amp;hellip;)&lt;/li>
+&lt;li>Tic tac toe game&lt;/li>
+&lt;li>Snake and ladder game&lt;/li>
+&lt;/ul>
+&lt;p>Medium :&lt;/p>
+&lt;ul>
+&lt;li>Parking lot design&lt;/li>
+&lt;li>Library Management System&lt;/li>
+&lt;li>Splitwise design&lt;/li>
+&lt;/ul>
+&lt;p>Hard : &lt;em>( multi-threading + locking )&lt;/em>&lt;/p>
+&lt;ul>
+&lt;li>Coffee Machine Design&lt;/li>
+&lt;/ul></content></item></channel></rss>

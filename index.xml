@@ -35,7 +35,35 @@ Backtrack(start&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#
 &lt;li>&lt;a href="https://leetcode.com/problems/combination-sum-iii">Combination Sum III&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://leetcode.com/problems/target-sum">Target Sum&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://leetcode.com/problems/letter-case-permutation">Letter Case Permutation&lt;/a>&lt;/li>
-&lt;/ol></content></item><item><title>System Design Fundamentals</title><link>/posts/system-design-template/</link><pubDate>Fri, 24 Sep 2021 13:50:00 +0000</pubDate><guid>/posts/system-design-template/</guid><description>work in progress&amp;hellip;..</description><content>&lt;h1 id="work-in-progress">work in progress&amp;hellip;..&lt;/h1></content></item><item><title>Javascript tricky interview questions</title><link>/posts/javascript-tricky-interview-questions/</link><pubDate>Fri, 24 Sep 2021 13:23:41 +0000</pubDate><guid>/posts/javascript-tricky-interview-questions/</guid><description>The original author is : Lydiya
+&lt;/ol></content></item><item><title>LLD or OOD Fundamentals</title><link>/posts/system-design-template/</link><pubDate>Fri, 24 Sep 2021 13:50:00 +0000</pubDate><guid>/posts/system-design-template/</guid><description>Pre-requisites : 🔵 OOPs Concepts
+🔵 Design Patterns ( resource )
+🔵 Multi threading
+🔵 Locking mechanism
+Some practice questions on LLD problems : Easy :
+Ride Sharing app ( Uber, Ola etc&amp;hellip;) Tic tac toe game Snake and ladder game Medium :
+Parking lot design Library Management System Splitwise design Hard : ( multi-threading + locking )
+Coffee Machine Design</description><content>&lt;h3 id="pre-requisites-">Pre-requisites :&lt;/h3>
+&lt;p>🔵 OOPs Concepts&lt;/p>
+&lt;p>🔵 Design Patterns ( &lt;a href="https://refactoring.guru/design-patterns">resource&lt;/a> )&lt;/p>
+&lt;p>🔵 Multi threading&lt;/p>
+&lt;p>🔵 Locking mechanism&lt;/p>
+&lt;h3 id="some-practice-questions-on-lld-problems-">Some practice questions on LLD problems :&lt;/h3>
+&lt;p>Easy :&lt;/p>
+&lt;ul>
+&lt;li>Ride Sharing app ( Uber, Ola etc&amp;hellip;)&lt;/li>
+&lt;li>Tic tac toe game&lt;/li>
+&lt;li>Snake and ladder game&lt;/li>
+&lt;/ul>
+&lt;p>Medium :&lt;/p>
+&lt;ul>
+&lt;li>Parking lot design&lt;/li>
+&lt;li>Library Management System&lt;/li>
+&lt;li>Splitwise design&lt;/li>
+&lt;/ul>
+&lt;p>Hard : &lt;em>( multi-threading + locking )&lt;/em>&lt;/p>
+&lt;ul>
+&lt;li>Coffee Machine Design&lt;/li>
+&lt;/ul></content></item><item><title>Javascript tricky interview questions</title><link>/posts/javascript-tricky-interview-questions/</link><pubDate>Fri, 24 Sep 2021 13:23:41 +0000</pubDate><guid>/posts/javascript-tricky-interview-questions/</guid><description>The original author is : Lydiya
 Below are the list of questions : 1. What&amp;rsquo;s the output? function sayHi() { console.log(name); console.log(age); var name = &amp;#39;Lydia&amp;#39;; let age = 21; } sayHi(); A: Lydia and undefined B: Lydia and ReferenceError C: ReferenceError and 21 D: undefined and ReferenceError Answer Answer: D Within the function, we first declare the name variable with the var keyword. This means that the variable gets hoisted (memory space is set up during the creation phase) with the default value of undefined, until we actually get to the line where we define the variable.</description><content>&lt;p>The original author is : &lt;a href="https://github.com/lydiahallie/javascript-questions/blob/master/README.md">Lydiya&lt;/a>&lt;/p>
 &lt;h3 id="below-are-the-list-of-questions-">Below are the list of questions :&lt;/h3>
 &lt;h6 id="1-whats-the-output">1. What&amp;rsquo;s the output?&lt;/h6>
