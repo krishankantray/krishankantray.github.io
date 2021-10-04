@@ -4,7 +4,6 @@ authorTwitter = ""
 cover = ""
 date = 2021-10-04T22:05:57Z
 description = "A whole range of problems based on monotonic stack"
-draft = true
 keywords = []
 showfullcontent = false
 tags = ["dsa", "algorithm", "next-greatest-element", "stack", "monotonic-stack"]
