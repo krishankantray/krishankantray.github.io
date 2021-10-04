@@ -23,7 +23,12 @@ title = "LLD or OOD Fundamentals"
 
 ### Some practice questions on LLD problems :
 
-\[ Good list can be found here - [https://github.com/niteshkumartiwari/LLD-Practice](https://github.com/niteshkumartiwari/LLD-Practice "https://github.com/niteshkumartiwari/LLD-Practice") \]
+> Comprehensive resources  -
+>
+> *  [https://github.com/niteshkumartiwari/LLD-Practice](https://github.com/niteshkumartiwari/LLD-Practice "https://github.com/niteshkumartiwari/LLD-Practice") 
+>
+>
+> * [https://workat.tech/machine-coding/article/how-to-practice-for-machine-coding-kp0oj3sw2jca](https://workat.tech/machine-coding/article/how-to-practice-for-machine-coding-kp0oj3sw2jca "https://workat.tech/machine-coding/article/how-to-practice-for-machine-coding-kp0oj3sw2jca")
 
 Easy :
 
