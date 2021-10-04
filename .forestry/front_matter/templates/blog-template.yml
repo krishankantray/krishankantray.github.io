@@ -61,5 +61,6 @@ fields:
 pages:
 - content/posts/backtracking-problems-made-easy.md
 - content/posts/javascript-tricky-interview-questions.md
+- content/posts/monotonic-stack-based-problems.md
 - content/posts/system-design-template.md
 - content/posts/tricky-frontend-questions.md
