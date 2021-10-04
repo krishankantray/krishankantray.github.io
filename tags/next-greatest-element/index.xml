@@ -48,15 +48,8 @@ s.push(nums[i]) ;
 &lt;p>&lt;a href="https://leetcode.com/problems/online-stock-span/discuss/168311/C++JavaPython-O(1)">901. Online Stock Span&lt;/a>&lt;/p>
 &lt;p>&lt;a href="https://leetcode.com/problems/score-of-parentheses/discuss/141777/C++JavaPython-O(1)-Space">856. Score of Parentheses&lt;/a>&lt;/p>
 &lt;p>&lt;a href="https://leetcode.com/problems/next-greater-element-ii/discuss/98270/JavaC++Python-Loop-Twice">503. Next Greater Element II&lt;/a>&lt;/p>
-&lt;ol start="496">
-&lt;li>
-&lt;p>Next Greater Element I&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Largest Rectangle in Histogram&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Trapping Rain Water&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>&lt;strong>Monotonic Stack&lt;/strong> 🌟 ( read about it )&lt;/p></content></item></channel></rss>
+&lt;ol>
+&lt;li>Next Greater Element I&lt;/li>
+&lt;li>Largest Rectangle in Histogram&lt;/li>
+&lt;li>Trapping Rain Water&lt;/li>
+&lt;/ol></content></item></channel></rss>

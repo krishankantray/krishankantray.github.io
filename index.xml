@@ -48,18 +48,11 @@ s.push(nums[i]) ;
 &lt;p>&lt;a href="https://leetcode.com/problems/online-stock-span/discuss/168311/C++JavaPython-O(1)">901. Online Stock Span&lt;/a>&lt;/p>
 &lt;p>&lt;a href="https://leetcode.com/problems/score-of-parentheses/discuss/141777/C++JavaPython-O(1)-Space">856. Score of Parentheses&lt;/a>&lt;/p>
 &lt;p>&lt;a href="https://leetcode.com/problems/next-greater-element-ii/discuss/98270/JavaC++Python-Loop-Twice">503. Next Greater Element II&lt;/a>&lt;/p>
-&lt;ol start="496">
-&lt;li>
-&lt;p>Next Greater Element I&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Largest Rectangle in Histogram&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Trapping Rain Water&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>&lt;strong>Monotonic Stack&lt;/strong> 🌟 ( read about it )&lt;/p></content></item><item><title>Backtracking problems made easy</title><link>/posts/backtracking-problems-made-easy/</link><pubDate>Sun, 26 Sep 2021 21:15:56 +0000</pubDate><guid>/posts/backtracking-problems-made-easy/</guid><description>Backtracking problems seems to be one of the tricky part while studying DSA. But once we figure out a pattern in it, then its even easier than array problems.
+&lt;ol>
+&lt;li>Next Greater Element I&lt;/li>
+&lt;li>Largest Rectangle in Histogram&lt;/li>
+&lt;li>Trapping Rain Water&lt;/li>
+&lt;/ol></content></item><item><title>Backtracking problems made easy</title><link>/posts/backtracking-problems-made-easy/</link><pubDate>Sun, 26 Sep 2021 21:15:56 +0000</pubDate><guid>/posts/backtracking-problems-made-easy/</guid><description>Backtracking problems seems to be one of the tricky part while studying DSA. But once we figure out a pattern in it, then its even easier than array problems.
 A general code structure of a backtracking problem solution looks like :
 void Backtrack(int start, vector&amp;lt;int&amp;gt;&amp;amp;arr, int &amp;amp;ans) { //Base case for(int i=start; i&amp;lt;arr.size(); i++) { //include the current element at this position if possible in the ans Backtrack(start+1) // here take care whethere to pass start or start+1 dending on the usecase //backtrack by removing current element } } To avoid duplicates in backtracking, we generally sort the array/list, then keep track of the duplicates by arr[i] == arr[i-1].</description><content>&lt;p>Backtracking problems seems to be one of the tricky part while studying DSA. But once we figure out a pattern in it, then its even easier than array problems.&lt;/p>
 &lt;p>A general code structure of a backtracking problem solution looks like :&lt;/p>
