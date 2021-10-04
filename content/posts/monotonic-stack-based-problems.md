@@ -12,26 +12,26 @@ title = "Monotonic Stack based problems"
 +++
 # Next Greater Element ( variants )
 
-This problem states that for every index `i` in the given array, we need to find the element to the right of it which is just greater ( not smaller ) than the elment at `i`. 
+This problem states that for every index `i` in the given array, we need to find the element to the right of it which is just greater ( not smaller ) than the elment at `i`.
 
 **Entire list** - [https://leetcode.com/tag/monotonic-stack/](https://leetcode.com/tag/monotonic-stack/)
 
-There are two ways to solve this problem  : 
+There are two ways to solve this problem  :
 
-- Using stack ( this is most popular one )
-- Without using stack
+* Using stack ( this is most popular one )
+* Without using stack
 
-Problems that are based on this concept are : 
+Problems that are based on this concept are :
 
-- Next Greater Element I - [https://leetcode.com/problems/next-greater-element-i/](https://leetcode.com/problems/next-greater-element-i/)
-- Next Greater Element II : [https://leetcode.com/problems/next-greater-element-ii/](https://leetcode.com/problems/next-greater-element-ii/)
-- Next Greater Element III :  [https://leetcode.com/problems/next-greater-element-iii/](https://leetcode.com/problems/next-greater-element-iii/)
-- Largest Rectangle histogram : [https://leetcode.com/problems/largest-rectangle-in-histogram/](https://leetcode.com/problems/largest-rectangle-in-histogram/)
-- Maximal Rectangle : [https://leetcode.com/problems/maximal-rectangle/](https://leetcode.com/problems/maximal-rectangle/)
+* Next Greater Element I - [https://leetcode.com/problems/next-greater-element-i/](https://leetcode.com/problems/next-greater-element-i/)
+* Next Greater Element II : [https://leetcode.com/problems/next-greater-element-ii/](https://leetcode.com/problems/next-greater-element-ii/)
+* Next Greater Element III :  [https://leetcode.com/problems/next-greater-element-iii/](https://leetcode.com/problems/next-greater-element-iii/)
+* Largest Rectangle histogram : [https://leetcode.com/problems/largest-rectangle-in-histogram/](https://leetcode.com/problems/largest-rectangle-in-histogram/)
+* Maximal Rectangle : [https://leetcode.com/problems/maximal-rectangle/](https://leetcode.com/problems/maximal-rectangle/)
 
 The order of relationship is : `NGE` > `largest rect histogram` > `maximal rectangle`
 
-**Next Greater Element** code using stacks : 
+**Next Greater Element** code using stacks :
 
 ```cpp
 /*
@@ -70,10 +70,6 @@ vector<int> nextGreaterElements(vector<int>& nums) {
 
 [503. Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/discuss/98270/JavaC++Python-Loop-Twice)
 
-496. Next Greater Element I
-
-84. Largest Rectangle in Histogram
-
-42. Trapping Rain Water
-
-**Monotonic Stack** 🌟 ( read about it )
+1. Next Greater Element I
+2. Largest Rectangle in Histogram
+3. Trapping Rain Water
