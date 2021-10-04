@@ -39,26 +39,29 @@ Backtrack(start&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#
 🔵 Design Patterns ( resource )
 🔵 Multi threading
 🔵 Locking mechanism
-Some practice questions on LLD problems : Easy :
-Ride Sharing app ( Uber, Ola etc&amp;hellip;) Tic tac toe game Snake and ladder game Medium :
-Parking lot design Library Management System Splitwise design Hard : ( multi-threading + locking )
-Coffee Machine Design ( &amp;hellip;..to be continued )</description><content>&lt;h3 id="pre-requisites-">Pre-requisites :&lt;/h3>
+Some practice questions on LLD problems : [ Good list can be found here - https://github.com/niteshkumartiwari/LLD-Practice ]
+Easy :
+Ride Sharing app [ link ] Tic tac toe game Snake and ladder game Medium :
+Parking lot design [ link ] Library Management System Splitwise design LRU Cache [ link ] Food Delivery Service Hard : ( multi-threading + locking )</description><content>&lt;h3 id="pre-requisites-">Pre-requisites :&lt;/h3>
 &lt;p>🔵 OOPs Concepts&lt;/p>
 &lt;p>🔵 Design Patterns ( &lt;a href="https://refactoring.guru/design-patterns">resource&lt;/a> )&lt;/p>
 &lt;p>🔵 Multi threading&lt;/p>
 &lt;p>🔵 Locking mechanism&lt;/p>
 &lt;h3 id="some-practice-questions-on-lld-problems-">Some practice questions on LLD problems :&lt;/h3>
+&lt;p>[ Good list can be found here - &lt;a href="https://github.com/niteshkumartiwari/LLD-Practice" title="https://github.com/niteshkumartiwari/LLD-Practice">https://github.com/niteshkumartiwari/LLD-Practice&lt;/a> ]&lt;/p>
 &lt;p>Easy :&lt;/p>
 &lt;ul>
-&lt;li>Ride Sharing app ( Uber, Ola etc&amp;hellip;)&lt;/li>
+&lt;li>Ride Sharing app [ &lt;a href="https://github.com/amarlearning/ride-sharing-low-level-design" title="Ride Sharing app">link&lt;/a> ]&lt;/li>
 &lt;li>Tic tac toe game&lt;/li>
 &lt;li>Snake and ladder game&lt;/li>
 &lt;/ul>
 &lt;p>Medium :&lt;/p>
 &lt;ul>
-&lt;li>Parking lot design&lt;/li>
+&lt;li>Parking lot design [ &lt;a href="https://github.com/anomaly2104/lld-parking-lot">link&lt;/a> ]&lt;/li>
 &lt;li>Library Management System&lt;/li>
 &lt;li>Splitwise design&lt;/li>
+&lt;li>LRU Cache [ &lt;a href="https://github.com/anomaly2104/cache-low-level-system-design">link&lt;/a> ]&lt;/li>
+&lt;li>Food Delivery Service&lt;/li>
 &lt;/ul>
 &lt;p>Hard : &lt;em>( multi-threading + locking )&lt;/em>&lt;/p>
 &lt;ul>
