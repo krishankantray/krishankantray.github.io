@@ -8,10 +8,10 @@ draft = true
 keywords = []
 showfullcontent = false
 tags = ["leetcode", "algorithm"]
-title = "Leetcode - Top 75 problems"
+title = "Leetcode - Quick 75 problems refresher"
 
 +++
-## **Classified list of top 75 problems**
+## **75 problems** refresher
 
 #### Array
 
