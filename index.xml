@@ -1,4 +1,139 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Krishankant</title><link>/</link><description>Recent content on Krishankant</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 04 Oct 2021 22:05:57 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Monotonic Stack based problems</title><link>/posts/monotonic-stack-based-problems/</link><pubDate>Mon, 04 Oct 2021 22:05:57 +0000</pubDate><guid>/posts/monotonic-stack-based-problems/</guid><description>Next Greater Element ( variants ) This problem states that for every index i in the given array, we need to find the element to the right of it which is just greater ( not smaller ) than the elment at i.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Krishankant</title><link>/</link><description>Recent content on Krishankant</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 09 Oct 2021 12:50:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Leetcode - Quick 75 problems refresher</title><link>/posts/leetcode-top-75-problems/</link><pubDate>Sat, 09 Oct 2021 12:50:00 +0000</pubDate><guid>/posts/leetcode-top-75-problems/</guid><description>75 problems refresher Array Two Sum - https://leetcode.com/problems/two-sum/ Best Time to Buy and Sell Stock - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ Contains Duplicate - https://leetcode.com/problems/contains-duplicate/ Product of Array Except Self - https://leetcode.com/problems/product-of-array-except-self/ Maximum Subarray - https://leetcode.com/problems/maximum-subarray/ Maximum Product Subarray - https://leetcode.com/problems/maximum-product-subarray/ Find Minimum in Rotated Sorted Array - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/ Search in Rotated Sorted Array - https://leetcode.com/problems/search-in-rotated-sorted-array/ 3Sum - https://leetcode.com/problems/3sum/ Container With Most Water - https://leetcode.com/problems/container-with-most-water/ Binary Sum of Two Integers - https://leetcode.</description><content>&lt;h2 id="75-problems-refresher">&lt;strong>75 problems&lt;/strong> refresher&lt;/h2>
+&lt;h4 id="array">Array&lt;/h4>
+&lt;ul>
+&lt;li>Two Sum - &lt;a href="https://leetcode.com/problems/two-sum/">https://leetcode.com/problems/two-sum/&lt;/a>&lt;/li>
+&lt;li>Best Time to Buy and Sell Stock - &lt;a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/">https://leetcode.com/problems/best-time-to-buy-and-sell-stock/&lt;/a>&lt;/li>
+&lt;li>Contains Duplicate - &lt;a href="https://leetcode.com/problems/contains-duplicate/">https://leetcode.com/problems/contains-duplicate/&lt;/a>&lt;/li>
+&lt;li>Product of Array Except Self - &lt;a href="https://leetcode.com/problems/product-of-array-except-self/">https://leetcode.com/problems/product-of-array-except-self/&lt;/a>&lt;/li>
+&lt;li>Maximum Subarray - &lt;a href="https://leetcode.com/problems/maximum-subarray/">https://leetcode.com/problems/maximum-subarray/&lt;/a>&lt;/li>
+&lt;li>Maximum Product Subarray - &lt;a href="https://leetcode.com/problems/maximum-product-subarray/">https://leetcode.com/problems/maximum-product-subarray/&lt;/a>&lt;/li>
+&lt;li>Find Minimum in Rotated Sorted Array - &lt;a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/">https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/&lt;/a>&lt;/li>
+&lt;li>Search in Rotated Sorted Array - &lt;a href="https://leetcode.com/problems/search-in-rotated-sorted-array/">https://leetcode.com/problems/search-in-rotated-sorted-array/&lt;/a>&lt;/li>
+&lt;li>3Sum - &lt;a href="https://leetcode.com/problems/3sum/">https://leetcode.com/problems/3sum/&lt;/a>&lt;/li>
+&lt;li>Container With Most Water - &lt;a href="https://leetcode.com/problems/container-with-most-water/">https://leetcode.com/problems/container-with-most-water/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h4 id="binary">Binary&lt;/h4>
+&lt;ul>
+&lt;li>Sum of Two Integers - &lt;a href="https://leetcode.com/problems/sum-of-two-integers/">https://leetcode.com/problems/sum-of-two-integers/&lt;/a>&lt;/li>
+&lt;li>Number of 1 Bits - &lt;a href="https://leetcode.com/problems/number-of-1-bits/">https://leetcode.com/problems/number-of-1-bits/&lt;/a>&lt;/li>
+&lt;li>Counting Bits - &lt;a href="https://leetcode.com/problems/counting-bits/">https://leetcode.com/problems/counting-bits/&lt;/a>&lt;/li>
+&lt;li>Missing Number - &lt;a href="https://leetcode.com/problems/missing-number/">https://leetcode.com/problems/missing-number/&lt;/a>&lt;/li>
+&lt;li>Reverse Bits - &lt;a href="https://leetcode.com/problems/reverse-bits/">https://leetcode.com/problems/reverse-bits/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h4 id="dynamic-programming">Dynamic Programming&lt;/h4>
+&lt;ul>
+&lt;li>Climbing Stairs - &lt;a href="https://leetcode.com/problems/climbing-stairs/">https://leetcode.com/problems/climbing-stairs/&lt;/a>&lt;/li>
+&lt;li>Coin Change - &lt;a href="https://leetcode.com/problems/coin-change/">https://leetcode.com/problems/coin-change/&lt;/a>&lt;/li>
+&lt;li>Longest Increasing Subsequence - &lt;a href="https://leetcode.com/problems/longest-increasing-subsequence/">https://leetcode.com/problems/longest-increasing-subsequence/&lt;/a>&lt;/li>
+&lt;li>Longest Common Subsequence -&lt;/li>
+&lt;li>Word Break Problem - &lt;a href="https://leetcode.com/problems/word-break/">https://leetcode.com/problems/word-break/&lt;/a>&lt;/li>
+&lt;li>Combination Sum - &lt;a href="https://leetcode.com/problems/combination-sum-iv/">https://leetcode.com/problems/combination-sum-iv/&lt;/a>&lt;/li>
+&lt;li>House Robber - &lt;a href="https://leetcode.com/problems/house-robber/">https://leetcode.com/problems/house-robber/&lt;/a>&lt;/li>
+&lt;li>House Robber II - &lt;a href="https://leetcode.com/problems/house-robber-ii/">https://leetcode.com/problems/house-robber-ii/&lt;/a>&lt;/li>
+&lt;li>Decode Ways - &lt;a href="https://leetcode.com/problems/decode-ways/">https://leetcode.com/problems/decode-ways/&lt;/a>&lt;/li>
+&lt;li>Unique Paths - &lt;a href="https://leetcode.com/problems/unique-paths/">https://leetcode.com/problems/unique-paths/&lt;/a>&lt;/li>
+&lt;li>Jump Game - &lt;a href="https://leetcode.com/problems/jump-game/">https://leetcode.com/problems/jump-game/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h4 id="graph">Graph&lt;/h4>
+&lt;ul>
+&lt;li>Clone Graph - &lt;a href="https://leetcode.com/problems/clone-graph/">https://leetcode.com/problems/clone-graph/&lt;/a>&lt;/li>
+&lt;li>Course Schedule - &lt;a href="https://leetcode.com/problems/course-schedule/">https://leetcode.com/problems/course-schedule/&lt;/a>&lt;/li>
+&lt;li>Pacific Atlantic Water Flow - &lt;a href="https://leetcode.com/problems/pacific-atlantic-water-flow/">https://leetcode.com/problems/pacific-atlantic-water-flow/&lt;/a>&lt;/li>
+&lt;li>Number of Islands - &lt;a href="https://leetcode.com/problems/number-of-islands/">https://leetcode.com/problems/number-of-islands/&lt;/a>&lt;/li>
+&lt;li>Longest Consecutive Sequence - &lt;a href="https://leetcode.com/problems/longest-consecutive-sequence/">https://leetcode.com/problems/longest-consecutive-sequence/&lt;/a>&lt;/li>
+&lt;li>Alien Dictionary (Leetcode Premium) - &lt;a href="https://leetcode.com/problems/alien-dictionary/">https://leetcode.com/problems/alien-dictionary/&lt;/a>&lt;/li>
+&lt;li>Graph Valid Tree (Leetcode Premium) - &lt;a href="https://leetcode.com/problems/graph-valid-tree/">https://leetcode.com/problems/graph-valid-tree/&lt;/a>&lt;/li>
+&lt;li>Number of Connected Components in an Undirected Graph (Leetcode Premium) -&lt;a href="https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/">https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h4 id="interval">Interval&lt;/h4>
+&lt;ul>
+&lt;li>Insert Interval - &lt;a href="https://leetcode.com/problems/insert-interval/">https://leetcode.com/problems/insert-interval/&lt;/a>&lt;/li>
+&lt;li>Merge Intervals - &lt;a href="https://leetcode.com/problems/merge-intervals/">https://leetcode.com/problems/merge-intervals/&lt;/a>&lt;/li>
+&lt;li>Non-overlapping Intervals - &lt;a href="https://leetcode.com/problems/non-overlapping-intervals/">https://leetcode.com/problems/non-overlapping-intervals/&lt;/a>&lt;/li>
+&lt;li>Meeting Rooms (Leetcode Premium) - &lt;a href="https://leetcode.com/problems/meeting-rooms/">https://leetcode.com/problems/meeting-rooms/&lt;/a>&lt;/li>
+&lt;li>Meeting Rooms II (Leetcode Premium) - &lt;a href="https://leetcode.com/problems/meeting-rooms-ii/">https://leetcode.com/problems/meeting-rooms-ii/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h4 id="linked-list">Linked List&lt;/h4>
+&lt;ul>
+&lt;li>Reverse a Linked List - &lt;a href="https://leetcode.com/problems/reverse-linked-list/">https://leetcode.com/problems/reverse-linked-list/&lt;/a>&lt;/li>
+&lt;li>Detect Cycle in a Linked List - &lt;a href="https://leetcode.com/problems/linked-list-cycle/">https://leetcode.com/problems/linked-list-cycle/&lt;/a>&lt;/li>
+&lt;li>Merge Two Sorted Lists - &lt;a href="https://leetcode.com/problems/merge-two-sorted-lists/">https://leetcode.com/problems/merge-two-sorted-lists/&lt;/a>&lt;/li>
+&lt;li>Merge K Sorted Lists - &lt;a href="https://leetcode.com/problems/merge-k-sorted-lists/">https://leetcode.com/problems/merge-k-sorted-lists/&lt;/a>&lt;/li>
+&lt;li>Remove Nth Node From End Of List - &lt;a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/">https://leetcode.com/problems/remove-nth-node-from-end-of-list/&lt;/a>&lt;/li>
+&lt;li>Reorder List - &lt;a href="https://leetcode.com/problems/reorder-list/">https://leetcode.com/problems/reorder-list/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h4 id="matrix">Matrix&lt;/h4>
+&lt;ul>
+&lt;li>Set Matrix Zeroes - &lt;a href="https://leetcode.com/problems/set-matrix-zeroes/">https://leetcode.com/problems/set-matrix-zeroes/&lt;/a>&lt;/li>
+&lt;li>Spiral Matrix - &lt;a href="https://leetcode.com/problems/spiral-matrix/">https://leetcode.com/problems/spiral-matrix/&lt;/a>&lt;/li>
+&lt;li>Rotate Image - &lt;a href="https://leetcode.com/problems/rotate-image/">https://leetcode.com/problems/rotate-image/&lt;/a>&lt;/li>
+&lt;li>Word Search - &lt;a href="https://leetcode.com/problems/word-search/">https://leetcode.com/problems/word-search/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h4 id="string">String&lt;/h4>
+&lt;ul>
+&lt;li>
+&lt;p>Longest Substring Without Repeating Characters - &lt;a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">https://leetcode.com/problems/longest-substring-without-repeating-characters/&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Longest Repeating Character Replacement -&lt;/p>
+&lt;p>&lt;a href="https://leetcode.com/problems/longest-repeating-character-replacement/">https://leetcode.com/problems/longest-repeating-character-replacement/&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Minimum Window Substring - &lt;a href="https://leetcode.com/problems/minimum-window-substring/">https://leetcode.com/problems/minimum-window-substring/&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Valid Anagram - &lt;a href="https://leetcode.com/problems/valid-anagram/">https://leetcode.com/problems/valid-anagram/&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Group Anagrams - &lt;a href="https://leetcode.com/problems/group-anagrams/">https://leetcode.com/problems/group-anagrams/&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Valid Parentheses - &lt;a href="https://leetcode.com/problems/valid-parentheses/">https://leetcode.com/problems/valid-parentheses/&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Valid Palindrome - &lt;a href="https://leetcode.com/problems/valid-palindrome/">https://leetcode.com/problems/valid-palindrome/&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Longest Palindromic Substring - &lt;a href="https://leetcode.com/problems/longest-palindromic-substring/">https://leetcode.com/problems/longest-palindromic-substring/&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Palindromic Substrings - &lt;a href="https://leetcode.com/problems/palindromic-substrings/">https://leetcode.com/problems/palindromic-substrings/&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Encode and Decode Strings (Leetcode Premium) -&lt;a href="https://leetcode.com/problems/encode-and-decode-strings/">https://leetcode.com/problems/encode-and-decode-strings/&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h4 id="tree">Tree&lt;/h4>
+&lt;ul>
+&lt;li>Maximum Depth of Binary Tree - &lt;a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/">https://leetcode.com/problems/maximum-depth-of-binary-tree/&lt;/a>&lt;/li>
+&lt;li>Same Tree - &lt;a href="https://leetcode.com/problems/same-tree/">https://leetcode.com/problems/same-tree/&lt;/a>&lt;/li>
+&lt;li>Invert/Flip Binary Tree - &lt;a href="https://leetcode.com/problems/invert-binary-tree/">https://leetcode.com/problems/invert-binary-tree/&lt;/a>&lt;/li>
+&lt;li>Binary Tree Maximum Path Sum - &lt;a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/">https://leetcode.com/problems/binary-tree-maximum-path-sum/&lt;/a>&lt;/li>
+&lt;li>Binary Tree Level Order Traversal - &lt;a href="https://leetcode.com/problems/binary-tree-level-order-traversal/">https://leetcode.com/problems/binary-tree-level-order-traversal/&lt;/a>&lt;/li>
+&lt;li>Serialize and Deserialize Binary Tree - &lt;a href="https://leetcode.com/problems/serialize-and-deserialize-binary-tree/">https://leetcode.com/problems/serialize-and-deserialize-binary-tree/&lt;/a>&lt;/li>
+&lt;li>Subtree of Another Tree - &lt;a href="https://leetcode.com/problems/subtree-of-another-tree/">https://leetcode.com/problems/subtree-of-another-tree/&lt;/a>&lt;/li>
+&lt;li>Construct Binary Tree from Preorder and Inorder Traversal -&lt;a href="https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/">https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/&lt;/a>&lt;/li>
+&lt;li>Validate Binary Search Tree - &lt;a href="https://leetcode.com/problems/validate-binary-search-tree/">https://leetcode.com/problems/validate-binary-search-tree/&lt;/a>&lt;/li>
+&lt;li>Kth Smallest Element in a BST - &lt;a href="https://leetcode.com/problems/kth-smallest-element-in-a-bst/">https://leetcode.com/problems/kth-smallest-element-in-a-bst/&lt;/a>&lt;/li>
+&lt;li>Lowest Common Ancestor of BST - &lt;a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/">https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/&lt;/a>&lt;/li>
+&lt;li>Implement Trie (Prefix Tree) - &lt;a href="https://leetcode.com/problems/implement-trie-prefix-tree/">https://leetcode.com/problems/implement-trie-prefix-tree/&lt;/a>&lt;/li>
+&lt;li>Add and Search Word - &lt;a href="https://leetcode.com/problems/add-and-search-word-data-structure-design/">https://leetcode.com/problems/add-and-search-word-data-structure-design/&lt;/a>&lt;/li>
+&lt;li>Word Search II - &lt;a href="https://leetcode.com/problems/word-search-ii/">https://leetcode.com/problems/word-search-ii/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h4 id="heap">Heap&lt;/h4>
+&lt;ul>
+&lt;li>Merge K Sorted Lists - &lt;a href="https://leetcode.com/problems/merge-k-sorted-lists/">https://leetcode.com/problems/merge-k-sorted-lists/&lt;/a>&lt;/li>
+&lt;li>Top K Frequent Elements - &lt;a href="https://leetcode.com/problems/top-k-frequent-elements/">https://leetcode.com/problems/top-k-frequent-elements/&lt;/a>&lt;/li>
+&lt;li>Find Median from Data Stream - &lt;a href="https://leetcode.com/problems/find-median-from-data-stream/">https://leetcode.com/problems/find-median-from-data-stream/&lt;/a>&lt;/li>
+&lt;/ul></content></item><item><title>Monotonic Stack based problems</title><link>/posts/monotonic-stack-based-problems/</link><pubDate>Mon, 04 Oct 2021 22:05:57 +0000</pubDate><guid>/posts/monotonic-stack-based-problems/</guid><description>Next Greater Element ( variants ) This problem states that for every index i in the given array, we need to find the element to the right of it which is just greater ( not smaller ) than the elment at i.
 Entire list - https://leetcode.com/tag/monotonic-stack/
 There are two ways to solve this problem :
 Using stack ( this is most popular one ) Without using stack Problems that are based on this concept are :</description><content>&lt;h1 id="next-greater-element--variants-">Next Greater Element ( variants )&lt;/h1>
