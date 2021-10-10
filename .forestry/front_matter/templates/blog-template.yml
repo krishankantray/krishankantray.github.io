@@ -60,6 +60,7 @@ fields:
   label: cover
 pages:
 - content/posts/backtracking-problems-made-easy.md
+- content/posts/graph-depth-first-search-dfs.md
 - content/posts/javascript-tricky-interview-questions.md
 - content/posts/leetcode-top-75-problems.md
 - content/posts/monotonic-stack-based-problems.md
