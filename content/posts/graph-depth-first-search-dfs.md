@@ -11,8 +11,6 @@ tags = ["DFS", "graph"]
 title = "Graph - Depth First Search (DFS)"
 
 +++
-# DFS
-
 ## Some basic problems to make DFS undestanding strong
 
-### Preorder 
+### Preorder
