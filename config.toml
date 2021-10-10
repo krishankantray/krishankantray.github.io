@@ -67,7 +67,7 @@ enableInlineShortcodes = true
     missingBackButtonLabel = "Back to home page"
 
     [languages.en.params.logo]
-      logoText = "Krishankant"
+      logoText = "👨 Krishankant"
       logoHomeLink = "/"
 
     [languages.en.menu]
