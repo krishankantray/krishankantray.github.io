@@ -67,24 +67,24 @@ enableInlineShortcodes = true
     missingBackButtonLabel = "Back to home page"
 
     [languages.en.params.logo]
-      logoText = "👨 Krishankant"
+      logoText = "👨Krishankant"
       logoHomeLink = "/"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "about"
-        name = "About/Resume"
+        name = "🧾About/Resume"
         url = "/about"
       [[languages.en.menu.main]]
         identifier = "blog"
-        name = "Blog"
+        name = "📝Blog"
         url = "/posts"
       [[languages.en.menu.main]]
         identifier = "projects"
-        name = "Projects"
+        name = "🖥️Projects"
         url = "/projects"
       [[languages.en.menu.main]]
         identifier = "contact"
-        name = "Contact"
+        name = "📩Contact"
         url = "/contact"
 
