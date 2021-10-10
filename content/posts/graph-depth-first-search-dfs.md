@@ -13,4 +13,21 @@ title = "Graph - Depth First Search (DFS)"
 +++
 ## Some basic problems to make DFS undestanding strong
 
-### Preorder
+#### Preorder Binary Tree Traversal
+
+```cpp
+vector<int> preorderTraversal(TreeNode* root) {
+    stack<TreeNode*>s;
+    s.push(root);
+    vector<int>ans;
+    while(!s.empty()){
+    	TreeNode* cur=s.top();
+    	s.pop();
+    	if(!cur) continue; 
+    	ans.push_back(cur->val);
+    	s.push(cur->right); // first push right because in Stack LIFO works
+        s.push(cur->left);
+    }
+    return ans;
+}
+```
