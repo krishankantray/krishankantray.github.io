@@ -2,7 +2,7 @@
 author = "Krishankant"
 authorTwitter = ""
 cover = ""
-date = 2021-10-08T20:21:27Z
+date = 2021-09-24T20:21:27Z
 description = "Explaination of solid principles with example."
 keywords = []
 showfullcontent = false
@@ -248,7 +248,7 @@ Our parking lot interface was composed of 2 things: Parking related logic (park 
 
 But it is too specific. Because of that, our FreeParking class was forced to implement payment-related methods that are irrelevant. Let's separate or segregate the interfaces.
 
-![](/uploads/solid-tutorial-1024x432.png)
+![](/uploads/ood-solid-princ.png)
 
 We've now separated the parking lot. With this new model, we can even go further and split the **PaidParkingLot** to support different types of payment.
 
