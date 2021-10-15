@@ -133,7 +133,98 @@
 &lt;li>Merge K Sorted Lists - &lt;a href="https://leetcode.com/problems/merge-k-sorted-lists/">https://leetcode.com/problems/merge-k-sorted-lists/&lt;/a>&lt;/li>
 &lt;li>Top K Frequent Elements - &lt;a href="https://leetcode.com/problems/top-k-frequent-elements/">https://leetcode.com/problems/top-k-frequent-elements/&lt;/a>&lt;/li>
 &lt;li>Find Median from Data Stream - &lt;a href="https://leetcode.com/problems/find-median-from-data-stream/">https://leetcode.com/problems/find-median-from-data-stream/&lt;/a>&lt;/li>
-&lt;/ul></content></item><item><title>Solid Principles ( OOD )</title><link>/posts/solid-principles-ood/</link><pubDate>Fri, 08 Oct 2021 20:21:27 +0000</pubDate><guid>/posts/solid-principles-ood/</guid><description>Solid Principles Best Video : https://youtu.be/gumM1H4qLUM
+&lt;/ul></content></item><item><title>Monotonic Stack based problems</title><link>/posts/monotonic-stack-based-problems/</link><pubDate>Mon, 04 Oct 2021 22:05:57 +0000</pubDate><guid>/posts/monotonic-stack-based-problems/</guid><description>Next Greater Element ( variants ) This problem states that for every index i in the given array, we need to find the element to the right of it which is just greater ( not smaller ) than the elment at i.
+Entire list - https://leetcode.com/tag/monotonic-stack/
+There are two ways to solve this problem :
+Using stack ( this is most popular one ) Without using stack Problems that are based on this concept are :</description><content>&lt;h1 id="next-greater-element--variants-">Next Greater Element ( variants )&lt;/h1>
+&lt;p>This problem states that for every index &lt;code>i&lt;/code> in the given array, we need to find the element to the right of it which is just greater ( not smaller ) than the elment at &lt;code>i&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>Entire list&lt;/strong> - &lt;a href="https://leetcode.com/tag/monotonic-stack/">https://leetcode.com/tag/monotonic-stack/&lt;/a>&lt;/p>
+&lt;p>There are two ways to solve this problem :&lt;/p>
+&lt;ul>
+&lt;li>Using stack ( this is most popular one )&lt;/li>
+&lt;li>Without using stack&lt;/li>
+&lt;/ul>
+&lt;p>Problems that are based on this concept are :&lt;/p>
+&lt;ul>
+&lt;li>Next Greater Element I - &lt;a href="https://leetcode.com/problems/next-greater-element-i/">https://leetcode.com/problems/next-greater-element-i/&lt;/a>&lt;/li>
+&lt;li>Next Greater Element II : &lt;a href="https://leetcode.com/problems/next-greater-element-ii/">https://leetcode.com/problems/next-greater-element-ii/&lt;/a>&lt;/li>
+&lt;li>Next Greater Element III : &lt;a href="https://leetcode.com/problems/next-greater-element-iii/">https://leetcode.com/problems/next-greater-element-iii/&lt;/a>&lt;/li>
+&lt;li>Largest Rectangle histogram : &lt;a href="https://leetcode.com/problems/largest-rectangle-in-histogram/">https://leetcode.com/problems/largest-rectangle-in-histogram/&lt;/a>&lt;/li>
+&lt;li>Maximal Rectangle : &lt;a href="https://leetcode.com/problems/maximal-rectangle/">https://leetcode.com/problems/maximal-rectangle/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>The order of relationship is : &lt;code>NGE&lt;/code> &amp;gt; &lt;code>largest rect histogram&lt;/code> &amp;gt; &lt;code>maximal rectangle&lt;/code>&lt;/p>
+&lt;p>&lt;strong>Next Greater Element&lt;/strong> code using stacks :&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="color:#75715e">/*
+&lt;/span>&lt;span style="color:#75715e"> INPUT : [1,2,1]
+&lt;/span>&lt;span style="color:#75715e"> OUTPUT : [2,-1,-1]
+&lt;/span>&lt;span style="color:#75715e">*/&lt;/span>
+vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> nextGreaterElements(vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&amp;amp;&lt;/span> nums) {
+&lt;span style="color:#66d9ef">int&lt;/span> n &lt;span style="color:#f92672">=&lt;/span> nums.size() ;
+vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>nge(n);
+stack&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>s ;
+&lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i&lt;span style="color:#f92672">=&lt;/span>n&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>; i&lt;span style="color:#f92672">&amp;gt;=&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span>; i&lt;span style="color:#f92672">--&lt;/span>){
+&lt;span style="color:#66d9ef">if&lt;/span>(s.empty()){
+nge[i]&lt;span style="color:#f92672">=-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> ;
+}
+&lt;span style="color:#66d9ef">else&lt;/span> &lt;span style="color:#a6e22e">if&lt;/span>(s.top() &lt;span style="color:#f92672">&amp;gt;=&lt;/span> nums[i]){
+nge[i]&lt;span style="color:#f92672">=&lt;/span>s.top() ;
+}
+&lt;span style="color:#66d9ef">else&lt;/span> &lt;span style="color:#a6e22e">if&lt;/span>(s.top()&lt;span style="color:#f92672">&amp;lt;&lt;/span>nums[i]){
+&lt;span style="color:#66d9ef">while&lt;/span>(&lt;span style="color:#f92672">!&lt;/span>s.empty() &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> s.top()&lt;span style="color:#f92672">&amp;lt;&lt;/span>nums[i]) s.pop() ;
+&lt;span style="color:#66d9ef">if&lt;/span>(s.empty()) nge[i]&lt;span style="color:#f92672">=-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> ;
+&lt;span style="color:#66d9ef">else&lt;/span> nge[i]&lt;span style="color:#f92672">=&lt;/span>s.top() ;
+}
+s.push(nums[i]) ;
+}
+&lt;span style="color:#66d9ef">return&lt;/span> nge ;
+}
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/discuss/339959/One-Pass-O(N)-Time-and-Space">1130. Minimum Cost Tree From Leaf Values&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://leetcode.com/problems/sum-of-subarray-minimums/discuss/170750/C++JavaPython-Stack-Solution">907. Sum of Subarray Minimums&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://leetcode.com/problems/online-stock-span/discuss/168311/C++JavaPython-O(1)">901. Online Stock Span&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://leetcode.com/problems/score-of-parentheses/discuss/141777/C++JavaPython-O(1)-Space">856. Score of Parentheses&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://leetcode.com/problems/next-greater-element-ii/discuss/98270/JavaC++Python-Loop-Twice">503. Next Greater Element II&lt;/a>&lt;/p>
+&lt;ol>
+&lt;li>Next Greater Element I&lt;/li>
+&lt;li>Largest Rectangle in Histogram&lt;/li>
+&lt;li>Trapping Rain Water&lt;/li>
+&lt;/ol></content></item><item><title>Backtracking problems made easy</title><link>/posts/backtracking-problems-made-easy/</link><pubDate>Sun, 26 Sep 2021 21:15:56 +0000</pubDate><guid>/posts/backtracking-problems-made-easy/</guid><description>Backtracking problems seems to be one of the tricky part while studying DSA. But once we figure out a pattern in it, then its even easier than array problems.
+A general code structure of a backtracking problem solution looks like :
+void Backtrack(int start, vector&amp;lt;int&amp;gt;&amp;amp;arr, int &amp;amp;ans) { //Base case for(int i=start; i&amp;lt;arr.size(); i++) { //include the current element at this position if possible in the ans Backtrack(start+1) // here take care whethere to pass start or start+1 dending on the usecase //backtrack by removing current element } } To avoid duplicates in backtracking, we generally sort the array/list, then keep track of the duplicates by arr[i] == arr[i-1].</description><content>&lt;p>Backtracking problems seems to be one of the tricky part while studying DSA. But once we figure out a pattern in it, then its even easier than array problems.&lt;/p>
+&lt;p>A general code structure of a backtracking problem solution looks like :&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-cpp" data-lang="cpp"> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">Backtrack&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> start, vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&amp;amp;&lt;/span>arr, &lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#f92672">&amp;amp;&lt;/span>ans)
+{
+&lt;span style="color:#75715e">//Base case
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>
+&lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i&lt;span style="color:#f92672">=&lt;/span>start; i&lt;span style="color:#f92672">&amp;lt;&lt;/span>arr.size(); i&lt;span style="color:#f92672">++&lt;/span>)
+{
+&lt;span style="color:#75715e">//include the current element at this position if possible in the ans
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>
+Backtrack(start&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>) &lt;span style="color:#75715e">// here take care whethere to pass start or start+1 dending on the usecase
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>
+&lt;span style="color:#75715e">//backtrack by removing current element
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> }
+}
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>To avoid duplicates in backtracking, we generally sort the array/list, then keep track of the duplicates by &lt;code>arr[i] == arr[i-1]&lt;/code>.&lt;/p>
+&lt;p>Here are some good backtracking problems which makes our understanding about the topic more firm :&lt;/p>
+&lt;ol>
+&lt;li>&lt;a href="https://leetcode.com/problems/letter-combinations-of-a-phone-number">Letter Combinations of a Phone Number&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://leetcode.com/problems/generate-parentheses">Generate Parentheses&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://leetcode.com/problems/sudoku-solver">Sudoku Solver&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://leetcode.com/problems/combination-sum">Combination Sum&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://leetcode.com/problems/combination-sum-ii">Combination Sum II&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://leetcode.com/problems/permutations">Permutations&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://leetcode.com/problems/permutations-ii">Permutations II&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://leetcode.com/problems/n-queens">N-Queens&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://leetcode.com/problems/combinations">Combinations&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://leetcode.com/problems/subsets">Subsets&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://leetcode.com/problems/subsets-ii">Subsets II&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://leetcode.com/problems/restore-ip-addresses">Restore IP Addresses&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://leetcode.com/problems/palindrome-partitioning">Palindrome Partitioning&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://leetcode.com/problems/word-break">Word Break&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://leetcode.com/problems/combination-sum-iii">Combination Sum III&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://leetcode.com/problems/target-sum">Target Sum&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://leetcode.com/problems/letter-case-permutation">Letter Case Permutation&lt;/a>&lt;/li>
+&lt;/ol></content></item><item><title>Solid Principles ( OOD )</title><link>/posts/solid-principles-ood/</link><pubDate>Fri, 24 Sep 2021 20:21:27 +0000</pubDate><guid>/posts/solid-principles-ood/</guid><description>Solid Principles Best Video : https://youtu.be/gumM1H4qLUM
 Best Artcile : https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/
 SOLID stands for:
 The Single Responsibility Principle The Open-Closed Principle The Liskov Substitution Principle The Interface Segregation Principle The Dependency Inversion Principle 1. Single Responsibility : The Single Responsibility Principle states that a class should do one thing and therefore it should have only a single reason to change.
@@ -299,103 +390,12 @@ getAreaTest&lt;span style="color:#f92672">(&lt;/span>sq&lt;span style="color:#f9
 &lt;span style="color:#f92672">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Our parking lot interface was composed of 2 things: Parking related logic (park car, unpark car, get capacity) and payment related logic.&lt;/p>
 &lt;p>But it is too specific. Because of that, our FreeParking class was forced to implement payment-related methods that are irrelevant. Let&amp;rsquo;s separate or segregate the interfaces.&lt;/p>
-&lt;p>&lt;img src="./uploads/solid-tutorial-1024x432.png" alt="">&lt;/p>
+&lt;p>&lt;img src="./uploads/ood-solid-princ.png" alt="">&lt;/p>
 &lt;p>We&amp;rsquo;ve now separated the parking lot. With this new model, we can even go further and split the &lt;strong>PaidParkingLot&lt;/strong> to support different types of payment.&lt;/p>
 &lt;p>Now our model is much more flexible, extendable, and the clients do not need to implement any irrelevant logic because we provide only parking-related functionality in the parking lot interface.&lt;/p>
 &lt;h3 id="5-dependency-inversion-principle">5. Dependency Inversion Principle&lt;/h3>
 &lt;p>The Dependency Inversion principle states that our classes should depend upon interfaces or abstract classes instead of concrete classes and functions.&lt;/p>
-&lt;p>We want our classes to be open to extension, so we have reorganized our dependencies to depend on interfaces instead of concrete classes.&lt;/p></content></item><item><title>Monotonic Stack based problems</title><link>/posts/monotonic-stack-based-problems/</link><pubDate>Mon, 04 Oct 2021 22:05:57 +0000</pubDate><guid>/posts/monotonic-stack-based-problems/</guid><description>Next Greater Element ( variants ) This problem states that for every index i in the given array, we need to find the element to the right of it which is just greater ( not smaller ) than the elment at i.
-Entire list - https://leetcode.com/tag/monotonic-stack/
-There are two ways to solve this problem :
-Using stack ( this is most popular one ) Without using stack Problems that are based on this concept are :</description><content>&lt;h1 id="next-greater-element--variants-">Next Greater Element ( variants )&lt;/h1>
-&lt;p>This problem states that for every index &lt;code>i&lt;/code> in the given array, we need to find the element to the right of it which is just greater ( not smaller ) than the elment at &lt;code>i&lt;/code>.&lt;/p>
-&lt;p>&lt;strong>Entire list&lt;/strong> - &lt;a href="https://leetcode.com/tag/monotonic-stack/">https://leetcode.com/tag/monotonic-stack/&lt;/a>&lt;/p>
-&lt;p>There are two ways to solve this problem :&lt;/p>
-&lt;ul>
-&lt;li>Using stack ( this is most popular one )&lt;/li>
-&lt;li>Without using stack&lt;/li>
-&lt;/ul>
-&lt;p>Problems that are based on this concept are :&lt;/p>
-&lt;ul>
-&lt;li>Next Greater Element I - &lt;a href="https://leetcode.com/problems/next-greater-element-i/">https://leetcode.com/problems/next-greater-element-i/&lt;/a>&lt;/li>
-&lt;li>Next Greater Element II : &lt;a href="https://leetcode.com/problems/next-greater-element-ii/">https://leetcode.com/problems/next-greater-element-ii/&lt;/a>&lt;/li>
-&lt;li>Next Greater Element III : &lt;a href="https://leetcode.com/problems/next-greater-element-iii/">https://leetcode.com/problems/next-greater-element-iii/&lt;/a>&lt;/li>
-&lt;li>Largest Rectangle histogram : &lt;a href="https://leetcode.com/problems/largest-rectangle-in-histogram/">https://leetcode.com/problems/largest-rectangle-in-histogram/&lt;/a>&lt;/li>
-&lt;li>Maximal Rectangle : &lt;a href="https://leetcode.com/problems/maximal-rectangle/">https://leetcode.com/problems/maximal-rectangle/&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>The order of relationship is : &lt;code>NGE&lt;/code> &amp;gt; &lt;code>largest rect histogram&lt;/code> &amp;gt; &lt;code>maximal rectangle&lt;/code>&lt;/p>
-&lt;p>&lt;strong>Next Greater Element&lt;/strong> code using stacks :&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="color:#75715e">/*
-&lt;/span>&lt;span style="color:#75715e"> INPUT : [1,2,1]
-&lt;/span>&lt;span style="color:#75715e"> OUTPUT : [2,-1,-1]
-&lt;/span>&lt;span style="color:#75715e">*/&lt;/span>
-vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> nextGreaterElements(vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&amp;amp;&lt;/span> nums) {
-&lt;span style="color:#66d9ef">int&lt;/span> n &lt;span style="color:#f92672">=&lt;/span> nums.size() ;
-vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>nge(n);
-stack&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>s ;
-&lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i&lt;span style="color:#f92672">=&lt;/span>n&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>; i&lt;span style="color:#f92672">&amp;gt;=&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span>; i&lt;span style="color:#f92672">--&lt;/span>){
-&lt;span style="color:#66d9ef">if&lt;/span>(s.empty()){
-nge[i]&lt;span style="color:#f92672">=-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> ;
-}
-&lt;span style="color:#66d9ef">else&lt;/span> &lt;span style="color:#a6e22e">if&lt;/span>(s.top() &lt;span style="color:#f92672">&amp;gt;=&lt;/span> nums[i]){
-nge[i]&lt;span style="color:#f92672">=&lt;/span>s.top() ;
-}
-&lt;span style="color:#66d9ef">else&lt;/span> &lt;span style="color:#a6e22e">if&lt;/span>(s.top()&lt;span style="color:#f92672">&amp;lt;&lt;/span>nums[i]){
-&lt;span style="color:#66d9ef">while&lt;/span>(&lt;span style="color:#f92672">!&lt;/span>s.empty() &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> s.top()&lt;span style="color:#f92672">&amp;lt;&lt;/span>nums[i]) s.pop() ;
-&lt;span style="color:#66d9ef">if&lt;/span>(s.empty()) nge[i]&lt;span style="color:#f92672">=-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> ;
-&lt;span style="color:#66d9ef">else&lt;/span> nge[i]&lt;span style="color:#f92672">=&lt;/span>s.top() ;
-}
-s.push(nums[i]) ;
-}
-&lt;span style="color:#66d9ef">return&lt;/span> nge ;
-}
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/discuss/339959/One-Pass-O(N)-Time-and-Space">1130. Minimum Cost Tree From Leaf Values&lt;/a>&lt;/p>
-&lt;p>&lt;a href="https://leetcode.com/problems/sum-of-subarray-minimums/discuss/170750/C++JavaPython-Stack-Solution">907. Sum of Subarray Minimums&lt;/a>&lt;/p>
-&lt;p>&lt;a href="https://leetcode.com/problems/online-stock-span/discuss/168311/C++JavaPython-O(1)">901. Online Stock Span&lt;/a>&lt;/p>
-&lt;p>&lt;a href="https://leetcode.com/problems/score-of-parentheses/discuss/141777/C++JavaPython-O(1)-Space">856. Score of Parentheses&lt;/a>&lt;/p>
-&lt;p>&lt;a href="https://leetcode.com/problems/next-greater-element-ii/discuss/98270/JavaC++Python-Loop-Twice">503. Next Greater Element II&lt;/a>&lt;/p>
-&lt;ol>
-&lt;li>Next Greater Element I&lt;/li>
-&lt;li>Largest Rectangle in Histogram&lt;/li>
-&lt;li>Trapping Rain Water&lt;/li>
-&lt;/ol></content></item><item><title>Backtracking problems made easy</title><link>/posts/backtracking-problems-made-easy/</link><pubDate>Sun, 26 Sep 2021 21:15:56 +0000</pubDate><guid>/posts/backtracking-problems-made-easy/</guid><description>Backtracking problems seems to be one of the tricky part while studying DSA. But once we figure out a pattern in it, then its even easier than array problems.
-A general code structure of a backtracking problem solution looks like :
-void Backtrack(int start, vector&amp;lt;int&amp;gt;&amp;amp;arr, int &amp;amp;ans) { //Base case for(int i=start; i&amp;lt;arr.size(); i++) { //include the current element at this position if possible in the ans Backtrack(start+1) // here take care whethere to pass start or start+1 dending on the usecase //backtrack by removing current element } } To avoid duplicates in backtracking, we generally sort the array/list, then keep track of the duplicates by arr[i] == arr[i-1].</description><content>&lt;p>Backtracking problems seems to be one of the tricky part while studying DSA. But once we figure out a pattern in it, then its even easier than array problems.&lt;/p>
-&lt;p>A general code structure of a backtracking problem solution looks like :&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-cpp" data-lang="cpp"> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">Backtrack&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> start, vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&amp;amp;&lt;/span>arr, &lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#f92672">&amp;amp;&lt;/span>ans)
-{
-&lt;span style="color:#75715e">//Base case
-&lt;/span>&lt;span style="color:#75715e">&lt;/span>
-&lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i&lt;span style="color:#f92672">=&lt;/span>start; i&lt;span style="color:#f92672">&amp;lt;&lt;/span>arr.size(); i&lt;span style="color:#f92672">++&lt;/span>)
-{
-&lt;span style="color:#75715e">//include the current element at this position if possible in the ans
-&lt;/span>&lt;span style="color:#75715e">&lt;/span>
-Backtrack(start&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>) &lt;span style="color:#75715e">// here take care whethere to pass start or start+1 dending on the usecase
-&lt;/span>&lt;span style="color:#75715e">&lt;/span>
-&lt;span style="color:#75715e">//backtrack by removing current element
-&lt;/span>&lt;span style="color:#75715e">&lt;/span> }
-}
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>To avoid duplicates in backtracking, we generally sort the array/list, then keep track of the duplicates by &lt;code>arr[i] == arr[i-1]&lt;/code>.&lt;/p>
-&lt;p>Here are some good backtracking problems which makes our understanding about the topic more firm :&lt;/p>
-&lt;ol>
-&lt;li>&lt;a href="https://leetcode.com/problems/letter-combinations-of-a-phone-number">Letter Combinations of a Phone Number&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://leetcode.com/problems/generate-parentheses">Generate Parentheses&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://leetcode.com/problems/sudoku-solver">Sudoku Solver&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://leetcode.com/problems/combination-sum">Combination Sum&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://leetcode.com/problems/combination-sum-ii">Combination Sum II&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://leetcode.com/problems/permutations">Permutations&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://leetcode.com/problems/permutations-ii">Permutations II&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://leetcode.com/problems/n-queens">N-Queens&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://leetcode.com/problems/combinations">Combinations&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://leetcode.com/problems/subsets">Subsets&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://leetcode.com/problems/subsets-ii">Subsets II&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://leetcode.com/problems/restore-ip-addresses">Restore IP Addresses&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://leetcode.com/problems/palindrome-partitioning">Palindrome Partitioning&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://leetcode.com/problems/word-break">Word Break&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://leetcode.com/problems/combination-sum-iii">Combination Sum III&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://leetcode.com/problems/target-sum">Target Sum&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://leetcode.com/problems/letter-case-permutation">Letter Case Permutation&lt;/a>&lt;/li>
-&lt;/ol></content></item><item><title>LLD or OOD Fundamentals</title><link>/posts/system-design-template/</link><pubDate>Fri, 24 Sep 2021 13:50:00 +0000</pubDate><guid>/posts/system-design-template/</guid><description>Pre-requisites : 🔵 OOPs Concepts
+&lt;p>We want our classes to be open to extension, so we have reorganized our dependencies to depend on interfaces instead of concrete classes.&lt;/p></content></item><item><title>LLD or OOD Fundamentals</title><link>/posts/system-design-template/</link><pubDate>Fri, 24 Sep 2021 13:50:00 +0000</pubDate><guid>/posts/system-design-template/</guid><description>Pre-requisites : 🔵 OOPs Concepts
 🔵 Design Patterns ( resource )
 🔵 Multi threading
 🔵 Locking mechanism

@@ -22,7 +22,7 @@
 <meta property="og:image" content="/">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
-<meta property="article:published_time" content="2021-10-08 20:21:27 +0000 UTC">
+<meta property="article:published_time" content="2021-09-24 20:21:27 +0000 UTC">
 </head>
 <body class=orange>
 <div class="container center headings--one-size">
@@ -58,7 +58,7 @@ Krishankant
 <a href=../../posts/solid-principles-ood/>Solid Principles ( OOD )</a></h1>
 <div class=post-meta>
 <span class=post-date>
-2021-10-08
+2021-09-24
 </span>
 <span class=post-author>:: Krishankant</span>
 </div>
@@ -256,7 +256,7 @@ Krishankant
 <span style=color:#f92672>}</span>
 </code></pre></div><p>Our parking lot interface was composed of 2 things: Parking related logic (park car, unpark car, get capacity) and payment related logic.</p>
 <p>But it is too specific. Because of that, our FreeParking class was forced to implement payment-related methods that are irrelevant. Let&rsquo;s separate or segregate the interfaces.</p>
-<p><img src=../../uploads/solid-tutorial-1024x432.png alt></p>
+<p><img src=../../uploads/ood-solid-princ.png alt></p>
 <p>We&rsquo;ve now separated the parking lot. With this new model, we can even go further and split the <strong>PaidParkingLot</strong> to support different types of payment.</p>
 <p>Now our model is much more flexible, extendable, and the clients do not need to implement any irrelevant logic because we provide only parking-related functionality in the parking lot interface.</p>
 <h3 id=5-dependency-inversion-principle>5. Dependency Inversion Principle<a href=#5-dependency-inversion-principle class=hanchor arialabel=Anchor>&#8983;</a> </h3>
@@ -270,14 +270,14 @@ Krishankant
 </div>
 <div class=pagination__buttons>
 <span class="button previous">
-<a href=../../posts/leetcode-top-75-problems/>
+<a href=../../posts/backtracking-problems-made-easy/>
 <span class=button__icon>←</span>
-<span class=button__text>Leetcode - Quick 75 problems refresher</span>
+<span class=button__text>Backtracking problems made easy </span>
 </a>
 </span>
 <span class="button next">
-<a href=../../posts/monotonic-stack-based-problems/>
-<span class=button__text>Monotonic Stack based problems</span>
+<a href=../../posts/system-design-template/>
+<span class=button__text>LLD or OOD Fundamentals</span>
 <span class=button__icon>→</span>
 </a>
 </span>
