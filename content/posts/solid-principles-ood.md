@@ -4,7 +4,6 @@ authorTwitter = ""
 cover = ""
 date = 2021-10-08T20:21:27Z
 description = "Explaination of solid principles with example."
-draft = true
 keywords = []
 showfullcontent = false
 tags = ["LLD", "OOD", "solid-principle"]
