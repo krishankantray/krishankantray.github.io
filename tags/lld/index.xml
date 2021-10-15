@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LLD on Krishankant</title><link>/tags/lld/</link><description>Recent content in LLD on Krishankant</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 08 Oct 2021 20:21:27 +0000</lastBuildDate><atom:link href="/tags/lld/index.xml" rel="self" type="application/rss+xml"/><item><title>Solid Principles ( OOD )</title><link>/posts/solid-principles-ood/</link><pubDate>Fri, 08 Oct 2021 20:21:27 +0000</pubDate><guid>/posts/solid-principles-ood/</guid><description>Solid Principles Best Video : https://youtu.be/gumM1H4qLUM
+Best Artcile : https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/
+SOLID stands for:
+The Single Responsibility Principle The Open-Closed Principle The Liskov Substitution Principle The Interface Segregation Principle The Dependency Inversion Principle 1. Single Responsibility : The Single Responsibility Principle states that a class should do one thing and therefore it should have only a single reason to change.
+Only one potential change (database logic, logging logic, and so on.</description><content>&lt;h1 id="solid-principles">Solid Principles&lt;/h1>
+&lt;p>&lt;strong>Best&lt;/strong> &lt;strong>Video&lt;/strong> : &lt;a href="https://youtu.be/gumM1H4qLUM">https://youtu.be/gumM1H4qLUM&lt;/a>&lt;/p>
+&lt;p>&lt;strong>Best Artcile :&lt;/strong> &lt;a href="https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/">https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/&lt;/a>&lt;/p>
+&lt;p>&lt;strong>SOLID stands for:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>The &lt;strong>S&lt;/strong>ingle Responsibility Principle&lt;/li>
+&lt;li>The &lt;strong>O&lt;/strong>pen-Closed Principle&lt;/li>
+&lt;li>The &lt;strong>L&lt;/strong>iskov Substitution Principle&lt;/li>
+&lt;li>The &lt;strong>I&lt;/strong>nterface Segregation Principle&lt;/li>
+&lt;li>The &lt;strong>D&lt;/strong>ependency Inversion Principle&lt;/li>
+&lt;/ul>
+&lt;h3 id="1-single-responsibility-">1. Single Responsibility :&lt;/h3>
+&lt;blockquote>
+&lt;p>The Single Responsibility Principle states that a class should do one thing and therefore it should have only a single reason to change.&lt;/p>
+&lt;/blockquote>
+&lt;p>Only one potential change (database logic, logging logic, and so on.) in the software’s specification should be able to affect the specification of the class.&lt;/p>
+&lt;p>This means that if a class is a data container, like a Book class or a Student class, and it has some fields regarding that entity, it should change only when we change the data model.&lt;/p>
+&lt;p>Example :&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Book&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> String bookName&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> String author&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> String text&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">boolean&lt;/span> &lt;span style="color:#a6e22e">findByAuthor&lt;/span>&lt;span style="color:#f92672">(&lt;/span>String authorName&lt;span style="color:#f92672">){&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> author&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">contains&lt;/span>&lt;span style="color:#f92672">(&lt;/span>authorName&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">boolean&lt;/span> &lt;span style="color:#a6e22e">findByName&lt;/span>&lt;span style="color:#f92672">(&lt;/span>String bookName&lt;span style="color:#f92672">){&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> bookName&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">contains&lt;/span>&lt;span style="color:#f92672">(&lt;/span>bookName&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">printToConsole&lt;/span>&lt;span style="color:#f92672">(){&lt;/span>
+&lt;span style="color:#75715e">// details to print
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Here, in this above example, &lt;code>printToConsole()&lt;/code> method is not related to Book. As, it may be needed in future to print in a file, then in that case we have to make changes in the class which is against the &lt;strong>single responsibility&lt;/strong>.&lt;/p>
+&lt;h3 id="2-the-open-closed-principle">2. The Open-Closed Principle&lt;/h3>
+&lt;p>The Open-Closed Principle requires that &lt;strong>classes should be open for extension and closed to modification.&lt;/strong>&lt;/p>
+&lt;p>Modification means changing the code of an existing class, and extension means adding new functionality.&lt;/p>
+&lt;p>Example:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Operations&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">double&lt;/span> &lt;span style="color:#a6e22e">calculate&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">double&lt;/span> a1&lt;span style="color:#f92672">,&lt;/span> &lt;span style="color:#66d9ef">double&lt;/span> a2&lt;span style="color:#f92672">,&lt;/span> String operationType&lt;span style="color:#f92672">){&lt;/span>
+&lt;span style="color:#66d9ef">switch&lt;/span>&lt;span style="color:#f92672">(&lt;/span>operationType&lt;span style="color:#f92672">){&lt;/span>
+&lt;span style="color:#66d9ef">case&lt;/span> &lt;span style="color:#e6db74">&amp;#34;+&amp;#34;&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> a1&lt;span style="color:#f92672">+&lt;/span>a2&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">case&lt;/span> &lt;span style="color:#e6db74">&amp;#34;-&amp;#34;&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> a1&lt;span style="color:#f92672">-&lt;/span>a2&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">default&lt;/span>&lt;span style="color:#f92672">:&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> 0&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>In this example, lets say we need to add one more operation say division. Then in that case we have to make changes in the code of class &lt;code>Operations&lt;/code> which can create bugs into the existing features like &lt;code>+&lt;/code> and &lt;code>-&lt;/code> operation. And this is violation of open-close principle.&lt;/p>
+&lt;p>So, to avoid any bugs and abide by the open close principle we can make following changes.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">interface&lt;/span> &lt;span style="color:#a6e22e">Operations&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">double&lt;/span> &lt;span style="color:#a6e22e">calculate&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">double&lt;/span> a1&lt;span style="color:#f92672">,&lt;/span> &lt;span style="color:#66d9ef">double&lt;/span> a2&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">AddOpearation&lt;/span> &lt;span style="color:#66d9ef">implements&lt;/span> Operations&lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">double&lt;/span> &lt;span style="color:#a6e22e">calculate&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">double&lt;/span> a1&lt;span style="color:#f92672">,&lt;/span> &lt;span style="color:#66d9ef">double&lt;/span> a2&lt;span style="color:#f92672">){&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> a1&lt;span style="color:#f92672">+&lt;/span>a2&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">DivisionOpearation&lt;/span> &lt;span style="color:#66d9ef">implements&lt;/span> Operations&lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">double&lt;/span> &lt;span style="color:#a6e22e">calculate&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">double&lt;/span> a1&lt;span style="color:#f92672">,&lt;/span> &lt;span style="color:#66d9ef">double&lt;/span> a2&lt;span style="color:#f92672">){&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> a1&lt;span style="color:#f92672">/&lt;/span>a2&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>So, we converted the class &lt;code>Operations&lt;/code> into an interface and then we can implement the interface into whatever operations class that we create according to requirements.&lt;/p>
+&lt;h3 id="3-liskov-substitution-principle">3. Liskov Substitution Principle&lt;/h3>
+&lt;p>The Liskov Substitution Principle states that subclasses should be substitutable for their base classes.&lt;/p>
+&lt;p>This means that, given that class B is a subclass of class A, we should be able to pass an object of class B to any method that expects an object of class A and the method should not give any weird output in that case.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Rectangle&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">protected&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> width&lt;span style="color:#f92672">,&lt;/span> height&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#a6e22e">Rectangle&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#a6e22e">Rectangle&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span> width&lt;span style="color:#f92672">,&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> height&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">width&lt;/span> &lt;span style="color:#f92672">=&lt;/span> width&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">height&lt;/span> &lt;span style="color:#f92672">=&lt;/span> height&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">getWidth&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> width&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">setWidth&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span> width&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">width&lt;/span> &lt;span style="color:#f92672">=&lt;/span> width&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">getHeight&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> height&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">setHeight&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span> height&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">height&lt;/span> &lt;span style="color:#f92672">=&lt;/span> height&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">getArea&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> width &lt;span style="color:#f92672">*&lt;/span> height&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Square&lt;/span> &lt;span style="color:#66d9ef">extends&lt;/span> Rectangle &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#a6e22e">Square&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#a6e22e">Square&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span> size&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+width &lt;span style="color:#f92672">=&lt;/span> height &lt;span style="color:#f92672">=&lt;/span> size&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">setWidth&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span> width&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">super&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setWidth&lt;/span>&lt;span style="color:#f92672">(&lt;/span>width&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#66d9ef">super&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setHeight&lt;/span>&lt;span style="color:#f92672">(&lt;/span>width&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">setHeight&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span> height&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">super&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setHeight&lt;/span>&lt;span style="color:#f92672">(&lt;/span>height&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#66d9ef">super&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setWidth&lt;/span>&lt;span style="color:#f92672">(&lt;/span>height&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>But when tester just came up with the testing function &lt;code>getAreaTest()&lt;/code> and tells you that your &lt;code>getArea&lt;/code> function fails to pass the test for square objects.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Test&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">static&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">getAreaTest&lt;/span>&lt;span style="color:#f92672">(&lt;/span>Rectangle r&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">int&lt;/span> width &lt;span style="color:#f92672">=&lt;/span> r&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getWidth&lt;/span>&lt;span style="color:#f92672">();&lt;/span>
+r&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setHeight&lt;/span>&lt;span style="color:#f92672">(&lt;/span>10&lt;span style="color:#f92672">);&lt;/span>
+System&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">out&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">println&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Expected area of &amp;#34;&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#f92672">(&lt;/span>width &lt;span style="color:#f92672">*&lt;/span> 10&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#e6db74">&amp;#34;, got &amp;#34;&lt;/span> &lt;span style="color:#f92672">+&lt;/span> r&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getArea&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">static&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>&lt;span style="color:#f92672">(&lt;/span>String&lt;span style="color:#f92672">[]&lt;/span> args&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+Rectangle rc &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> Rectangle&lt;span style="color:#f92672">(&lt;/span>2&lt;span style="color:#f92672">,&lt;/span> 3&lt;span style="color:#f92672">);&lt;/span>
+getAreaTest&lt;span style="color:#f92672">(&lt;/span>rc&lt;span style="color:#f92672">);&lt;/span>
+Rectangle sq &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> Square&lt;span style="color:#f92672">();&lt;/span>
+sq&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setWidth&lt;/span>&lt;span style="color:#f92672">(&lt;/span>5&lt;span style="color:#f92672">);&lt;/span>
+getAreaTest&lt;span style="color:#f92672">(&lt;/span>sq&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="4-interface-segregation-principle">4. Interface Segregation Principle&lt;/h3>
+&lt;p>Interface Segregation Principle is about separating the interfaces.&lt;/p>
+&lt;p>The principle states that many client-specific interfaces are better than one general-purpose interface. Clients should not be forced to implement a function they do no need.&lt;/p>
+&lt;p>Example :&lt;/p>
+&lt;p>This is a simple principle to understand and apply, so let&amp;rsquo;s see an example.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">interface&lt;/span> &lt;span style="color:#a6e22e">ParkingLot&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">parkCar&lt;/span>&lt;span style="color:#f92672">();&lt;/span> &lt;span style="color:#75715e">// Decrease empty spot count by 1
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">unparkCar&lt;/span>&lt;span style="color:#f92672">();&lt;/span> &lt;span style="color:#75715e">// Increase empty spots by 1
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">getCapacity&lt;/span>&lt;span style="color:#f92672">();&lt;/span> &lt;span style="color:#75715e">// Returns car capacity
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">double&lt;/span> &lt;span style="color:#a6e22e">calculateFee&lt;/span>&lt;span style="color:#f92672">(&lt;/span>Car car&lt;span style="color:#f92672">);&lt;/span> &lt;span style="color:#75715e">// Returns the price based on number of hours
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">doPayment&lt;/span>&lt;span style="color:#f92672">(&lt;/span>Car car&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Car&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>We modeled a very simplified parking lot. It is the type of parking lot where you pay an hourly fee. Now consider that we want to implement a parking lot that is free.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">FreeParking&lt;/span> &lt;span style="color:#66d9ef">implements&lt;/span> ParkingLot &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">parkCar&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">unparkCar&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">getCapacity&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">double&lt;/span> &lt;span style="color:#a6e22e">calculateFee&lt;/span>&lt;span style="color:#f92672">(&lt;/span>Car car&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> 0&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">doPayment&lt;/span>&lt;span style="color:#f92672">(&lt;/span>Car car&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">throw&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> Exception&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Parking lot is free&amp;#34;&lt;/span>&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Our parking lot interface was composed of 2 things: Parking related logic (park car, unpark car, get capacity) and payment related logic.&lt;/p>
+&lt;p>But it is too specific. Because of that, our FreeParking class was forced to implement payment-related methods that are irrelevant. Let&amp;rsquo;s separate or segregate the interfaces.&lt;/p>
+&lt;p>&lt;img src="../../uploads/solid-tutorial-1024x432.png" alt="">&lt;/p>
+&lt;p>We&amp;rsquo;ve now separated the parking lot. With this new model, we can even go further and split the &lt;strong>PaidParkingLot&lt;/strong> to support different types of payment.&lt;/p>
+&lt;p>Now our model is much more flexible, extendable, and the clients do not need to implement any irrelevant logic because we provide only parking-related functionality in the parking lot interface.&lt;/p>
+&lt;h3 id="5-dependency-inversion-principle">5. Dependency Inversion Principle&lt;/h3>
+&lt;p>The Dependency Inversion principle states that our classes should depend upon interfaces or abstract classes instead of concrete classes and functions.&lt;/p>
+&lt;p>We want our classes to be open to extension, so we have reorganized our dependencies to depend on interfaces instead of concrete classes.&lt;/p></content></item></channel></rss>
