@@ -2,7 +2,6 @@
 title = "About Me"
 
 +++
-[![Download Resume](https://img.icons8.com/color/30/000000/pdf.png) Download Resume](/pdf/KrishankantRay.pdf)
 
 # Hi there
 
@@ -22,4 +21,4 @@ Others : `Algorithms`, `Data Structures`, `OOP`, `System Design`
 
 ***
 
-Feel free to reach out to me at [contacts](https://krishankantray.github.io/contact) page.
+Feel free to reach out to me at [contacts](/contact) page.
