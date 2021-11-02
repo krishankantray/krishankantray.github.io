@@ -31,7 +31,7 @@ enableInlineShortcodes = true
   centerTheme = true
 
   # set a custom favicon (default is a `themeColor` square)
-  favicon = {{</*icon name="fa-brackets-curly" size="x-large"*/>}}
+  favicon = {{< icon fa-desktop >}} fa-desktop
 
   # set post to show the last updated
   # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
