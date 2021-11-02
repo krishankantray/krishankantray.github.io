@@ -14,7 +14,7 @@ Solution:
 <link rel=canonical href=../../posts/2017-09-26-codevita-2017-round-1-problem-c/>
 <link rel=stylesheet href=../../assets/style.css>
 <link rel=apple-touch-icon href=../../img/apple-touch-icon-192x192.png>
-<link rel="shortcut icon" href=../../img/favicon/orange.png>
+<link rel="shortcut icon" href=../../face_co%20%281%29.ico>
 <meta name=twitter:card content="summary">
 <meta name=twitter:site content>
 <meta name=twitter:creator content="Krishankant Ray">
@@ -29,7 +29,7 @@ Solution:
 /* Author: Krishankant Ray * CodeVita 2017 Round 1 */ #include&amp;lt;iostream&amp;gt; #include&amp;lt;vector&amp;gt; using namespace std; int main() { int d,k=0; string arr; cin&amp;gt;&amp;gt;d; cin&amp;gt;&amp;gt;arr; int n=arr.length(); char R[n]; for(int f=0; f&amp;lt;n; ) { R[f]=arr[k++]; f+=((2*d)-2); } for(int i=1; i&amp;lt;d-1;i++) { R[i]=arr[k++]; for(int j=i; j&amp;lt;n;) { j+=((2*d)-2-(2*i)); R[j]=arr[k++]; j+=((2*i)); if(j&amp;lt;n) R[j]=arr[k++]; } } for(int l=d-1; l&amp;lt;n;l+=((2*d)-2)) { R[l]=arr[k++]; } for(int f=0; f&amp;lt;n;f++) { if(R[f]=='X') break; else cout&amp;lt;&amp;lt;R[f]; } return 0; }  ">
 <meta property="og:url" content="/posts/2017-09-26-codevita-2017-round-1-problem-c/">
 <meta property="og:site_name" content="Krishankant">
-<meta property="og:image" content="/img/favicon/orange.png">
+<meta property="og:image" content="/face_co%20%281%29.ico">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 <meta property="article:published_time" content="2017-09-26 20:20:00 +0530 +0530">
