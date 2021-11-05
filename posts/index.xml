@@ -3763,7 +3763,7 @@ At last, we invoke the &lt;code>unshift&lt;/code> method on the &lt;code>fruit&l
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#a6e22e">keys&lt;/span> &lt;span style="color:#f92672">=&lt;/span> [&lt;span style="color:#e6db74">&amp;#34;name&amp;#34;&lt;/span>, &lt;span style="color:#e6db74">&amp;#34;age&amp;#34;&lt;/span>]
 &lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#a6e22e">values&lt;/span> &lt;span style="color:#f92672">=&lt;/span> [&lt;span style="color:#e6db74">&amp;#34;Lydia&amp;#34;&lt;/span>, &lt;span style="color:#ae81ff">22&lt;/span>]
 &lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#a6e22e">method&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#75715e">/* ?? */&lt;/span>
-Object[&lt;span style="color:#a6e22e">method&lt;/span>](&lt;span style="color:#a6e22e">keys&lt;/span>.&lt;span style="color:#a6e22e">map&lt;/span>((&lt;span style="color:#ae81ff">_&lt;/span>, &lt;span style="color:#a6e22e">i&lt;/span>) =&amp;gt; {
+Object[&lt;span style="color:#a6e22e">method&lt;/span>](&lt;span style="color:#a6e22e">keys&lt;/span>.&lt;span style="color:#a6e22e">map&lt;/span>((&lt;span style="color:#a6e22e">_&lt;/span>, &lt;span style="color:#a6e22e">i&lt;/span>) =&amp;gt; {
 &lt;span style="color:#66d9ef">return&lt;/span> [&lt;span style="color:#a6e22e">keys&lt;/span>[&lt;span style="color:#a6e22e">i&lt;/span>], &lt;span style="color:#a6e22e">values&lt;/span>[&lt;span style="color:#a6e22e">i&lt;/span>]]
 })) &lt;span style="color:#75715e">// { name: &amp;#34;Lydia&amp;#34;, age: 22 }
 &lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
@@ -5657,10 +5657,10 @@ return 0;
 }
 &lt;/code>&lt;/pre>
 &lt;p>&lt;strong>&lt;sup> &lt;/sup>&lt;/strong>&lt;span style="color: red;">&lt;span
-style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">** **&lt;/span>&lt;/span>&lt;br>
-&lt;span style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">**&lt;span
-style="color: red;"> &lt;/span>**&lt;/span>&lt;br>
-&lt;span style="color: red;">**&lt;span
+style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">** &lt;strong>&lt;/span>&lt;/span>&lt;br>
+&lt;span style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">&lt;/strong>&lt;span
+style="color: red;"> &lt;/span>&lt;strong>&lt;/span>&lt;br>
+&lt;span style="color: red;">&lt;/strong>&lt;span
 style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">&lt;/span>**&lt;/span>&lt;/p></content></item><item><title>CodeChef SEPT17 Problem: CHEFSUM</title><link>/posts/2017-09-03-codechef-sept17-problem-chefsum/</link><pubDate>Sun, 03 Sep 2017 22:52:00 +0530</pubDate><guid>/posts/2017-09-03-codechef-sept17-problem-chefsum/</guid><description>Problem: Little Chef and Sums
 Our little chef is fond of doing additions/sums in his free time. Today, he has an array A consisting of N positive integers and he will compute prefix and suffix sums over this array.
 He first defines two functions prefixSum(i) and suffixSum(i) for the array as follows. The function prefixSum(i) denotes the sum of first i numbers of the array. Similarly, he defines suffixSum(i) as the sum of last N - i + 1 numbers of the array.</description><content>&lt;p>&lt;span style="color: red;">&lt;strong>&lt;span
@@ -5757,10 +5757,10 @@ style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">
 style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">&lt;span
 style="color: red;">&lt;/strong> &lt;strong>&lt;/span>&lt;/span>&lt;/sup>&lt;/strong>&lt;/p>
 &lt;p>&lt;span style="color: red;">&lt;span
-style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">** **&lt;/span>&lt;/span>&lt;br>
-&lt;span style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">**&lt;span
-style="color: red;"> &lt;/span>**&lt;/span>&lt;br>
-&lt;span style="color: red;">**&lt;span
+style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">** &lt;strong>&lt;/span>&lt;/span>&lt;br>
+&lt;span style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">&lt;/strong>&lt;span
+style="color: red;"> &lt;/span>&lt;strong>&lt;/span>&lt;br>
+&lt;span style="color: red;">&lt;/strong>&lt;span
 style="font-family: &amp;quot;verdana&amp;quot; , sans-serif;">&lt;/span>**&lt;/span>&lt;/p></content></item><item><title>CodeChef (AUG17 LunchTime) : Mathison and pangrams - MATPAN</title><link>/posts/2017-08-30-codechef-aug17-lunchtime-mathison-and-pangrams-matpan/</link><pubDate>Wed, 30 Aug 2017 21:10:00 +0530</pubDate><guid>/posts/2017-08-30-codechef-aug17-lunchtime-mathison-and-pangrams-matpan/</guid><description>Problem: Mathison and pangrams
 Mathison recently inherited an ancient papyrus that contained some text. Unfortunately, the text was not a pangram. Now, Mathison has a particular liking for holoalphabetic strings and the text bothers him. The good news is that Mathison can buy letters from the local store in order to turn his text into a pangram.
 However, each letter has a price and Mathison is not very rich. Can you help Mathison find the cheapest way to obtain a pangram?</description><content>&lt;p>&lt;span style="color: red;">&lt;strong>&lt;span
@@ -6000,7 +6000,7 @@ Output&lt;br>
 4&lt;/span>&lt;br>
 &lt;span style="color: red;">&lt;span
 style="font-family: Verdana,sans-serif;">** **&lt;/span>&lt;/span>&lt;br>
-&lt;u>&lt;span style="font-family: inherit;">**Explanations**&lt;/span>&lt;/u>&lt;br>
+&lt;u>&lt;span style="font-family: inherit;">&lt;strong>Explanations&lt;/strong>&lt;/span>&lt;/u>&lt;br>
 The primes ≤ 10 are 2, 3, 5, 7. These can be used to form the following
 concatenated numbers: 22, 23, 25, 27, 32, 33, 35, 37,&lt;br>
 52, 53, 55, 57, 72, 73, 75, 77. Of these, there are four primes: 23 37
@@ -6512,7 +6512,7 @@ style="font-family: &amp;quot;consolas&amp;quot;;">&lt;span
 style="color: brown;">*&lt;span
 style="font-family: &amp;quot;consolas&amp;quot;;">&lt;span
 style="font-family: &amp;quot;consolas&amp;quot;;">&lt;span
-style="color: brown;">*eliminate* &lt;/span>&lt;/span>&lt;/span>trailing
+style="color: brown;">&lt;em>eliminate&lt;/em> &lt;/span>&lt;/span>&lt;/span>trailing
 whitespaces created due to  endline character of
 cin&amp;gt;&amp;gt; *&lt;/span>&lt;/span>&lt;/span>&lt;/p>
 &lt;p>&lt;span style="font-family: &amp;quot;consolas&amp;quot;;">&lt;span
