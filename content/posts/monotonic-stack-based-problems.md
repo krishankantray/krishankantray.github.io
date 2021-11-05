@@ -1,7 +1,7 @@
 +++
 author = "Krishankant"
 authorTwitter = ""
-cover = ""
+cover = "/uploads/monotonic-stack.jpg"
 date = 2021-10-04T22:05:57Z
 description = "A whole range of problems based on monotonic stack"
 keywords = []
