@@ -1,4 +1,102 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Krishankant</title><link>/posts/</link><description>Recent content in Posts on Krishankant</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 09 Oct 2021 12:50:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Leetcode - Quick 75 problems refresher</title><link>/posts/leetcode-top-75-problems/</link><pubDate>Sat, 09 Oct 2021 12:50:00 +0000</pubDate><guid>/posts/leetcode-top-75-problems/</guid><description>75 problems refresher Array Two Sum - https://leetcode.com/problems/two-sum/ Best Time to Buy and Sell Stock - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ Contains Duplicate - https://leetcode.com/problems/contains-duplicate/ Product of Array Except Self - https://leetcode.com/problems/product-of-array-except-self/ Maximum Subarray - https://leetcode.com/problems/maximum-subarray/ Maximum Product Subarray - https://leetcode.com/problems/maximum-product-subarray/ Find Minimum in Rotated Sorted Array - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/ Search in Rotated Sorted Array - https://leetcode.com/problems/search-in-rotated-sorted-array/ 3Sum - https://leetcode.com/problems/3sum/ Container With Most Water - https://leetcode.com/problems/container-with-most-water/ Binary Sum of Two Integers - https://leetcode.</description><content>&lt;h2 id="75-problems-refresher">&lt;strong>75 problems&lt;/strong> refresher&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Krishankant</title><link>/posts/</link><description>Recent content in Posts on Krishankant</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 05 Nov 2021 19:58:04 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Cycle detection in directed and undirected graphs</title><link>/posts/cycle-detection-in-directed-and-undirected-graphs/</link><pubDate>Fri, 05 Nov 2021 19:58:04 +0000</pubDate><guid>/posts/cycle-detection-in-directed-and-undirected-graphs/</guid><description>Cycle detection in graph Undirected graph :
+To detect cycle in an undirected graph we do not need any extra space apart from maintaining a visited[] array. We just need to keep tract of parent of current node so that the algorithm excludes the single edge loop condition.
+Code ( C++) : ( github link )
+#include &amp;lt;bits/stdc++.h&amp;gt;using namespace std; class Solution { public: bool isCycle(vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt;&amp;amp;adj, vector&amp;lt;bool&amp;gt;&amp;amp;vis, int parent, int cur){ vis[cur]=true; for(int node:adj[cur]){ if(!</description><content>&lt;h2 id="cycle-detection-in-graph">Cycle detection in graph&lt;/h2>
+&lt;p>&lt;strong>Undirected graph :&lt;/strong>&lt;/p>
+&lt;p>To detect cycle in an undirected graph we do not need any extra space apart from maintaining a &lt;code>visited[]&lt;/code> array. We just need to keep tract of parent of current node so that the algorithm excludes the single edge loop condition.&lt;/p>
+&lt;p>Code ( &lt;strong>C++&lt;/strong>) : ( &lt;a href="https://github.com/krishankantray/Graph-Algorithms/blob/master/cycle_detection_undirected_graph.cpp" title="github link">github link&lt;/a> )&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;bits/stdc++.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">using&lt;/span> &lt;span style="color:#66d9ef">namespace&lt;/span> std;
+&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Solution&lt;/span> {
+&lt;span style="color:#66d9ef">public&lt;/span>&lt;span style="color:#f92672">:&lt;/span>
+&lt;span style="color:#66d9ef">bool&lt;/span> isCycle(vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&amp;gt;&amp;amp;&lt;/span>adj, vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">bool&lt;/span>&lt;span style="color:#f92672">&amp;gt;&amp;amp;&lt;/span>vis, &lt;span style="color:#66d9ef">int&lt;/span> parent, &lt;span style="color:#66d9ef">int&lt;/span> cur){
+vis[cur]&lt;span style="color:#f92672">=&lt;/span>true;
+&lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> node:adj[cur]){
+&lt;span style="color:#66d9ef">if&lt;/span>(&lt;span style="color:#f92672">!&lt;/span>vis[node]){
+&lt;span style="color:#66d9ef">if&lt;/span>(isCycle(adj, vis, cur, node))
+&lt;span style="color:#66d9ef">return&lt;/span> true;
+}
+&lt;span style="color:#66d9ef">else&lt;/span>{
+&lt;span style="color:#66d9ef">return&lt;/span> node&lt;span style="color:#f92672">!=&lt;/span>parent ;
+}
+}
+&lt;span style="color:#66d9ef">return&lt;/span> false;
+}
+&lt;span style="color:#66d9ef">bool&lt;/span> &lt;span style="color:#a6e22e">detectCycle&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> V, vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&amp;gt;&amp;amp;&lt;/span>adj){
+vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">bool&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>vis(V, false);
+&lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span>; i&lt;span style="color:#f92672">&amp;lt;&lt;/span>V; i&lt;span style="color:#f92672">++&lt;/span>){
+&lt;span style="color:#66d9ef">if&lt;/span>(&lt;span style="color:#f92672">!&lt;/span>vis[i]){
+&lt;span style="color:#66d9ef">if&lt;/span>(isCycle(adj, vis, &lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>, i))
+&lt;span style="color:#66d9ef">return&lt;/span> true;
+}
+}
+&lt;span style="color:#66d9ef">return&lt;/span> false;
+}
+}
+&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>() {
+&lt;span style="color:#66d9ef">int&lt;/span> V; &lt;span style="color:#75715e">// number of vertices
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> E; &lt;span style="color:#75715e">// number of edges
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span>adj(V); &lt;span style="color:#75715e">// adjancency matrix
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> cin&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span>V&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span>E;
+&lt;span style="color:#66d9ef">int&lt;/span> u,v;
+&lt;span style="color:#66d9ef">while&lt;/span>(E&lt;span style="color:#f92672">--&lt;/span>){
+cin&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span>u&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span>v;
+adj[u].push_back(v);
+adj[v].push_back(u); &lt;span style="color:#75715e">// for undirected graph u-&amp;gt;v also imples v-&amp;gt;u
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> }
+Solution s &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> Solution();
+cout&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>s.detectCycle(V, adj);
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+}
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Directed graph :&lt;/strong>&lt;/p>
+&lt;p>In directed graph we need to keep tract of &lt;code>visited[]&lt;/code> nodes and also currently processing dfs stack.&lt;/p>
+&lt;p>C++ Code : ( &lt;a href="https://github.com/krishankantray/Graph-Algorithms/blob/master/cycle_detection_in_directed_graph.cpp" title="Github link">github link&lt;/a> )&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;bits/stdc++.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">using&lt;/span> &lt;span style="color:#66d9ef">namespace&lt;/span> std;
+&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Solution&lt;/span> {
+&lt;span style="color:#66d9ef">public&lt;/span>&lt;span style="color:#f92672">:&lt;/span>
+&lt;span style="color:#66d9ef">bool&lt;/span> isCycle(vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&amp;gt;&amp;amp;&lt;/span>adj, vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">bool&lt;/span>&lt;span style="color:#f92672">&amp;gt;&amp;amp;&lt;/span>vis, vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">bool&lt;/span>&lt;span style="color:#f92672">&amp;gt;&amp;amp;&lt;/span>dfsVis, &lt;span style="color:#66d9ef">int&lt;/span> parent, &lt;span style="color:#66d9ef">int&lt;/span> cur){
+vis[cur]&lt;span style="color:#f92672">=&lt;/span>true;
+dfsVis[cur]&lt;span style="color:#f92672">=&lt;/span>true;
+&lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> node:adj[cur]){
+&lt;span style="color:#66d9ef">if&lt;/span>(&lt;span style="color:#f92672">!&lt;/span>vis[node]){
+&lt;span style="color:#66d9ef">if&lt;/span>(isCycle(adj, vis, cur, node))
+&lt;span style="color:#66d9ef">return&lt;/span> true;
+}
+&lt;span style="color:#66d9ef">else&lt;/span> &lt;span style="color:#a6e22e">if&lt;/span>(dfs[cur]){
+&lt;span style="color:#66d9ef">return&lt;/span> true ;
+}
+}
+dfsVis[cur]&lt;span style="color:#f92672">=&lt;/span>false;
+&lt;span style="color:#66d9ef">return&lt;/span> false;
+}
+&lt;span style="color:#66d9ef">bool&lt;/span> &lt;span style="color:#a6e22e">detectCycle&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> V, vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&amp;gt;&amp;amp;&lt;/span>adj){
+vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">bool&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>vis(V, false);
+vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">bool&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>dfsVis(V, false);
+&lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span>; i&lt;span style="color:#f92672">&amp;lt;&lt;/span>V; i&lt;span style="color:#f92672">++&lt;/span>){
+&lt;span style="color:#66d9ef">if&lt;/span>(&lt;span style="color:#f92672">!&lt;/span>vis[i]){
+&lt;span style="color:#66d9ef">if&lt;/span>(isCycle(adj, vis, dfsVis, &lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>, i))
+&lt;span style="color:#66d9ef">return&lt;/span> true;
+}
+}
+&lt;span style="color:#66d9ef">return&lt;/span> false;
+}
+}
+&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>() {
+&lt;span style="color:#66d9ef">int&lt;/span> V; &lt;span style="color:#75715e">// number of vertices
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> E; &lt;span style="color:#75715e">// number of edges
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>vector&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span>adj(V); &lt;span style="color:#75715e">// adjancency matrix
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> cin&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span>V&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span>E;
+&lt;span style="color:#66d9ef">int&lt;/span> u,v;
+&lt;span style="color:#66d9ef">while&lt;/span>(E&lt;span style="color:#f92672">--&lt;/span>){
+cin&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span>u&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span>v;
+adj[u].push_back(v);
+}
+Solution s &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> Solution();
+cout&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>s.detectCycle(V, adj);
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+}
+&lt;/code>&lt;/pre>&lt;/div></content></item><item><title>Leetcode - Quick 75 problems refresher</title><link>/posts/leetcode-top-75-problems/</link><pubDate>Sat, 09 Oct 2021 12:50:00 +0000</pubDate><guid>/posts/leetcode-top-75-problems/</guid><description>75 problems refresher Array Two Sum - https://leetcode.com/problems/two-sum/ Best Time to Buy and Sell Stock - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ Contains Duplicate - https://leetcode.com/problems/contains-duplicate/ Product of Array Except Self - https://leetcode.com/problems/product-of-array-except-self/ Maximum Subarray - https://leetcode.com/problems/maximum-subarray/ Maximum Product Subarray - https://leetcode.com/problems/maximum-product-subarray/ Find Minimum in Rotated Sorted Array - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/ Search in Rotated Sorted Array - https://leetcode.com/problems/search-in-rotated-sorted-array/ 3Sum - https://leetcode.com/problems/3sum/ Container With Most Water - https://leetcode.com/problems/container-with-most-water/ Binary Sum of Two Integers - https://leetcode.</description><content>&lt;h2 id="75-problems-refresher">&lt;strong>75 problems&lt;/strong> refresher&lt;/h2>
 &lt;h4 id="array">Array&lt;/h4>
 &lt;ul>
 &lt;li>Two Sum - &lt;a href="https://leetcode.com/problems/two-sum/">https://leetcode.com/problems/two-sum/&lt;/a>&lt;/li>
