@@ -2,8 +2,7 @@
 title = "About Me"
 
 +++
-
-# Hi there
+# 👋 Hi there 
 
 My name is Krishankant and I'm a software engineer based in India 🇮🇳.
 
