@@ -4,6 +4,7 @@ theme = "terminal"
 paginate = 15
 relativeURLs=true
 enableInlineShortcodes = true
+googleAnalytics = 'G-QWLMER60PT'
 
 [markup]
   [markup.goldmark]
