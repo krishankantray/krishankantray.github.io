@@ -138,156 +138,81 @@ title = "Leetcode - Quick 75 problems refresher"
 
 Difficulty wise :
 
-| ID   | Problem Name                                               | Problem Link                                                                             | Difficulty | Status  |
-| ---- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------- | ------- |
-| 1250 |  Longest Common Subsequence                                |  https://leetcode.com/problems/longest-common-subsequence                                |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 647  |  Palindromic Substrings                                    |  https://leetcode.com/problems/palindromic-substrings                                    |  Medium    |         |
-|      |                                                            |                                                                                          |            |         |
-| 572  |  Subtree of Another Tree                                   |  https://leetcode.com/problems/subtree-of-another-tree                                   |  Easy      |         |
-|      |                                                            |                                                                                          |            |         |
-| 449  |  Serialize and Deserialize BST                             |  https://leetcode.com/problems/serialize-and-deserialize-bst                             |  Medium    |         |
-|      |                                                            |                                                                                          |            |         |
-| 435  |  Non-overlapping Intervals                                 |  https://leetcode.com/problems/non-overlapping-intervals                                 |  Medium    |         |
-|      |                                                            |                                                                                          |            |         |
-| 424  |  Longest Repeating Character Replacement                   |  https://leetcode.com/problems/null                                                      |  Medium    |         |
-|      |                                                            |                                                                                          |            |         |
-| 417  |  Pacific Atlantic Water Flow                               |  https://leetcode.com/problems/pacific-atlantic-water-flow                               |  Medium    |         |
-|      |                                                            |                                                                                          |            |         |
-| 371  |  Sum of Two Integers                                       |  https://leetcode.com/problems/sum-of-two-integers                                       |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 347  |  Top K Frequent Elements                                   |  https://leetcode.com/problems/top-k-frequent-elements                                   |  Medium    |         |
-|      |                                                            |                                                                                          |            |         |
-| 338  |  Counting Bits                                             |  https://leetcode.com/problems/counting-bits                                             |  Easy      |         |
-|      |                                                            |                                                                                          |            |         |
-| 323  |  Number of Connected Components in an Undirected Graph     |  https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph     |  Medium    |         |
-|      |                                                            |                                                                                          |            |         |
-| 322  |  Coin Change                                               |  https://leetcode.com/problems/coin-change                                               |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 300  |  Longest Increasing Subsequence                            |  https://leetcode.com/problems/longest-increasing-subsequence                            |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 295  |  Find Median from Data Stream                              |  https://leetcode.com/problems/find-median-from-data-stream                              |  Difficult |         |
-|      |                                                            |                                                                                          |            |         |
-| 271  |  Encode and Decode Strings                                 |  https://leetcode.com/problems/encode-and-decode-strings                                 |  Medium    |         |
-|      |                                                            |                                                                                          |            |         |
-| 269  |  Alien Dictionary                                          |  https://leetcode.com/problems/alien-dictionary                                          |  Difficult |         |
-|      |                                                            |                                                                                          |            |         |
-| 268  |  Missing Number                                            |  https://leetcode.com/problems/missing-number                                            |  Easy      |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 261  |  Graph Valid Tree                                          |  https://leetcode.com/problems/graph-valid-tree                                          |  Medium    |         |
-|      |                                                            |                                                                                          |            |         |
-| 253  |  Meeting Rooms II                                          |  https://leetcode.com/problems/meeting-rooms-ii                                          |  Medium    |         |
-|      |                                                            |                                                                                          |            |         |
-| 252  |  Meeting Rooms                                             |  https://leetcode.com/problems/meeting-rooms                                             |  Easy      |         |
-|      |                                                            |                                                                                          |            |         |
-| 242  |  Valid Anagram                                             |  https://leetcode.com/problems/valid-anagram                                             |  Easy      |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 238  |  Product of Array Except Self                              |  https://leetcode.com/problems/product-of-array-except-self                              |  Medium    |         |
-|      |                                                            |                                                                                          |            |         |
-| 236  |  Lowest Common Ancestor of a Binary Tree                   |  https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree                   |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 235  |  Lowest Common Ancestor of a Binary Search Tree            |  https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree            |  Easy      |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 230  |  Kth Smallest Element in a BST                             |  https://leetcode.com/problems/kth-smallest-element-in-a-bst                             |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 226  |  Invert Binary Tree                                        |  https://leetcode.com/problems/invert-binary-tree                                        |  Easy      |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 217  |  Contains Duplicate                                        |  https://leetcode.com/problems/contains-duplicate                                        |  Easy      |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 213  |  House Robber II                                           |  https://leetcode.com/problems/house-robber-ii                                           |  Medium    |         |
-|      |                                                            |                                                                                          |            |         |
-| 212  |  Word Search II                                            |  https://leetcode.com/problems/word-search-ii                                            |  Difficult |         |
-|      |                                                            |                                                                                          |            |         |
-| 211  |  Design Add and Search Words Data Structure                |  https://leetcode.com/problems/add-and-search-word                                       |  Medium    |         |
-|      |                                                            |                                                                                          |            |         |
-| 208  |  Implement Trie (Prefix Tree)                              |  https://leetcode.com/problems/implement-trie-prefix-tree                                |  Medium    |         |
-|      |                                                            |                                                                                          |            |         |
-| 207  |  Course Schedule                                           |  https://leetcode.com/problems/course-schedule                                           |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 206  |  Reverse Linked List                                       |  https://leetcode.com/problems/reverse-linked-list                                       |  Easy      |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 200  |  Number of Islands                                         |  https://leetcode.com/problems/number-of-islands                                         |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 198  |  House Robber                                              |  https://leetcode.com/problems/house-robber                                              |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 191  |  Number of 1 Bits                                          |  https://leetcode.com/problems/number-of-1-bits                                          |  Easy      |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 190  |  Reverse Bits                                              |  https://leetcode.com/problems/reverse-bits                                              |  Easy      |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 153  |  Find Minimum in Rotated Sorted Array                      |  https://leetcode.com/problems/find-minimum-in-rotated-sorted-array                      |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 152  |  Maximum Product Subarray                                  |  https://leetcode.com/problems/maximum-product-subarray                                  |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 143  |  Reorder List                                              |  https://leetcode.com/problems/reorder-list                                              |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 141  |  Linked List Cycle                                         |  https://leetcode.com/problems/linked-list-cycle                                         |  Easy      |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 139  |  Word Break                                                |  https://leetcode.com/problems/word-break                                                |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 133  |  Clone Graph                                               |  https://leetcode.com/problems/clone-graph                                               |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 128  |  Longest Consecutive Sequence                              |  https://leetcode.com/problems/longest-consecutive-sequence                              |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 125  |  Valid Palindrome                                          |  https://leetcode.com/problems/valid-palindrome                                          |  Easy      |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 124  |  Binary Tree Maximum Path Sum                              |  https://leetcode.com/problems/binary-tree-maximum-path-sum                              |  Difficult |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 121  |  Best Time to Buy and Sell Stock                           |  https://leetcode.com/problems/best-time-to-buy-and-sell-stock                           |  Easy      |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 105  |  Construct Binary Tree from Preorder and Inorder Traversal |  https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal |  Medium    |         |
-|      |                                                            |                                                                                          |            |         |
-| 104  |  Maximum Depth of Binary Tree                              |  https://leetcode.com/problems/maximum-depth-of-binary-tree                              |  Easy      |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 102  |  Binary Tree Level Order Traversal                         |  https://leetcode.com/problems/binary-tree-level-order-traversal                         |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 100  |  Same Tree                                                 |  https://leetcode.com/problems/same-tree                                                 |  Easy      |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 98   |  Validate Binary Search Tree                               |  https://leetcode.com/problems/validate-binary-search-tree                               |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 91   |  Decode Ways                                               |  https://leetcode.com/problems/decode-ways                                               |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 79   |  Word Search                                               |  https://leetcode.com/problems/word-search                                               |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 76   |  Minimum Window Substring                                  |  https://leetcode.com/problems/minimum-window-substring                                  |  Difficult |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 73   |  Set Matrix Zeroes                                         |  https://leetcode.com/problems/set-matrix-zeroes                                         |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 70   |  Climbing Stairs                                           |  https://leetcode.com/problems/climbing-stairs                                           |  Easy      |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 62   |  Unique Paths                                              |  https://leetcode.com/problems/unique-paths                                              |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 57   |  Insert Interval                                           |  https://leetcode.com/problems/insert-interval                                           |  Medium    |         |
-|      |                                                            |                                                                                          |            |         |
-| 56   |  Merge Intervals                                           |  https://leetcode.com/problems/merge-intervals                                           |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 55   |  Jump Game                                                 |  https://leetcode.com/problems/jump-game                                                 |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 54   |  Spiral Matrix                                             |  https://leetcode.com/problems/spiral-matrix                                             |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 53   |  Maximum Subarray                                          |  https://leetcode.com/problems/maximum-subarray                                          |  Easy      |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 49   |  Group Anagrams                                            |  https://leetcode.com/problems/group-anagrams                                            |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 48   |  Rotate Image                                              |  https://leetcode.com/problems/rotate-image                                              |  Medium    |         |
-|      |                                                            |                                                                                          |            |         |
-| 39   |  Combination Sum                                           |  https://leetcode.com/problems/combination-sum                                           |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 33   |  Search in Rotated Sorted Array                            |  https://leetcode.com/problems/search-in-rotated-sorted-array                            |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 23   |  Merge k Sorted Lists                                      |  https://leetcode.com/problems/merge-k-sorted-list                                       |  Difficult |         |
-|      |                                                            |                                                                                          |            |         |
-| 21   |  Merge Two Sorted Lists                                    |  https://leetcode.com/problems/merge-two-sorted-lists                                    |  Easy      |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 20   |  Valid Parentheses                                         |  https://leetcode.com/problems/valid-parentheses                                         |  Easy      |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 19   |  Remove Nth Node From End of List                          |  https://leetcode.com/problems/remove-nth-node-from-end-of-list                          |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 15   |  3Sum                                                      |  https://leetcode.com/problems/3sum                                                      |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 11   |  Container With Most Water                                 |  https://leetcode.com/problems/container-with-most-water                                 |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 5    |  Longest Palindromic Substring                             |  https://leetcode.com/problems/longest-palindromic-substring                             |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 3    |  Longest Substring Without Repeating Characters            |  https://leetcode.com/problems/longest-substring-without-repeating-characters            |  Medium    |  Solved |
-|      |                                                            |                                                                                          |            |         |
-| 1    |  Two Sum                                                   |  https://leetcode.com/problems/two-sum                                                   |  Easy      |  Solved |
+|ID  |Problem Name                                              |Problem Link                                                                            |Difficulty|Status |
+|----|----------------------------------------------------------|----------------------------------------------------------------------------------------|----------|-------|
+|295 | Find Median from Data Stream                             | https://leetcode.com/problems/find-median-from-data-stream                             | Difficult|       |
+|269 | Alien Dictionary                                         | https://leetcode.com/problems/alien-dictionary                                         | Difficult|       |
+|212 | Word Search II                                           | https://leetcode.com/problems/word-search-ii                                           | Difficult|       |
+|124 | Binary Tree Maximum Path Sum                             | https://leetcode.com/problems/binary-tree-maximum-path-sum                             | Difficult| Solved|
+|76  | Minimum Window Substring                                 | https://leetcode.com/problems/minimum-window-substring                                 | Difficult| Solved|
+|23  | Merge k Sorted Lists                                     | https://leetcode.com/problems/merge-k-sorted-list                                      | Difficult|       |
+|572 | Subtree of Another Tree                                  | https://leetcode.com/problems/subtree-of-another-tree                                  | Easy     |       |
+|338 | Counting Bits                                            | https://leetcode.com/problems/counting-bits                                            | Easy     |       |
+|268 | Missing Number                                           | https://leetcode.com/problems/missing-number                                           | Easy     | Solved|
+|252 | Meeting Rooms                                            | https://leetcode.com/problems/meeting-rooms                                            | Easy     |       |
+|242 | Valid Anagram                                            | https://leetcode.com/problems/valid-anagram                                            | Easy     | Solved|
+|235 | Lowest Common Ancestor of a Binary Search Tree           | https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree           | Easy     | Solved|
+|226 | Invert Binary Tree                                       | https://leetcode.com/problems/invert-binary-tree                                       | Easy     | Solved|
+|217 | Contains Duplicate                                       | https://leetcode.com/problems/contains-duplicate                                       | Easy     | Solved|
+|206 | Reverse Linked List                                      | https://leetcode.com/problems/reverse-linked-list                                      | Easy     | Solved|
+|191 | Number of 1 Bits                                         | https://leetcode.com/problems/number-of-1-bits                                         | Easy     | Solved|
+|190 | Reverse Bits                                             | https://leetcode.com/problems/reverse-bits                                             | Easy     | Solved|
+|141 | Linked List Cycle                                        | https://leetcode.com/problems/linked-list-cycle                                        | Easy     | Solved|
+|125 | Valid Palindrome                                         | https://leetcode.com/problems/valid-palindrome                                         | Easy     | Solved|
+|121 | Best Time to Buy and Sell Stock                          | https://leetcode.com/problems/best-time-to-buy-and-sell-stock                          | Easy     | Solved|
+|104 | Maximum Depth of Binary Tree                             | https://leetcode.com/problems/maximum-depth-of-binary-tree                             | Easy     | Solved|
+|100 | Same Tree                                                | https://leetcode.com/problems/same-tree                                                | Easy     | Solved|
+|70  | Climbing Stairs                                          | https://leetcode.com/problems/climbing-stairs                                          | Easy     | Solved|
+|53  | Maximum Subarray                                         | https://leetcode.com/problems/maximum-subarray                                         | Easy     | Solved|
+|21  | Merge Two Sorted Lists                                   | https://leetcode.com/problems/merge-two-sorted-lists                                   | Easy     | Solved|
+|20  | Valid Parentheses                                        | https://leetcode.com/problems/valid-parentheses                                        | Easy     | Solved|
+|1   | Two Sum                                                  | https://leetcode.com/problems/two-sum                                                  | Easy     | Solved|
+|1250| Longest Common Subsequence                               | https://leetcode.com/problems/longest-common-subsequence                               | Medium   | Solved|
+|647 | Palindromic Substrings                                   | https://leetcode.com/problems/palindromic-substrings                                   | Medium   |       |
+|449 | Serialize and Deserialize BST                            | https://leetcode.com/problems/serialize-and-deserialize-bst                            | Medium   |       |
+|435 | Non-overlapping Intervals                                | https://leetcode.com/problems/non-overlapping-intervals                                | Medium   |       |
+|424 | Longest Repeating Character Replacement                  | https://leetcode.com/problems/null                                                     | Medium   |       |
+|417 | Pacific Atlantic Water Flow                              | https://leetcode.com/problems/pacific-atlantic-water-flow                              | Medium   |       |
+|371 | Sum of Two Integers                                      | https://leetcode.com/problems/sum-of-two-integers                                      | Medium   | Solved|
+|347 | Top K Frequent Elements                                  | https://leetcode.com/problems/top-k-frequent-elements                                  | Medium   |       |
+|323 | Number of Connected Components in an Undirected Graph    | https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph    | Medium   |       |
+|322 | Coin Change                                              | https://leetcode.com/problems/coin-change                                              | Medium   | Solved|
+|300 | Longest Increasing Subsequence                           | https://leetcode.com/problems/longest-increasing-subsequence                           | Medium   | Solved|
+|271 | Encode and Decode Strings                                | https://leetcode.com/problems/encode-and-decode-strings                                | Medium   |       |
+|261 | Graph Valid Tree                                         | https://leetcode.com/problems/graph-valid-tree                                         | Medium   |       |
+|253 | Meeting Rooms II                                         | https://leetcode.com/problems/meeting-rooms-ii                                         | Medium   |       |
+|238 | Product of Array Except Self                             | https://leetcode.com/problems/product-of-array-except-self                             | Medium   |       |
+|236 | Lowest Common Ancestor of a Binary Tree                  | https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree                  | Medium   | Solved|
+|230 | Kth Smallest Element in a BST                            | https://leetcode.com/problems/kth-smallest-element-in-a-bst                            | Medium   | Solved|
+|213 | House Robber II                                          | https://leetcode.com/problems/house-robber-ii                                          | Medium   |       |
+|211 | Design Add and Search Words Data Structure               | https://leetcode.com/problems/add-and-search-word                                      | Medium   |       |
+|208 | Implement Trie (Prefix Tree)                             | https://leetcode.com/problems/implement-trie-prefix-tree                               | Medium   |       |
+|207 | Course Schedule                                          | https://leetcode.com/problems/course-schedule                                          | Medium   | Solved|
+|200 | Number of Islands                                        | https://leetcode.com/problems/number-of-islands                                        | Medium   | Solved|
+|198 | House Robber                                             | https://leetcode.com/problems/house-robber                                             | Medium   | Solved|
+|153 | Find Minimum in Rotated Sorted Array                     | https://leetcode.com/problems/find-minimum-in-rotated-sorted-array                     | Medium   | Solved|
+|152 | Maximum Product Subarray                                 | https://leetcode.com/problems/maximum-product-subarray                                 | Medium   | Solved|
+|143 | Reorder List                                             | https://leetcode.com/problems/reorder-list                                             | Medium   | Solved|
+|139 | Word Break                                               | https://leetcode.com/problems/word-break                                               | Medium   | Solved|
+|133 | Clone Graph                                              | https://leetcode.com/problems/clone-graph                                              | Medium   | Solved|
+|128 | Longest Consecutive Sequence                             | https://leetcode.com/problems/longest-consecutive-sequence                             | Medium   | Solved|
+|105 | Construct Binary Tree from Preorder and Inorder Traversal| https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal| Medium   |       |
+|102 | Binary Tree Level Order Traversal                        | https://leetcode.com/problems/binary-tree-level-order-traversal                        | Medium   | Solved|
+|98  | Validate Binary Search Tree                              | https://leetcode.com/problems/validate-binary-search-tree                              | Medium   | Solved|
+|91  | Decode Ways                                              | https://leetcode.com/problems/decode-ways                                              | Medium   | Solved|
+|79  | Word Search                                              | https://leetcode.com/problems/word-search                                              | Medium   | Solved|
+|73  | Set Matrix Zeroes                                        | https://leetcode.com/problems/set-matrix-zeroes                                        | Medium   | Solved|
+|62  | Unique Paths                                             | https://leetcode.com/problems/unique-paths                                             | Medium   | Solved|
+|57  | Insert Interval                                          | https://leetcode.com/problems/insert-interval                                          | Medium   |       |
+|56  | Merge Intervals                                          | https://leetcode.com/problems/merge-intervals                                          | Medium   | Solved|
+|55  | Jump Game                                                | https://leetcode.com/problems/jump-game                                                | Medium   | Solved|
+|54  | Spiral Matrix                                            | https://leetcode.com/problems/spiral-matrix                                            | Medium   | Solved|
+|49  | Group Anagrams                                           | https://leetcode.com/problems/group-anagrams                                           | Medium   | Solved|
+|48  | Rotate Image                                             | https://leetcode.com/problems/rotate-image                                             | Medium   |       |
+|39  | Combination Sum                                          | https://leetcode.com/problems/combination-sum                                          | Medium   | Solved|
+|33  | Search in Rotated Sorted Array                           | https://leetcode.com/problems/search-in-rotated-sorted-array                           | Medium   | Solved|
+|19  | Remove Nth Node From End of List                         | https://leetcode.com/problems/remove-nth-node-from-end-of-list                         | Medium   | Solved|
+|15  | 3Sum                                                     | https://leetcode.com/problems/3sum                                                     | Medium   | Solved|
+|11  | Container With Most Water                                | https://leetcode.com/problems/container-with-most-water                                | Medium   | Solved|
+|5   | Longest Palindromic Substring                            | https://leetcode.com/problems/longest-palindromic-substring                            | Medium   | Solved|
+|3   | Longest Substring Without Repeating Characters           | https://leetcode.com/problems/longest-substring-without-repeating-characters           | Medium   | Solved|
