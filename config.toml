@@ -5,7 +5,6 @@ paginate = 15
 relativeURLs=true
 enableInlineShortcodes = true
 googleAnalytics = 'G-QWLMER60PT'
-disqusShortname = 'krishankantray'
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
