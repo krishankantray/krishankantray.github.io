@@ -6,5 +6,6 @@ title = "Contact"
 | --- |
 | Email:  krishankant_rai@rediffmail.com |
 | LinkedIn:  linkedin.com/in/krishankantray |
-| Phone:  +91 9560621994 |
 | GitHub: github.com/krishankantray |
+| Twitter:  @krishankantray |
+| Instagram:  @hachiman_kami.97 |
