@@ -7951,16 +7951,16 @@ Frameworks/Tools : ReactJS, ExpressJS, NodeJS</description><content>&lt;h1 id="-
 &lt;td>Email: &lt;a href="mailto:krishankant_rai@rediffmail.com">krishankant_rai@rediffmail.com&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>LinkedIn: linkedin.com/in/krishankantray&lt;/td>
+&lt;td>LinkedIn: &lt;a href="https://www.linkedin.com/in/krishankantray/">linkedin.com/in/krishankantray&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>GitHub: github.com/krishankantray&lt;/td>
+&lt;td>GitHub: &lt;a href="https://github.com/krishankantray">github.com/krishankantray&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Twitter: @krishankantray&lt;/td>
+&lt;td>Twitter: &lt;a href="https://twitter.com/krishankantray/">@krishankantray&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Instagram: @hachiman_kami.97&lt;/td>
+&lt;td>Instagram: &lt;a href="https://www.instagram.com/hachiman_kami.97/">@hachiman_kami.97&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table></content></item><item><title>Projects</title><link>/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/</guid><description>1. Blog CMS This‌‌ is‌‌ a‌‌ full‌‌ stack‌‌ blogging‌‌ app‌‌ which‌‌ provides ability‌‌ to‌‌ read‌‌ and‌‌ write‌‌ blogs. There‌‌ can‌‌ be‌‌ guest‌‌ users‌‌ and‌‌ logged‌‌ in‌‌ users.‌‌ The‌‌ guest ‌‌users‌‌ can‌‌ only‌‌ read‌‌ blog‌‌ as‌‌ compared‌‌ to‌‌ logged in‌‌ user‌‌ who‌‌ can‌‌ create‌‌ posts.‌ Technologies‌‌‌ -‌‌ NodeJs ,‌‌ Express,‌‌ MongoDB,‌‌ ReactJs‌
