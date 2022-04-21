@@ -1,135 +1,36 @@
-<!doctype html><html lang=en>
-<head>
-<title>Codechef SEPT17 CookOff - Subsequence Equality Problem Code: LIKECS01 :: Krishankant</title>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Problem: (Link: https://www.codechef.com/problems/LIKECS01 ) Chef Tobby is playing a rapid fire with Bhuvan. He gives Bhuvan a string S and each time, Bhuvan has to guess whether there exists 2 equal subsequences in the string or not.
-Bhuvan got a perfect score in the game with Chef Tobby. However, Chef Tobby has now asked Bhuvan to write a program that will do this automatically given a string S. Bhuvan is an intelligent man but he does not know how to write a code.">
-<meta name=keywords content="Krishankant Ray">
-<meta name=robots content="noodp">
-<link rel=canonical href=../../posts/2017-09-18-codechef-sept17-cookoff-subsequence-equality-problem-code-likecs01/>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QWLMER60PT"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-QWLMER60PT',{anonymize_ip:!1})}</script>
-<link rel=stylesheet href=../../assets/style.css>
-<link rel=apple-touch-icon href=../../img/apple-touch-icon-192x192.png>
-<link rel="shortcut icon" href=../../img/favicon.ico>
-<meta name=twitter:card content="summary">
-<meta name=twitter:site content>
-<meta name=twitter:creator content="Krishankant Ray">
-<meta property="og:locale" content="en">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Codechef SEPT17 CookOff - Subsequence Equality Problem Code: LIKECS01">
-<meta property="og:description" content="Problem: (Link: https://www.codechef.com/problems/LIKECS01 ) Chef Tobby is playing a rapid fire with Bhuvan. He gives Bhuvan a string S and each time, Bhuvan has to guess whether there exists 2 equal subsequences in the string or not.
-Bhuvan got a perfect score in the game with Chef Tobby. However, Chef Tobby has now asked Bhuvan to write a program that will do this automatically given a string S. Bhuvan is an intelligent man but he does not know how to write a code.">
-<meta property="og:url" content="/posts/2017-09-18-codechef-sept17-cookoff-subsequence-equality-problem-code-likecs01/">
-<meta property="og:site_name" content="Krishankant">
-<meta property="og:image" content="/img/favicon.ico">
-<meta property="og:image:width" content="2048">
-<meta property="og:image:height" content="1024">
-<meta property="article:published_time" content="2017-09-18 00:46:00 +0530 +0530">
-</head>
-<body class=orange>
-<div class="container center headings--one-size">
-<head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QWLMER60PT"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-QWLMER60PT',{anonymize_ip:!1})}</script>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-QWLMER60PT','auto'),ga('send','pageview'))</script>
-<script async src=https://www.google-analytics.com/analytics.js></script>
-</head>
-<header class=header>
-<div class=header__inner>
-<div class=header__logo>
-<a href=../../>
-<div class=logo>
-Krishankant
-</div>
-</a>
-</div>
-<div class=menu-trigger>menu</div>
-</div>
-<nav class=menu>
-<ul class="menu__inner menu__inner--desktop">
-<li><a href=../../about>About/Resume</a></li>
-<li><a href=../../posts>Blog</a></li>
-<li><a href=../../contact>Contact</a></li>
-<li><a href=../../projects>Projects</a></li>
-</ul>
-<ul class="menu__inner menu__inner--mobile">
-<li><a href=../../about>About/Resume</a></li>
-<li><a href=../../posts>Blog</a></li>
-<li><a href=../../contact>Contact</a></li>
-<li><a href=../../projects>Projects</a></li>
-</ul>
-</nav>
-</header>
-<div class=content>
-<div class=post>
-<h1 class=post-title>
-<a href=../../posts/2017-09-18-codechef-sept17-cookoff-subsequence-equality-problem-code-likecs01/>Codechef SEPT17 CookOff - Subsequence Equality Problem Code: LIKECS01</a></h1>
-<div class=post-meta>
-<span class=post-date>
-2017-09-18
-</span>
-<span class=post-author>:: Krishankant Ray</span>
-</div>
-<div class=post-content><div>
-<h3 id=span-stylecolor-redproblemspan-linkhttpswwwcodechefcomproblemslikecs01-><span style=color:red>Problem:</span> (Link: <a href=https://www.codechef.com/problems/LIKECS01>https://www.codechef.com/problems/LIKECS01</a> )<a href=#span-stylecolor-redproblemspan-linkhttpswwwcodechefcomproblemslikecs01- class=hanchor arialabel=Anchor>&#8983;</a> </h3>
-<p>Chef Tobby is playing a rapid fire with Bhuvan. He gives Bhuvan a string
+<!doctype html><html lang=en><head><title>Codechef SEPT17 CookOff - Subsequence Equality Problem Code: LIKECS01 :: Krishankant</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Problem: (Link: https://www.codechef.com/problems/LIKECS01 ) Chef Tobby is playing a rapid fire with Bhuvan. He gives Bhuvan a string S and each time, Bhuvan has to guess whether there exists 2 equal subsequences in the string or not.
+Bhuvan got a perfect score in the game with Chef Tobby. However, Chef Tobby has now asked Bhuvan to write a program that will do this automatically given a string S. Bhuvan is an intelligent man but he does not know how to write a code."><meta name=keywords content="Krishankant Ray"><meta name=robots content="noodp"><link rel=canonical href=../../posts/2017-09-18-codechef-sept17-cookoff-subsequence-equality-problem-code-likecs01/><script async src="https://www.googletagmanager.com/gtag/js?id=G-QWLMER60PT"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-QWLMER60PT",{anonymize_ip:!1})}</script><link rel=stylesheet href=../../assets/style.css><link rel=apple-touch-icon href=../../img/apple-touch-icon-192x192.png><link rel="shortcut icon" href=../../img/favicon.ico><meta name=twitter:card content="summary"><meta name=twitter:site content><meta name=twitter:creator content="Krishankant Ray"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="og:title" content="Codechef SEPT17 CookOff - Subsequence Equality Problem Code: LIKECS01"><meta property="og:description" content="Problem: (Link: https://www.codechef.com/problems/LIKECS01 ) Chef Tobby is playing a rapid fire with Bhuvan. He gives Bhuvan a string S and each time, Bhuvan has to guess whether there exists 2 equal subsequences in the string or not.
+Bhuvan got a perfect score in the game with Chef Tobby. However, Chef Tobby has now asked Bhuvan to write a program that will do this automatically given a string S. Bhuvan is an intelligent man but he does not know how to write a code."><meta property="og:url" content="/posts/2017-09-18-codechef-sept17-cookoff-subsequence-equality-problem-code-likecs01/"><meta property="og:site_name" content="Krishankant"><meta property="og:image" content="/img/favicon.ico"><meta property="og:image:width" content="2048"><meta property="og:image:height" content="1024"><meta property="article:published_time" content="2017-09-18 00:46:00 +0530 +0530"></head><body class=orange><div class="container center headings--one-size"><head><script async src="https://www.googletagmanager.com/gtag/js?id=G-QWLMER60PT"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-QWLMER60PT",{anonymize_ip:!1})}</script><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","G-QWLMER60PT","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script></head><header class=header><div class=header__inner><div class=header__logo><a href=../../><div class=logo>Krishankant</div></a></div><div class=menu-trigger>menu</div></div><nav class=menu><ul class="menu__inner menu__inner--desktop"><li><a href=../../about>About/Resume</a></li><li><a href=../../posts>Blog</a></li><li><a href=../../contact>Contact</a></li><li><a href=../../projects>Projects</a></li></ul><ul class="menu__inner menu__inner--mobile"><li><a href=../../about>About/Resume</a></li><li><a href=../../posts>Blog</a></li><li><a href=../../contact>Contact</a></li><li><a href=../../projects>Projects</a></li></ul></nav></header><div class=content><div class=post><h1 class=post-title><a href=../../posts/2017-09-18-codechef-sept17-cookoff-subsequence-equality-problem-code-likecs01/>Codechef SEPT17 CookOff - Subsequence Equality Problem Code: LIKECS01</a></h1><div class=post-meta><span class=post-date>2017-09-18</span>
+<span class=post-author>:: Krishankant Ray</span></div><div class=post-content><div><h3 id=span-stylecolor-redproblemspan-linkhttpswwwcodechefcomproblemslikecs01-><span style=color:red>Problem:</span> (Link: <a href=https://www.codechef.com/problems/LIKECS01>https://www.codechef.com/problems/LIKECS01</a> )<a href=#span-stylecolor-redproblemspan-linkhttpswwwcodechefcomproblemslikecs01- class=hanchor arialabel=Anchor>&#8983;</a></h3><p>Chef Tobby is playing a rapid fire with Bhuvan. He gives Bhuvan a string
 <strong>S</strong> and each time, Bhuvan has to guess whether there exists <strong>2</strong>
 equal <a href=https://en.wikipedia.org/wiki/Subsequence>subsequences</a> in the
-string or not.<br>
-Bhuvan got a perfect score in the game with Chef Tobby. However, Chef
+string or not.<br>Bhuvan got a perfect score in the game with Chef Tobby. However, Chef
 Tobby has now asked Bhuvan to write a program that will do this
 automatically given a string <strong>S</strong>. Bhuvan is an intelligent man but he
-does not know how to write a code. Can you help him?<br>
-Find two different subsequences such that they are equal in their value,
+does not know how to write a code. Can you help him?<br>Find two different subsequences such that they are equal in their value,
 more formally, find two sequences of indices (a<sub>1</sub>,
 a<sub>2</sub>, &mldr;, a<sub>k-1</sub>, a<sub>k</sub>) and (b<sub>1</sub>,
-b<sub>2</sub>, &mldr;, b<sub>k-1</sub>, b<sub>k</sub>) such that:</p>
-<ol>
-<li>1≤ a<sub>i</sub>, b<sub>i</sub> ≤ |S|</li>
-<li>a<sub>i</sub> &lt; a<sub>i+1</sub> for all valid i</li>
-<li>b<sub>i</sub> &lt; b<sub>i+1</sub> for all valid i</li>
-<li>S<sub>a<sub>i</sub></sub> = S<sub>b<sub>i</sub></sub> for all valid
-i</li>
-<li>there exist at least one i such that a<sub>i</sub> is not equal to
-b<sub>i</sub></li>
-</ol>
-<h3 id=span-stylecolor-redinput-sectionspan><span style=color:red>Input section</span><a href=#span-stylecolor-redinput-sectionspan class=hanchor arialabel=Anchor>&#8983;</a> </h3>
-<p>The first line contains <strong>T</strong>, the number of test cases.<br>
-Each of the next <strong>T</strong> lines contain one string <strong>S</strong> each.<br>
-<strong>Input will only consist of lowercase english characters</strong></p>
-<h3 id=span-stylecolor-redoutput-sectionspan><span style=color:red>Output section</span><a href=#span-stylecolor-redoutput-sectionspan class=hanchor arialabel=Anchor>&#8983;</a> </h3>
-<p>For each test case, output <strong>&ldquo;yes&rdquo;</strong> or <strong>&ldquo;no&rdquo;</strong> (without quotes) as the
-solution to the problem.</p>
-<h3 id=span-stylecolor-redinput-constraintsspan><span style=color:red>Input constraints</span><a href=#span-stylecolor-redinput-constraintsspan class=hanchor arialabel=Anchor>&#8983;</a> </h3>
-<pre><code>1 ≤ T ≤ 1000
+b<sub>2</sub>, &mldr;, b<sub>k-1</sub>, b<sub>k</sub>) such that:</p><ol><li>1≤ a<sub>i</sub>, b<sub>i</sub> ≤ |S|</li><li>a<sub>i</sub> &lt; a<sub>i+1</sub> for all valid i</li><li>b<sub>i</sub> &lt; b<sub>i+1</sub> for all valid i</li><li>S<sub>a<sub>i</sub></sub> = S<sub>b<sub>i</sub></sub> for all valid
+i</li><li>there exist at least one i such that a<sub>i</sub> is not equal to
+b<sub>i</sub></li></ol><h3 id=span-stylecolor-redinput-sectionspan><span style=color:red>Input section</span><a href=#span-stylecolor-redinput-sectionspan class=hanchor arialabel=Anchor>&#8983;</a></h3><p>The first line contains <strong>T</strong>, the number of test cases.<br>Each of the next <strong>T</strong> lines contain one string <strong>S</strong> each.<br><strong>Input will only consist of lowercase english characters</strong></p><h3 id=span-stylecolor-redoutput-sectionspan><span style=color:red>Output section</span><a href=#span-stylecolor-redoutput-sectionspan class=hanchor arialabel=Anchor>&#8983;</a></h3><p>For each test case, output <strong>&ldquo;yes&rdquo;</strong> or <strong>&ldquo;no&rdquo;</strong> (without quotes) as the
+solution to the problem.</p><h3 id=span-stylecolor-redinput-constraintsspan><span style=color:red>Input constraints</span><a href=#span-stylecolor-redinput-constraintsspan class=hanchor arialabel=Anchor>&#8983;</a></h3><pre><code>1 ≤ T ≤ 1000
 1 ≤ length of S ≤ 100
-</code></pre>
-<h3 id=span-stylecolor-redsample-inputspan><span style=color:red>Sample Input</span><a href=#span-stylecolor-redsample-inputspan class=hanchor arialabel=Anchor>&#8983;</a> </h3>
-<pre><code>4
+</code></pre><h3 id=span-stylecolor-redsample-inputspan><span style=color:red>Sample Input</span><a href=#span-stylecolor-redsample-inputspan class=hanchor arialabel=Anchor>&#8983;</a></h3><pre><code>4
 likecs
 venivedivici
 bhuvan
 codechef
-</code></pre>
-<h3 id=span-stylecolor-redsample-outputspan><span style=color:red>Sample Output</span><a href=#span-stylecolor-redsample-outputspan class=hanchor arialabel=Anchor>&#8983;</a> </h3>
-<pre><code>no
+</code></pre><h3 id=span-stylecolor-redsample-outputspan><span style=color:red>Sample Output</span><a href=#span-stylecolor-redsample-outputspan class=hanchor arialabel=Anchor>&#8983;</a></h3><pre><code>no
 yes
 no
 yes
-</code></pre>
-<h3 id=span-stylecolor-redexplanationspan><span style=color:red>Explanation</span><a href=#span-stylecolor-redexplanationspan class=hanchor arialabel=Anchor>&#8983;</a> </h3>
-<p>In test case <strong>2</strong>, one of the possible equal subsequence is <strong>&ldquo;vi&rdquo;</strong>
+</code></pre><h3 id=span-stylecolor-redexplanationspan><span style=color:red>Explanation</span><a href=#span-stylecolor-redexplanationspan class=hanchor arialabel=Anchor>&#8983;</a></h3><p>In test case <strong>2</strong>, one of the possible equal subsequence is <strong>&ldquo;vi&rdquo;</strong>
 and <strong>&ldquo;vi&rdquo;</strong>. (one at position <strong>{0, 3}</strong> and other at <strong>{4, 7}</strong>,
-assuming 0-based indexing).<br>
-In test case <strong>4</strong>, one of the possible equal subsequence is <strong>&ldquo;ce&rdquo;</strong>
+assuming 0-based indexing).<br>In test case <strong>4</strong>, one of the possible equal subsequence is <strong>&ldquo;ce&rdquo;</strong>
 and <strong>&ldquo;ce&rdquo;</strong>. (one at position <strong>{0, 3}</strong> and other at <strong>{4, 6}</strong>,
-assuming 0-based indexing).</p>
-<h3 id=span-stylecolor-redsolution-span><span style=color:red>Solution :</span><a href=#span-stylecolor-redsolution-span class=hanchor arialabel=Anchor>&#8983;</a> </h3>
-<h3 id=heading><a href=#heading class=hanchor arialabel=Anchor>&#8983;</a> </h3>
-<h3 id=heading-1><a href=#heading-1 class=hanchor arialabel=Anchor>&#8983;</a> </h3>
-<pre><code>#include &lt;iostream&gt;
+assuming 0-based indexing).</p><h3 id=span-stylecolor-redsolution-span><span style=color:red>Solution :</span><a href=#span-stylecolor-redsolution-span class=hanchor arialabel=Anchor>&#8983;</a></h3><h3 id=heading><a href=#heading class=hanchor arialabel=Anchor>&#8983;</a></h3><h3 id=heading-1><a href=#heading-1 class=hanchor arialabel=Anchor>&#8983;</a></h3><pre><code>#include &lt;iostream&gt;
 #include &lt;set&gt;
 using namespace std;
 int main()
@@ -150,37 +51,8 @@ int main()
 
     return 0;
 }
-</code></pre>
-</div></div>
-<div class=pagination>
-<div class=pagination__title>
-<span class=pagination__title-h>Read other posts</span>
-<hr>
-</div>
-<div class=pagination__buttons>
-<span class="button previous">
-<a href=../../posts/2017-09-26-tcs-codevita-2017-round-1-problem-a/>
-<span class=button__icon>←</span>
-<span class=button__text>TCS-Codevita 2017 Round-1 Problem-A</span>
-</a>
-</span>
-<span class="button next">
-<a href=../../posts/2017-09-14-codechef-courses-in-an-university-problem-code-unicours/>
-<span class=button__text>Codechef - Courses in an university - Problem Code: UNICOURS</span>
-<span class=button__icon>→</span>
-</a>
-</span>
-</div>
-</div>
-</div>
-</div>
-<footer class=footer>
-<div class=footer__inner>
-<p></p>
-</div>
-</footer>
-<script src=../../assets/main.js></script>
-<script src=../../assets/prism.js></script>
-</div>
-</body>
-</html>
+</code></pre></div></div><div class=pagination><div class=pagination__title><span class=pagination__title-h>Read other posts</span><hr></div><div class=pagination__buttons><span class="button previous"><a href=../../posts/2017-09-26-tcs-codevita-2017-round-1-problem-a/><span class=button__icon>←</span>
+<span class=button__text>TCS-Codevita 2017 Round-1 Problem-A</span></a></span>
+<span class="button next"><a href=../../posts/2017-09-14-codechef-courses-in-an-university-problem-code-unicours/><span class=button__text>Codechef - Courses in an university - Problem Code: UNICOURS</span>
+<span class=button__icon>→</span></a></span></div></div></div></div><footer class=footer><div class=footer__inner><p></p></div></footer><script src=../../assets/main.js></script>
+<script src=../../assets/prism.js></script></div></body></html>

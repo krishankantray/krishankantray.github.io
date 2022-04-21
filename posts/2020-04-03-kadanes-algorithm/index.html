@@ -1,182 +1,49 @@
-<!doctype html><html lang=en>
-<head>
-<title>Kadane's Algorithm :: Krishankant</title>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Kadane&amp;rsquo;s Algorithm TL;DR
- This algorithm is used to find maximum sum sub-array from a given array.  Its has O(n) time complexity and O(1) space complexity.  It works irrespective of whether the elements are positive or negative, whether sorted or unsorted.  Its DP approach Its brute force approach takes O(n^2) as it calculates all possible sub-array and then return maximum out of them.   Since brute force approach is very obvious and easy to implement, so, I am not discussing it here.">
-<meta name=keywords content="Krishankant Ray">
-<meta name=robots content="noodp">
-<link rel=canonical href=../../posts/2020-04-03-kadanes-algorithm/>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QWLMER60PT"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-QWLMER60PT',{anonymize_ip:!1})}</script>
-<link rel=stylesheet href=../../assets/style.css>
-<link rel=apple-touch-icon href=../../img/apple-touch-icon-192x192.png>
-<link rel="shortcut icon" href=../../img/favicon.ico>
-<meta name=twitter:card content="summary">
-<meta name=twitter:site content>
-<meta name=twitter:creator content="Krishankant Ray">
-<meta property="og:locale" content="en">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Kadane's Algorithm">
-<meta property="og:description" content="Kadane&amp;rsquo;s Algorithm TL;DR
- This algorithm is used to find maximum sum sub-array from a given array.  Its has O(n) time complexity and O(1) space complexity.  It works irrespective of whether the elements are positive or negative, whether sorted or unsorted.  Its DP approach Its brute force approach takes O(n^2) as it calculates all possible sub-array and then return maximum out of them.   Since brute force approach is very obvious and easy to implement, so, I am not discussing it here.">
-<meta property="og:url" content="/posts/2020-04-03-kadanes-algorithm/">
-<meta property="og:site_name" content="Krishankant">
-<meta property="og:image" content="/img/favicon.ico">
-<meta property="og:image:width" content="2048">
-<meta property="og:image:height" content="1024">
-<meta property="article:published_time" content="2020-04-03 06:16:00 +0530 +0530">
-</head>
-<body class=orange>
-<div class="container center headings--one-size">
-<head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QWLMER60PT"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-QWLMER60PT',{anonymize_ip:!1})}</script>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-QWLMER60PT','auto'),ga('send','pageview'))</script>
-<script async src=https://www.google-analytics.com/analytics.js></script>
-</head>
-<header class=header>
-<div class=header__inner>
-<div class=header__logo>
-<a href=../../>
-<div class=logo>
-Krishankant
-</div>
-</a>
-</div>
-<div class=menu-trigger>menu</div>
-</div>
-<nav class=menu>
-<ul class="menu__inner menu__inner--desktop">
-<li><a href=../../about>About/Resume</a></li>
-<li><a href=../../posts>Blog</a></li>
-<li><a href=../../contact>Contact</a></li>
-<li><a href=../../projects>Projects</a></li>
-</ul>
-<ul class="menu__inner menu__inner--mobile">
-<li><a href=../../about>About/Resume</a></li>
-<li><a href=../../posts>Blog</a></li>
-<li><a href=../../contact>Contact</a></li>
-<li><a href=../../projects>Projects</a></li>
-</ul>
-</nav>
-</header>
-<div class=content>
-<div class=post>
-<h1 class=post-title>
-<a href=../../posts/2020-04-03-kadanes-algorithm/>Kadane&rsquo;s Algorithm</a></h1>
-<div class=post-meta>
-<span class=post-date>
-2020-04-03
-</span>
-<span class=post-author>:: Krishankant Ray</span>
-</div>
-<div class=post-content><div>
-<h2 id=span-stylecolor-redspan-stylefont-size-x-largespan-stylefont-family-verdana-sans-serifkadanes-algorithmspanspanspan><span style=color:red><span style=font-size:x-large><span style=font-family:Verdana,sans-serif>Kadane&rsquo;s Algorithm</span></span></span><a href=#span-stylecolor-redspan-stylefont-size-x-largespan-stylefont-family-verdana-sans-serifkadanes-algorithmspanspanspan class=hanchor arialabel=Anchor>&#8983;</a> </h2>
-<p>TL;DR</p>
-<ul>
-<li>This algorithm is used to find maximum sum sub-array from a given
-array. </li>
-<li>Its has O(n) time complexity and O(1) space complexity.  </li>
-<li>It works irrespective of whether the elements are positive or
-negative, whether sorted or unsorted. </li>
-<li>Its DP approach</li>
-<li>Its brute force approach takes O(n^2) as it calculates all possible
-sub-array and then return maximum out of them. </li>
-</ul>
-<p>Since brute force approach is very obvious and easy to implement, so, I
-am not discussing it here.</p>
-<h4 id=lets-directly-jump-to-kadanes-algorithm->Lets directly jump to Kadane&rsquo;s Algorithm : <a href=#lets-directly-jump-to-kadanes-algorithm- class=hanchor arialabel=Anchor>&#8983;</a> </h4>
-<p>Its uses two variables one stores local maximum ( <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">local_maximum
+<!doctype html><html lang=en><head><title>Kadane's Algorithm :: Krishankant</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Kadane&amp;rsquo;s Algorithm TL;DR
+ This algorithm is used to find maximum sum sub-array from a given array.  Its has O(n) time complexity and O(1) space complexity.  It works irrespective of whether the elements are positive or negative, whether sorted or unsorted.  Its DP approach Its brute force approach takes O(n^2) as it calculates all possible sub-array and then return maximum out of them.   Since brute force approach is very obvious and easy to implement, so, I am not discussing it here."><meta name=keywords content="Krishankant Ray"><meta name=robots content="noodp"><link rel=canonical href=../../posts/2020-04-03-kadanes-algorithm/><script async src="https://www.googletagmanager.com/gtag/js?id=G-QWLMER60PT"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-QWLMER60PT",{anonymize_ip:!1})}</script><link rel=stylesheet href=../../assets/style.css><link rel=apple-touch-icon href=../../img/apple-touch-icon-192x192.png><link rel="shortcut icon" href=../../img/favicon.ico><meta name=twitter:card content="summary"><meta name=twitter:site content><meta name=twitter:creator content="Krishankant Ray"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="og:title" content="Kadane's Algorithm"><meta property="og:description" content="Kadane&amp;rsquo;s Algorithm TL;DR
+ This algorithm is used to find maximum sum sub-array from a given array.  Its has O(n) time complexity and O(1) space complexity.  It works irrespective of whether the elements are positive or negative, whether sorted or unsorted.  Its DP approach Its brute force approach takes O(n^2) as it calculates all possible sub-array and then return maximum out of them.   Since brute force approach is very obvious and easy to implement, so, I am not discussing it here."><meta property="og:url" content="/posts/2020-04-03-kadanes-algorithm/"><meta property="og:site_name" content="Krishankant"><meta property="og:image" content="/img/favicon.ico"><meta property="og:image:width" content="2048"><meta property="og:image:height" content="1024"><meta property="article:published_time" content="2020-04-03 06:16:00 +0530 +0530"></head><body class=orange><div class="container center headings--one-size"><head><script async src="https://www.googletagmanager.com/gtag/js?id=G-QWLMER60PT"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-QWLMER60PT",{anonymize_ip:!1})}</script><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","G-QWLMER60PT","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script></head><header class=header><div class=header__inner><div class=header__logo><a href=../../><div class=logo>Krishankant</div></a></div><div class=menu-trigger>menu</div></div><nav class=menu><ul class="menu__inner menu__inner--desktop"><li><a href=../../about>About/Resume</a></li><li><a href=../../posts>Blog</a></li><li><a href=../../contact>Contact</a></li><li><a href=../../projects>Projects</a></li></ul><ul class="menu__inner menu__inner--mobile"><li><a href=../../about>About/Resume</a></li><li><a href=../../posts>Blog</a></li><li><a href=../../contact>Contact</a></li><li><a href=../../projects>Projects</a></li></ul></nav></header><div class=content><div class=post><h1 class=post-title><a href=../../posts/2020-04-03-kadanes-algorithm/>Kadane&rsquo;s Algorithm</a></h1><div class=post-meta><span class=post-date>2020-04-03</span>
+<span class=post-author>:: Krishankant Ray</span></div><div class=post-content><div><h2 id=span-stylecolor-redspan-stylefont-size-x-largespan-stylefont-family-verdana-sans-serifkadanes-algorithmspanspanspan><span style=color:red><span style=font-size:x-large><span style=font-family:Verdana,sans-serif>Kadane&rsquo;s Algorithm</span></span></span><a href=#span-stylecolor-redspan-stylefont-size-x-largespan-stylefont-family-verdana-sans-serifkadanes-algorithmspanspanspan class=hanchor arialabel=Anchor>&#8983;</a></h2><p>TL;DR</p><ul><li>This algorithm is used to find maximum sum sub-array from a given
+array. </li><li>Its has O(n) time complexity and O(1) space complexity.  </li><li>It works irrespective of whether the elements are positive or
+negative, whether sorted or unsorted. </li><li>Its DP approach</li><li>Its brute force approach takes O(n^2) as it calculates all possible
+sub-array and then return maximum out of them. </li></ul><p>Since brute force approach is very obvious and easy to implement, so, I
+am not discussing it here.</p><h4 id=lets-directly-jump-to-kadanes-algorithm->Lets directly jump to Kadane&rsquo;s Algorithm : <a href=#lets-directly-jump-to-kadanes-algorithm- class=hanchor arialabel=Anchor>&#8983;</a></h4><p>Its uses two variables one stores local maximum ( <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">local_maximum
 </span></span>) and other stores global maximum ( <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">global_maximum</span>
-</span>) .<br>
-Initialise , <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">local_maximum
+</span>) .<br>Initialise , <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">local_maximum
 = 0 </span></span>and <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">global_maximum</span>
-= -Infinity </span></p>
-<dl>
-<dt>We start iteration from the first element, and for each element we check</dt>
-<dt>following condition before updating the &lt;span</dt>
-<dt>style=&ldquo;color: #e69138;">&lt;span</dt>
-<dt>style=&ldquo;font-family: "Courier New", Courier, monospace;">local_maximum</span></span></dt>
-<dd></dd>
-</dl>
-<ul>
-<li>if  <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">local_maximum
+= -Infinity </span></p><dl><dt>We start iteration from the first element, and for each element we check</dt><dt>following condition before updating the &lt;span</dt><dt>style=&ldquo;color: #e69138;">&lt;span</dt><dt>style=&ldquo;font-family: "Courier New", Courier, monospace;">local_maximum</span></span></dt><dd></dd></dl><ul><li>if  <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">local_maximum
 &lt; 0</span> </span>,  then <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">local_maximum
 = arr[i]</span></span> ,  this is because if <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">local_maximum
 </span></span>is negative value then adding it with current value
-will result into lower value.<br>
-Otherwise, if<span style=color:#e69138><span style="font-family:courier new,Courier,monospace">
+will result into lower value.<br>Otherwise, if<span style=color:#e69138><span style="font-family:courier new,Courier,monospace">
 local_maximum >=0 </span></span>then <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">local_maximum=
-local_maximum + arr[i]</span></span> .</li>
-</ul>
-<p>Now, we got <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">local_maximum
+local_maximum + arr[i]</span></span> .</li></ul><p>Now, we got <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">local_maximum
 </span></span>till current element, its time to compare it with <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">global_maximum</span>
-</span>. </p>
-<p> </p>
-<ul>
-<li>If <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">global_maximum
+</span>. </p><p> </p><ul><li>If <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">global_maximum
 &lt; local_maximum</span></span> then  <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">global
-maximum = local_maximum</span></span>              </li>
-</ul>
-<p> </p>
-<p> Thats it, now after whole iteration is finished the our answer is the
-value of <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">global_maximum</span></span>. </p>
-<p> </p>
-<h4 id=now-its-time-to-code-it-out->Now, its time to code it out : <a href=#now-its-time-to-code-it-out- class=hanchor arialabel=Anchor>&#8983;</a> </h4>
-<p>Language used : <code>JavaScript</code></p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>
-    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>maxSubArray</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>function</span>(<span style=color:#a6e22e>nums</span>) {
-        <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>local_maximum</span><span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>;
-        
-        <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>nums</span>
-            .<span style=color:#a6e22e>reduce</span>( (<span style=color:#a6e22e>global_maximum</span>,<span style=color:#a6e22e>current_element</span>)=&gt;{
-            
-            <span style=color:#66d9ef>if</span>(<span style=color:#a6e22e>local_maximum</span> <span style=color:#f92672>&lt;</span><span style=color:#ae81ff>0</span> ) {
-                <span style=color:#a6e22e>local_maximum</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>current_element</span> ;
-            }
-            <span style=color:#66d9ef>else</span>
-                <span style=color:#a6e22e>local_maximum</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>local_maximum</span> <span style=color:#f92672>+</span> <span style=color:#a6e22e>current_element</span> ;
-            
-            <span style=color:#a6e22e>global_maximum</span> <span style=color:#f92672>=</span>  Math.<span style=color:#a6e22e>max</span>(<span style=color:#a6e22e>global_maximum</span>,<span style=color:#a6e22e>local_maximum</span>);
-            
-            <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>global_maximum</span> ;
-            
-        }, <span style=color:#f92672>-</span><span style=color:#66d9ef>Infinity</span>);
-    };
-</code></pre></div><p>Please read about reduce function in JS if you don&rsquo;t already know about
-it.</p>
-</div></div>
-<div class=pagination>
-<div class=pagination__title>
-<span class=pagination__title-h>Read other posts</span>
-<hr>
-</div>
-<div class=pagination__buttons>
-<span class="button previous">
-<a href=../../posts/csv-to-sql-import/>
-<span class=button__icon>←</span>
-<span class=button__text>CSV to SQL import using Node, Express and React</span>
-</a>
-</span>
-<span class="button next">
-<a href=../../posts/2020-02-16-leetcode-169-majority-element/>
-<span class=button__text>LeetCode: 169 Majority Element</span>
-<span class=button__icon>→</span>
-</a>
-</span>
-</div>
-</div>
-</div>
-</div>
-<footer class=footer>
-<div class=footer__inner>
-<p></p>
-</div>
-</footer>
-<script src=../../assets/main.js></script>
-<script src=../../assets/prism.js></script>
-</div>
-</body>
-</html>
+maximum = local_maximum</span></span>              </li></ul><p> </p><p> Thats it, now after whole iteration is finished the our answer is the
+value of <span style=color:#e69138><span style="font-family:courier new,Courier,monospace">global_maximum</span></span>. </p><p> </p><h4 id=now-its-time-to-code-it-out->Now, its time to code it out : <a href=#now-its-time-to-code-it-out- class=hanchor arialabel=Anchor>&#8983;</a></h4><p>Language used : <code>JavaScript</code></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>maxSubArray</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>function</span>(<span style=color:#a6e22e>nums</span>) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>local_maximum</span><span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>        
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>nums</span>
+</span></span><span style=display:flex><span>            .<span style=color:#a6e22e>reduce</span>( (<span style=color:#a6e22e>global_maximum</span>,<span style=color:#a6e22e>current_element</span>)=&gt;{
+</span></span><span style=display:flex><span>            
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span>(<span style=color:#a6e22e>local_maximum</span> <span style=color:#f92672>&lt;</span><span style=color:#ae81ff>0</span> ) {
+</span></span><span style=display:flex><span>                <span style=color:#a6e22e>local_maximum</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>current_element</span> ;
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>else</span>
+</span></span><span style=display:flex><span>                <span style=color:#a6e22e>local_maximum</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>local_maximum</span> <span style=color:#f92672>+</span> <span style=color:#a6e22e>current_element</span> ;
+</span></span><span style=display:flex><span>            
+</span></span><span style=display:flex><span>            <span style=color:#a6e22e>global_maximum</span> <span style=color:#f92672>=</span>  Math.<span style=color:#a6e22e>max</span>(<span style=color:#a6e22e>global_maximum</span>,<span style=color:#a6e22e>local_maximum</span>);
+</span></span><span style=display:flex><span>            
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>global_maximum</span> ;
+</span></span><span style=display:flex><span>            
+</span></span><span style=display:flex><span>        }, <span style=color:#f92672>-</span><span style=color:#66d9ef>Infinity</span>);
+</span></span><span style=display:flex><span>    };
+</span></span></code></pre></div><p>Please read about reduce function in JS if you don&rsquo;t already know about
+it.</p></div></div><div class=pagination><div class=pagination__title><span class=pagination__title-h>Read other posts</span><hr></div><div class=pagination__buttons><span class="button previous"><a href=../../posts/csv-to-sql-import/><span class=button__icon>←</span>
+<span class=button__text>CSV to SQL import using Node, Express and React</span></a></span>
+<span class="button next"><a href=../../posts/2020-02-16-leetcode-169-majority-element/><span class=button__text>LeetCode: 169 Majority Element</span>
+<span class=button__icon>→</span></a></span></div></div></div></div><footer class=footer><div class=footer__inner><p></p></div></footer><script src=../../assets/main.js></script>
+<script src=../../assets/prism.js></script></div></body></html>

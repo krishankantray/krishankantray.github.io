@@ -1,136 +1,28 @@
-<!doctype html><html lang=en>
-<head>
-<title>TCS-Codevita 2017 Round-1 Problem-A :: Krishankant</title>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="**Problem : **Mountain peak sequence
+<!doctype html><html lang=en><head><title>TCS-Codevita 2017 Round-1 Problem-A :: Krishankant</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="**Problem : **Mountain peak sequence
 Consider the first three natural numbers 1, 2, 3. These can be arranged in the following ways: 2, 3, 1 and 1, 3, 2. Inboth of
 these arrangements, the numbers increase to a certain point and then decrease. A sequence with this property is called a
 &amp;ldquo;mountain peak sequence&amp;rdquo;.
-Given an integer N, write a program to find the remainder of mountain peak arrangements that can be obtained by rearranging">
-<meta name=keywords content="Krishankant Ray">
-<meta name=robots content="noodp">
-<link rel=canonical href=../../posts/2017-09-26-tcs-codevita-2017-round-1-problem-a/>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QWLMER60PT"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-QWLMER60PT',{anonymize_ip:!1})}</script>
-<link rel=stylesheet href=../../assets/style.css>
-<link rel=apple-touch-icon href=../../img/apple-touch-icon-192x192.png>
-<link rel="shortcut icon" href=../../img/favicon.ico>
-<meta name=twitter:card content="summary">
-<meta name=twitter:site content>
-<meta name=twitter:creator content="Krishankant Ray">
-<meta property="og:locale" content="en">
-<meta property="og:type" content="article">
-<meta property="og:title" content="TCS-Codevita 2017 Round-1  Problem-A">
-<meta property="og:description" content="**Problem : **Mountain peak sequence
+Given an integer N, write a program to find the remainder of mountain peak arrangements that can be obtained by rearranging"><meta name=keywords content="Krishankant Ray"><meta name=robots content="noodp"><link rel=canonical href=../../posts/2017-09-26-tcs-codevita-2017-round-1-problem-a/><script async src="https://www.googletagmanager.com/gtag/js?id=G-QWLMER60PT"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-QWLMER60PT",{anonymize_ip:!1})}</script><link rel=stylesheet href=../../assets/style.css><link rel=apple-touch-icon href=../../img/apple-touch-icon-192x192.png><link rel="shortcut icon" href=../../img/favicon.ico><meta name=twitter:card content="summary"><meta name=twitter:site content><meta name=twitter:creator content="Krishankant Ray"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="og:title" content="TCS-Codevita 2017 Round-1  Problem-A"><meta property="og:description" content="**Problem : **Mountain peak sequence
 Consider the first three natural numbers 1, 2, 3. These can be arranged in the following ways: 2, 3, 1 and 1, 3, 2. Inboth of
 these arrangements, the numbers increase to a certain point and then decrease. A sequence with this property is called a
 &amp;ldquo;mountain peak sequence&amp;rdquo;.
-Given an integer N, write a program to find the remainder of mountain peak arrangements that can be obtained by rearranging">
-<meta property="og:url" content="/posts/2017-09-26-tcs-codevita-2017-round-1-problem-a/">
-<meta property="og:site_name" content="Krishankant">
-<meta property="og:image" content="/img/favicon.ico">
-<meta property="og:image:width" content="2048">
-<meta property="og:image:height" content="1024">
-<meta property="article:published_time" content="2017-09-26 19:39:00 +0530 +0530">
-</head>
-<body class=orange>
-<div class="container center headings--one-size">
-<head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QWLMER60PT"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-QWLMER60PT',{anonymize_ip:!1})}</script>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-QWLMER60PT','auto'),ga('send','pageview'))</script>
-<script async src=https://www.google-analytics.com/analytics.js></script>
-</head>
-<header class=header>
-<div class=header__inner>
-<div class=header__logo>
-<a href=../../>
-<div class=logo>
-Krishankant
-</div>
-</a>
-</div>
-<div class=menu-trigger>menu</div>
-</div>
-<nav class=menu>
-<ul class="menu__inner menu__inner--desktop">
-<li><a href=../../about>About/Resume</a></li>
-<li><a href=../../posts>Blog</a></li>
-<li><a href=../../contact>Contact</a></li>
-<li><a href=../../projects>Projects</a></li>
-</ul>
-<ul class="menu__inner menu__inner--mobile">
-<li><a href=../../about>About/Resume</a></li>
-<li><a href=../../posts>Blog</a></li>
-<li><a href=../../contact>Contact</a></li>
-<li><a href=../../projects>Projects</a></li>
-</ul>
-</nav>
-</header>
-<div class=content>
-<div class=post>
-<h1 class=post-title>
-<a href=../../posts/2017-09-26-tcs-codevita-2017-round-1-problem-a/>TCS-Codevita 2017 Round-1 Problem-A</a></h1>
-<div class=post-meta>
-<span class=post-date>
-2017-09-26
-</span>
-<span class=post-author>:: Krishankant Ray</span>
-</div>
-<div class=post-content><div>
-<p>**<span style=color:red><span style=font-family:verdana,sans-serif>Problem :
-</span></span>**Mountain peak sequence</p>
-<p>Consider the first three natural numbers 1, 2, 3. These can be arranged
-in the following ways: 2, 3, 1 and 1, 3, 2. Inboth of<br>
-these arrangements, the numbers increase to a certain point and then
-decrease. A sequence with this property is called a<br>
-&ldquo;mountain peak sequence&rdquo;.<br>
-Given an integer N, write a program to find the remainder of mountain
-peak arrangements that can be obtained by rearranging<br>
-the numbers 1, 2, &mldr;., N.</p>
-<p><strong><span style=color:red><span style=font-family:verdana,sans-serif>Input
-Format:</span></span></strong></p>
-<p>One line containing the integer N</p>
-<p><strong><span style=color:red><span style=font-family:verdana,sans-serif>Output
-Format:</span></span></strong></p>
-<p>An integer m, giving the remainder of the number of mountain peak
-arrangements that could be obtained from 1, 2, &mldr;., N is<br>
-divide by Mod</p>
-<p><strong><span style=color:red><span style=font-family:verdana,sans-serif>Constraints</span></span></strong>:</p>
-<p>Mod = 109+7<br>
-N ≤ 109</p>
-<p><strong><span style=color:red><span style=font-family:verdana,sans-serif>Example
-1</span></span></strong></p>
-<p>Input<br>
-3<br>
-Output<br>
-2<br>
-Explanation<br>
-There are two such arrangements: 1, 3, 2 and 2, 3, 1</p>
-<p><strong><span style=color:red><span style=font-family:verdana,sans-serif>Example
-2</span></span></strong></p>
-<p>Input<br>
-4<br>
-Output<br>
-6<br>
-Explanation<br>
-The six arrangements are (1, 2, 4, 3), (1,3,4,2), (1,4,3,2), (2,3,4,1),
-(2,4,3,1), (3,4,2,1)</p>
-<p><strong><span style=color:red><span style=font-family:verdana,sans-serif>Note:</span></span></strong></p>
-<p>Please do not use package and namespace in your code. For object
-oriented languages your code should be written in one<br>
-class.<br>
-Note:<br>
-Participants submitting solutions in C language should not use functions
-from &lt;conio.h> / &lt;process.h> as these files do not<br>
-exist in gcc<br>
-Note:<br>
-For C and C++, return type of main() function should be int.<br>
-<span style=font-size:xx-small>© 2017 Tata Consultancy Services
-Limited. All Rights Reserved.</span></p>
-<p><span style=font-size:xx-small> </span><strong><span style=color:red><span style=font-family:verdana,sans-serif>Solution:</span></span></strong></p>
-<pre><code>/*
+Given an integer N, write a program to find the remainder of mountain peak arrangements that can be obtained by rearranging"><meta property="og:url" content="/posts/2017-09-26-tcs-codevita-2017-round-1-problem-a/"><meta property="og:site_name" content="Krishankant"><meta property="og:image" content="/img/favicon.ico"><meta property="og:image:width" content="2048"><meta property="og:image:height" content="1024"><meta property="article:published_time" content="2017-09-26 19:39:00 +0530 +0530"></head><body class=orange><div class="container center headings--one-size"><head><script async src="https://www.googletagmanager.com/gtag/js?id=G-QWLMER60PT"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-QWLMER60PT",{anonymize_ip:!1})}</script><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","G-QWLMER60PT","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script></head><header class=header><div class=header__inner><div class=header__logo><a href=../../><div class=logo>Krishankant</div></a></div><div class=menu-trigger>menu</div></div><nav class=menu><ul class="menu__inner menu__inner--desktop"><li><a href=../../about>About/Resume</a></li><li><a href=../../posts>Blog</a></li><li><a href=../../contact>Contact</a></li><li><a href=../../projects>Projects</a></li></ul><ul class="menu__inner menu__inner--mobile"><li><a href=../../about>About/Resume</a></li><li><a href=../../posts>Blog</a></li><li><a href=../../contact>Contact</a></li><li><a href=../../projects>Projects</a></li></ul></nav></header><div class=content><div class=post><h1 class=post-title><a href=../../posts/2017-09-26-tcs-codevita-2017-round-1-problem-a/>TCS-Codevita 2017 Round-1 Problem-A</a></h1><div class=post-meta><span class=post-date>2017-09-26</span>
+<span class=post-author>:: Krishankant Ray</span></div><div class=post-content><div><p>**<span style=color:red><span style=font-family:verdana,sans-serif>Problem :
+</span></span>**Mountain peak sequence</p><p>Consider the first three natural numbers 1, 2, 3. These can be arranged
+in the following ways: 2, 3, 1 and 1, 3, 2. Inboth of<br>these arrangements, the numbers increase to a certain point and then
+decrease. A sequence with this property is called a<br>&ldquo;mountain peak sequence&rdquo;.<br>Given an integer N, write a program to find the remainder of mountain
+peak arrangements that can be obtained by rearranging<br>the numbers 1, 2, &mldr;., N.</p><p><strong><span style=color:red><span style=font-family:verdana,sans-serif>Input
+Format:</span></span></strong></p><p>One line containing the integer N</p><p><strong><span style=color:red><span style=font-family:verdana,sans-serif>Output
+Format:</span></span></strong></p><p>An integer m, giving the remainder of the number of mountain peak
+arrangements that could be obtained from 1, 2, &mldr;., N is<br>divide by Mod</p><p><strong><span style=color:red><span style=font-family:verdana,sans-serif>Constraints</span></span></strong>:</p><p>Mod = 109+7<br>N ≤ 109</p><p><strong><span style=color:red><span style=font-family:verdana,sans-serif>Example
+1</span></span></strong></p><p>Input<br>3<br>Output<br>2<br>Explanation<br>There are two such arrangements: 1, 3, 2 and 2, 3, 1</p><p><strong><span style=color:red><span style=font-family:verdana,sans-serif>Example
+2</span></span></strong></p><p>Input<br>4<br>Output<br>6<br>Explanation<br>The six arrangements are (1, 2, 4, 3), (1,3,4,2), (1,4,3,2), (2,3,4,1),
+(2,4,3,1), (3,4,2,1)</p><p><strong><span style=color:red><span style=font-family:verdana,sans-serif>Note:</span></span></strong></p><p>Please do not use package and namespace in your code. For object
+oriented languages your code should be written in one<br>class.<br>Note:<br>Participants submitting solutions in C language should not use functions
+from &lt;conio.h> / &lt;process.h> as these files do not<br>exist in gcc<br>Note:<br>For C and C++, return type of main() function should be int.<br><span style=font-size:xx-small>© 2017 Tata Consultancy Services
+Limited. All Rights Reserved.</span></p><p><span style=font-size:xx-small> </span><strong><span style=color:red><span style=font-family:verdana,sans-serif>Solution:</span></span></strong></p><pre><code>/*
  * CODEvita  2017 problem-A
  * Author: krishankantray
  */
@@ -165,37 +57,8 @@ int main()
     cout&lt;&lt;(m%mod);
     return 0;
 }
-</code></pre>
-</div></div>
-<div class=pagination>
-<div class=pagination__title>
-<span class=pagination__title-h>Read other posts</span>
-<hr>
-</div>
-<div class=pagination__buttons>
-<span class="button previous">
-<a href=../../posts/2017-09-26-codevita-2017-round-1-problem-b/>
-<span class=button__icon>←</span>
-<span class=button__text>CodeVita 2017 Round-1 Problem-B</span>
-</a>
-</span>
-<span class="button next">
-<a href=../../posts/2017-09-18-codechef-sept17-cookoff-subsequence-equality-problem-code-likecs01/>
-<span class=button__text>Codechef SEPT17 CookOff - Subsequence Equality Problem Code: LIKECS01</span>
-<span class=button__icon>→</span>
-</a>
-</span>
-</div>
-</div>
-</div>
-</div>
-<footer class=footer>
-<div class=footer__inner>
-<p></p>
-</div>
-</footer>
-<script src=../../assets/main.js></script>
-<script src=../../assets/prism.js></script>
-</div>
-</body>
-</html>
+</code></pre></div></div><div class=pagination><div class=pagination__title><span class=pagination__title-h>Read other posts</span><hr></div><div class=pagination__buttons><span class="button previous"><a href=../../posts/2017-09-26-codevita-2017-round-1-problem-b/><span class=button__icon>←</span>
+<span class=button__text>CodeVita 2017 Round-1 Problem-B</span></a></span>
+<span class="button next"><a href=../../posts/2017-09-18-codechef-sept17-cookoff-subsequence-equality-problem-code-likecs01/><span class=button__text>Codechef SEPT17 CookOff - Subsequence Equality Problem Code: LIKECS01</span>
+<span class=button__icon>→</span></a></span></div></div></div></div><footer class=footer><div class=footer__inner><p></p></div></footer><script src=../../assets/main.js></script>
+<script src=../../assets/prism.js></script></div></body></html>
