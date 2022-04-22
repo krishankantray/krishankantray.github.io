@@ -7940,7 +7940,7 @@ Frameworks/Tools : ReactJS, ExpressJS, NodeJS</description><content>&lt;h1 id="-
 &lt;p>Frameworks/Tools : &lt;code>ReactJS&lt;/code>, &lt;code>ExpressJS&lt;/code>, &lt;code>NodeJS&lt;/code>&lt;/p>
 &lt;p>Others : &lt;code>Algorithms&lt;/code>, &lt;code>Data Structures&lt;/code>, &lt;code>OOP&lt;/code>, &lt;code>System Design&lt;/code>&lt;/p>
 &lt;hr>
-&lt;p>Feel free to reach out to me at &lt;a href="./contact">contacts&lt;/a> page.&lt;/p></content></item><item><title>Contact</title><link>/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/contact/</guid><description> Contact Email: krishankant_rai@rediffmail.com LinkedIn: linkedin.com/in/krishankantray GitHub: github.com/krishankantray Twitter: @krishankantray Instagram: @hachiman_kami.97</description><content>&lt;table>
+&lt;p>Feel free to reach out to me at &lt;a href="./contact">contacts&lt;/a> page.&lt;/p></content></item><item><title>Contact</title><link>/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/contact/</guid><description> Contact Email: krishankant_rai@rediffmail.com LinkedIn: linkedin.com/in/krishankantray GitHub: github.com/krishankantray Twitter: @krishankantray Instagram: @hachiman.97</description><content>&lt;table>
 &lt;thead>
 &lt;tr>
 &lt;th>Contact&lt;/th>
@@ -7960,7 +7960,7 @@ Frameworks/Tools : ReactJS, ExpressJS, NodeJS</description><content>&lt;h1 id="-
 &lt;td>Twitter: &lt;a href="https://twitter.com/krishankantray/">@krishankantray&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Instagram: &lt;a href="https://www.instagram.com/hachiman_kami.97/">@hachiman_kami.97&lt;/a>&lt;/td>
+&lt;td>Instagram: &lt;a href="https://www.instagram.com/hachiman.97/">@hachiman.97&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table></content></item><item><title>Projects</title><link>/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/</guid><description>1. Blog CMS This‌‌ is‌‌ a‌‌ full‌‌ stack‌‌ blogging‌‌ app‌‌ which‌‌ provides ability‌‌ to‌‌ read‌‌ and‌‌ write‌‌ blogs. There‌‌ can‌‌ be‌‌ guest‌‌ users‌‌ and‌‌ logged‌‌ in‌‌ users.‌‌ The‌‌ guest ‌‌users‌‌ can‌‌ only‌‌ read‌‌ blog‌‌ as‌‌ compared‌‌ to‌‌ logged in‌‌ user‌‌ who‌‌ can‌‌ create‌‌ posts.‌ Technologies‌‌‌ -‌‌ NodeJs ,‌‌ Express,‌‌ MongoDB,‌‌ ReactJs‌
