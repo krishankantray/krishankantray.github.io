@@ -73,7 +73,7 @@ googleAnalytics = 'G-QWLMER60PT'
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "about"
-        name = "About/Resume"
+        name = "About"
         url = "/about"
       [[languages.en.menu.main]]
         identifier = "blog"
