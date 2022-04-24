@@ -20,4 +20,8 @@ Others : `Algorithms`, `Data Structures`, `OOP`, `System Design`
 
 ***
 
-Feel free to reach out to me at [contacts](/contact) page.
+Follow me at twitter - <a href="https://twitter.com/krishankantray?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @krishankantray</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Message me - <a href="https://twitter.com/messages/compose?recipient_id=&ref_src=twsrc%5Etfw" class="twitter-dm-button" data-size="large" data-show-screen-name="false" data-screen-name="krishankantray" data-show-count="false">Message @krishankantray</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+For other means to contact please checkout [contacts](/contact) page.
